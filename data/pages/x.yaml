@@ -1,0 +1,9 @@
+# An employee record
+data:
+  title: You can find me on X
+  subTitle: X Marks the Sport
+  image: https://picsum.photos/350/165?random
+  body: 
+    <p>Today we are going to talk about X.</p>
+    <p>I am on the site that is all</p>
+  featured: false  

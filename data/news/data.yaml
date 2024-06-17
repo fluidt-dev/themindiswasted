@@ -1,0 +1,11 @@
+# Simple News
+data:
+  - title: Whats is on my mind - 6/16/2024
+    subTitle: I started this site today.
+    image: /imgs/news1.webp
+    content: '<p>I decided to start this website to speak my mind on entertainment.</p>'
+  - title: What is on my mind - 6/16/2024
+    subTitle: The power of one, the power of two, the power of maaaaannnnnnyyyyyy!!
+    image: /imgs/news2.webp
+    content: <p>This phrase from StarWars The Acoloyte or I should say The Wokelyte is the biggest piece of shit dialog I have ever seen.</p>
+    

@@ -1,0 +1,10 @@
+# Oneliners
+data:
+  - icon: "mdi-guy-fawkes-mask"
+    title: "I don’t suffer from insanity—I enjoy every minute of it."
+    datetime: "2024-06-16 10:28PM"
+    value: 1
+  - icon: "mdi-flask"
+    title: 'Never trust atoms; they make up everything.'
+    datetime: "2024-06-16 8:28PM"
+    value: 2,
