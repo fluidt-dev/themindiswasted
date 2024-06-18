@@ -8,3 +8,6 @@ data:
     title: 'Never trust atoms; they make up everything.'
     datetime: "2024-06-16 8:28PM"
     value: 2,
+  - icon: "mdi-guy-fawkes-mask"
+    title: 'People who take care of chickens are literally chicken tenders.'
+    dateTime: "2024-06-17 8:07PM"
