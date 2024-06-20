@@ -1,0 +1,36 @@
+data:
+  - title: V Rising 
+    startDate: 6/13/2024
+    endDate: -
+    rating: 3
+    image: /imgs/games/vrising.jpeg
+    review: ''
+    platform: 'ps5'    
+  - title: Diablo IV
+    startDate: 5/19/2024
+    endDate: -
+    rating: 4
+    image: /imgs/games/diabloiv.jpeg
+    review: '/article/diablo_iv'
+    platform: 'pc'
+  - title: Stellar Blade
+    startDate: 4/26/2024
+    endDate: "-"
+    rating: 5
+    image: /imgs/games/stellarblade.jpeg
+    review: ''
+    platform: 'ps5'
+  - title: Final Fantasy Rebirth
+    startDate: 2/29/2024
+    endDate: 4/15/2024
+    rating: 5
+    image: /imgs/games/ff7rebirth.avif
+    review: '/article/finalfantasy7rebirth'
+    platform: 'ps5'
+  - title: Hell Divers 2
+    startDate: 2/8/2024
+    endDate: -
+    rating: 4
+    image: /imgs/games/helldivers2.jpeg
+    review: ''
+    platform: 'ps5'

@@ -1,13 +1,22 @@
 # Oneliners
 data:
+  - icon: "mdi-bacteria"
+    title: 'The power of one.....'
+    datetime: "2024-06-20 7:38AM"
+    author: "TheMindIsWasted"
+    value: 4
   - icon: "mdi-guy-fawkes-mask"
-    title: "I don’t suffer from insanity—I enjoy every minute of it."
-    datetime: "2024-06-16 10:28PM"
-    value: 1
+    title: 'People who take care of chickens are literally chicken tenders.'
+    datetime: "2024-06-17 8:07PM"
+    author: "TheMindIsWasted"
+    value: 3
   - icon: "mdi-flask"
     title: 'Never trust atoms; they make up everything.'
     datetime: "2024-06-16 8:28PM"
-    value: 2,
+    author: "TheMindIsWasted"
+    value: 2
   - icon: "mdi-guy-fawkes-mask"
-    title: 'People who take care of chickens are literally chicken tenders.'
-    dateTime: "2024-06-17 8:07PM"
+    title: "I don’t suffer from insanity—I enjoy every minute of it."
+    datetime: "2024-06-16 10:28PM"
+    author: "TheMindIsWasted"
+    value: 1

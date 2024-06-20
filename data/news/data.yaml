@@ -1,15 +1,25 @@
 # Simple News
 data:
-  - title: Whats is on my mind - 6/16/2024
-    subTitle: I started this site today.
-    image: /imgs/news1.webp
-    content: '<p>I decided to start this website to speak my mind on entertainment.</p>'
-  - title: What is on my mind - 6/16/2024
-    subTitle: The power of one, the power of two, the power of maaaaannnnnnyyyyyy!!
-    image: /imgs/news2.webp
-    content: <p>This phrase from StarWars The Acoloyte or I should say The Wokelyte is the biggest piece of shit dialog I have ever seen.</p>
-  - title: What is on my mind - 6/17/2024
-    subTitle: IGN DEI Defenders
-    image: /imgs/news3.webp
+  - title: Insomniac Games Doubles Down with SBI and Marvels Wolverine
+    date: 6/20/2024
+    subTitle: Whats on my mind
+    image: /imgs/news/news4.jpeg
+    content: <p>Wolverine is a beloved character of mine. But once again Racisim disguised as DEI is injected into a game.</p>
+  - title: IGN DEI Defenders
+    date: 6/17/2024
+    subTitle: What is on my mind
+    image: /imgs/news/news3.webp
     content: <p>So IGN thinks its ok to not report facts but report what they are feeling. What has happened to Journalism?</p>
-    
+  - title: The power of one, the power of two, the power of maaaaannnnnnyyyyyy!!
+    date: 6/17/2024
+    subTitle: What is on my mind
+    image: /imgs/news/news2.webp
+    content: <p>This phrase from StarWars The Acoloyte or I should say The Wokelyte is the biggest piece of shit dialog I have ever seen.</p>
+  - title: I started this site today.
+    date: 6/16/2024
+    subTitle: Whats is on my mind
+    image: /imgs/news/news1.webp
+    content: '<p>I decided to start this website to speak my mind on entertainment.</p>'
+
+
+
