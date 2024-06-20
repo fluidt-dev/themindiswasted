@@ -1,10 +1,10 @@
 data:
-  title: Diablo IV
+  title: Hell Divers 2
   subTitle: 
     <p>Original Game</p>
   category: Video Games
-  image: /imgs/games/diabloiv.jpeg
+  image: /imgs/games/helldivers2.jpeg
   datetime: 2024-06-20 7:54AM
   body: 
-    <p>Excellent Game</p>
+    <p>Good Game</p>
   featured: false  

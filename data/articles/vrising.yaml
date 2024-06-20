@@ -1,0 +1,10 @@
+data:
+  title: V Rising
+  subTitle: 
+    <p>Castlevania Edition</p>
+  category: Video Games
+  image: /imgs/games/vrising.jpeg
+  datetime: 2024-06-20 7:54AM
+  body: 
+    <p>Good Game</p>
+  featured: false  
