@@ -1,14 +1,14 @@
 data:
   - title: V Rising 
     startDate: 6/13/2024
-    endDate: -
+    endDate: "-"
     rating: 3
     image: /imgs/games/vrising.jpeg
     review: ''
     platform: 'ps5'    
   - title: Diablo IV
     startDate: 5/19/2024
-    endDate: -
+    endDate: "-"
     rating: 4
     image: /imgs/games/diabloiv.jpeg
     review: '/article/diablo_iv'
@@ -29,7 +29,7 @@ data:
     platform: 'ps5'
   - title: Hell Divers 2
     startDate: 2/8/2024
-    endDate: -
+    endDate: "-"
     rating: 4
     image: /imgs/games/helldivers2.jpeg
     review: ''
