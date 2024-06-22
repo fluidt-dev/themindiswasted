@@ -1,4 +1,11 @@
 data:
+  - title: ELDEN RING Shadow of the Erdtree 
+    startDate: 6/21/2024
+    endDate: "-"
+    rating: 4
+    image: /imgs/games/eldenringsote.jpeg
+    review: '/article/eldenringSoTE'
+    platform: 'ps5'   
   - title: V Rising 
     startDate: 6/13/2024
     endDate: "-"
