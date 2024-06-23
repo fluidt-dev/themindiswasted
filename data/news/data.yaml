@@ -1,21 +1,25 @@
 # Simple News
 data:
-  - title: Insomniac Games Doubles Down with SBI and Marvels Wolverine
+  - id: 4996f5de-299b-4081-993a-b7b5b5ec437c
+    title: Insomniac Games Doubles Down with SBI and Marvels Wolverine
     date: 6/20/2024
     subTitle: Whats on my mind
     image: /imgs/news/news4.jpeg
     content: <p>Wolverine is a beloved character of mine. But once again Racisim disguised as DEI is injected into a game.</p>
-  - title: IGN DEI Defenders
+  - id: 2d7a521a-31f6-48c3-9f26-8e7ee5aab1c8
+    title: IGN DEI Defenders
     date: 6/17/2024
     subTitle: What is on my mind
     image: /imgs/news/news3.webp
     content: <p>So IGN thinks its ok to not report facts but report what they are feeling. What has happened to Journalism?</p>
-  - title: The power of one, the power of two, the power of maaaaannnnnnyyyyyy!!
+  - id: d1c42070-059b-4e43-b1ab-5431310010e5
+    title: The power of one, the power of two, the power of maaaaannnnnnyyyyyy!!
     date: 6/17/2024
     subTitle: What is on my mind
     image: /imgs/news/news2.webp
     content: <p>This phrase from StarWars The Acoloyte or I should say The Wokelyte is the biggest piece of shit dialog I have ever seen.</p>
-  - title: I started this site today.
+  - id: 2541fdcb-8aca-463d-9fed-0ab07ddb22fa
+    title: I started this site today.
     date: 6/16/2024
     subTitle: Whats is on my mind
     image: /imgs/news/news1.webp

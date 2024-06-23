@@ -1,43 +1,49 @@
 data:
-  - title: ELDEN RING Shadow of the Erdtree 
-    startDate: 6/21/2024
-    endDate: "-"
-    rating: 4
-    image: /imgs/games/eldenringsote.jpeg
-    review: '/article/eldenringSoTE'
-    platform: 'ps5'   
-  - title: V Rising 
-    startDate: 6/13/2024
-    endDate: "-"
-    rating: 3
-    image: /imgs/games/vrising.jpeg
-    review: '/article/vrising'
-    platform: 'ps5'    
-  - title: Diablo IV
-    startDate: 5/19/2024
-    endDate: "-"
-    rating: 4
-    image: /imgs/games/diabloiv.jpeg
-    review: '/article/diablo_iv'
-    platform: 'pc'
-  - title: Stellar Blade
-    startDate: 4/26/2024
-    endDate: "-"
-    rating: 5
-    image: /imgs/games/stellarblade.jpeg
-    review: '/article/stellarblade'
-    platform: 'ps5'
-  - title: Final Fantasy Rebirth
-    startDate: 2/29/2024
-    endDate: 4/15/2024
-    rating: 5
-    image: /imgs/games/ff7rebirth.avif
-    review: '/article/finalfantasy7rebirth'
-    platform: 'ps5'
-  - title: Hell Divers 2
-    startDate: 2/8/2024
-    endDate: "-"
-    rating: 4
-    image: /imgs/games/helldivers2.jpeg
-    review: '/article/helldivers2'
-    platform: 'ps5'
+- id: 83e37acf-619f-43c8-9143-0f23670f83c4
+  title: ELDEN RING Shadow of the Erdtree
+  startdate: 6/21/2024
+  enddate: '-'
+  rating: 4
+  image: /imgs/games/eldenringsote.jpeg
+  review: /article/eldenringSoTE
+  platform: ps5
+- id: df43c35c-29c1-427f-bd75-74072617bf07
+  title: V Rising
+  startdate: 6/13/2024
+  enddate: '-'
+  rating: 4
+  image: /imgs/games/vrising.jpeg
+  review: /article/vrising
+  platform: ps5
+- id: 864a84fe-d59c-4be7-8866-7f26c7c74267
+  title: Diablo IV
+  startdate: 5/19/2024
+  enddate: '-'
+  rating: 4
+  image: /imgs/games/diabloiv.jpeg
+  review: /article/diablo_iv
+  platform: pc
+- id: 70a953db-d26d-4b0f-aceb-042a4681c5bb
+  title: Stellar Blade
+  startdate: 4/26/2024
+  enddate: '-'
+  rating: 5
+  image: /imgs/games/stellarblade.jpeg
+  review: /article/stellarblade
+  platform: ps5
+- id: a9769b6f-46cf-4090-9710-9b4e9b990eb1
+  title: Final Fantasy Rebirth
+  startdate: 2/29/2024
+  enddate: 4/15/2024
+  rating: 5
+  image: /imgs/games/ff7rebirth.avif
+  review: /article/finalfantasy7rebirth
+  platform: ps5
+- id: fcfac73f-a3f9-4e48-b956-61fcd2c413a2
+  title: Hell Divers 2
+  startdate: 2/8/2024
+  enddate: '-'
+  rating: 4
+  image: /imgs/games/helldivers2.jpeg
+  review: /article/helldivers2
+  platform: ps5
