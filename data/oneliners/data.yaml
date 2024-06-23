@@ -1,26 +1,31 @@
-# Oneliners
 data:
-  - id: 5e62e452-3f5f-4186-b83b-d00876502ba0
-    icon: "mdi-bacteria"
-    title: 'The power of one.....'
-    datetime: "2024-06-20 7:38AM"
-    author: "TheMindIsWasted"
-    value: 4
-  - id: c204366b-c43d-409b-b29f-bd26bcaa0577
-    icon: "mdi-guy-fawkes-mask"
-    title: 'People who take care of chickens are literally chicken tenders.'
-    datetime: "2024-06-17 8:07PM"
-    author: "TheMindIsWasted"
-    value: 3
-  - id: 2ca2554d-bf2f-4c80-b47a-e79f35a710c3
-    icon: "mdi-flask"
-    title: 'Never trust atoms; they make up everything.'
-    datetime: "2024-06-16 8:28PM"
-    author: "TheMindIsWasted"
-    value: 2
-  - id: 2cab097b-2152-4b89-b74c-340a2e839181
-    icon: "mdi-guy-fawkes-mask"
-    title: "I don’t suffer from insanity—I enjoy every minute of it."
-    datetime: "2024-06-16 10:28PM"
-    author: "TheMindIsWasted"
-    value: 1
+- id: 360cde38-3198-11ef-ad67-fe69821cec18
+  icon: mdi-bacteria
+  title: This power of two.....
+  datetime: 2024-06-23 3:38:23PM
+  author: themindiswasted
+  value: 5
+- id: 5e62e452-3f5f-4186-b83b-d00876502ba0
+  icon: mdi-bacteria
+  title: The power of one.....
+  datetime: 2024-06-20 7:38AM
+  author: TheMindIsWasted
+  value: 4
+- id: c204366b-c43d-409b-b29f-bd26bcaa0577
+  icon: mdi-guy-fawkes-mask
+  title: People who take care of chickens are literally chicken tenders.
+  datetime: 2024-06-17 8:07PM
+  author: TheMindIsWasted
+  value: 3
+- id: 2ca2554d-bf2f-4c80-b47a-e79f35a710c3
+  icon: mdi-flask
+  title: Never trust atoms; they make up everything.
+  datetime: 2024-06-16 8:28PM
+  author: TheMindIsWasted
+  value: 2
+- id: 2cab097b-2152-4b89-b74c-340a2e839181
+  icon: mdi-guy-fawkes-mask
+  title: I don’t suffer from insanity—I enjoy every minute of it.
+  datetime: 2024-06-16 10:28PM
+  author: TheMindIsWasted
+  value: 1
