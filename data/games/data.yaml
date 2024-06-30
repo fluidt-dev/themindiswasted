@@ -6,7 +6,7 @@ data:
   rating: 3
   image: /imgs/games/killerclowns.jpg
   review: ""
-  platform: ""
+  platform: ps5
 - id: 83e37acf-619f-43c8-9143-0f23670f83c4
   title: ELDEN RING Shadow of the Erdtree
   startdate: 6/21/2024
@@ -14,7 +14,7 @@ data:
   rating: 4
   image: /imgs/games/eldenringsote.jpeg
   review: /article/eldenringSoTE
-  platform: ps5
+  platform: pc
 - id: df43c35c-29c1-427f-bd75-74072617bf07
   title: V Rising
   startdate: 6/13/2024
