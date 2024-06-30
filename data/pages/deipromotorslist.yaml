@@ -3,33 +3,40 @@ data:
   subtitle: List of DEI Activists on the Internet
   image: /imgs/parallax.webp
   body: '<p><span style="font-size: 24px;"><strong>DEI Consultants</strong></span></p><p><br></p><table
-    style="width: 100%;"><thead><tr><th>Company</th><th>Website<br></th></tr></thead><tbody><tr><td
-    style="width: 50.0000%;">Sweet Baby Inc</td><td style="width: 50.0000%;"><a data-fr-linked="true"
-    href="https://sweetbabyinc.com/" id="isPasted">https://sweetbabyinc.com/</a><br></td></tr><tr><td
+    style="width: 100%;" class="fr-alternate-rows fr-dashed-borders"><thead><tr><th
+    style="background-color: rgb(84, 172, 210);"><div style="text-align: left;"><span
+    style="color: rgb(239, 239, 239);">Company</span></div></th><th style="background-color:
+    rgb(84, 172, 210);"><div style="text-align: left;"><span style="color: rgb(255,
+    255, 255);">Website</span></div></th></tr></thead><tbody><tr><td style="width:
+    50.0000%;">Sweet Baby Inc</td><td style="width: 50.0000%;"><a data-fr-linked="true"
+    href="https://sweetbabyinc.com/" id="isPasted">https://sweetbabyinc.com/</a></td></tr><tr><td
     style="width: 50.0000%;">Silverstringmedia</td><td style="width: 50.0000%;"><p
     id="isPasted"><a data-fr-linked="true" href="https://silverstringmedia.com/consultancy">https://silverstringmedia.com/consultancy</a></p></td></tr><tr><td
-    style="width: 50.0000%;">Stonemaier Games<br></td><td style="width: 50.0000%;"><a
+    style="width: 50.0000%;">Stonemaier Games</td><td style="width: 50.0000%;"><a
     data-fr-linked="true" href="https://stonemaiergames.com/diversity-equity-and-inclusion-in-the-game-industry/"
-    id="isPasted">https://stonemaiergames.com/diversity-equity-and-inclusion-in-the-game-industry/</a><br></td></tr><tr><td
+    id="isPasted">https://stonemaiergames.com/diversity-equity-and-inclusion-in-the-game-industry/</a></td></tr><tr><td
     style="width: 50.0000%;">GaymerX</td><td style="width: 50.0000%;"><a data-fr-linked="true"
-    href="https://gaymerx.org/consulting" id="isPasted">https://gaymerx.org/consulting</a><br></td></tr><tr><td
-    style="width: 50.0000%;">James Mendez Hodes<br></td><td style="width: 50.0000%;"><a
-    data-fr-linked="true" href="https://jamesmendezhodes.com/workshops" id="isPasted">https://jamesmendezhodes.com/workshops</a><br></td></tr><tr><td
+    href="https://gaymerx.org/consulting" id="isPasted">https://gaymerx.org/consulting</a></td></tr><tr><td
+    style="width: 50.0000%;">James Mendez Hodes</td><td style="width: 50.0000%;"><a
+    data-fr-linked="true" href="https://jamesmendezhodes.com/workshops" id="isPasted">https://jamesmendezhodes.com/workshops</a></td></tr><tr><td
     style="width: 50.0000%;">Black Rock</td><td style="width: 50.0000%;"><a data-fr-linked="true"
     href="https://www.blackrock.com/corporate/about-us/diversity-equity-and-inclusion/commitment-to-dei"
-    id="isPasted">https://www.blackrock.com/corporate/about-us/diversity-equity-and-inclusion/commitment-to-dei</a><br></td></tr><tr><td
+    id="isPasted">https://www.blackrock.com/corporate/about-us/diversity-equity-and-inclusion/commitment-to-dei</a></td></tr><tr><td
     style="width: 50.0000%;">Black Girl Gamers</td><td style="width: 50.0000%;"><a
-    data-fr-linked="true" href="https://www.theblackgirlgamers.com/" id="isPasted">https://www.theblackgirlgamers.com/</a><br></td></tr><tr><td
+    data-fr-linked="true" href="https://www.theblackgirlgamers.com/" id="isPasted">https://www.theblackgirlgamers.com/</a></td></tr><tr><td
     style="width: 50.0000%;">DIG</td><td style="width: 50.0000%;"><a data-fr-linked="true"
-    href="https://diversityin.games/mission" id="isPasted">https://diversityin.games/mission</a><br></td></tr><tr><td
+    href="https://diversityin.games/mission" id="isPasted">https://diversityin.games/mission</a></td></tr><tr><td
     style="width: 50.0000%;">Hit Detection</td><td style="width: 50.0000%;"><a data-fr-linked="true"
-    href="https://www.hitdetection.com/" id="isPasted">https://www.hitdetection.com/</a><br></td></tr></tbody></table><p><br></p><p><strong><span
+    href="https://www.hitdetection.com/" id="isPasted">https://www.hitdetection.com/</a></td></tr></tbody></table><p><br></p><p><strong><span
     style="font-size: 24px;">X DEI Activist</span></strong></p><p><br></p><table style="width:
-    100%;"><thead><tr><th>Who</th><th>Link</th></tr></thead><tbody><tr><td style="width:
-    50.0000%;">Alyssa Mercante</td><td style="width: 50.0000%;"><a data-fr-linked="true"
-    href="https://x.com/alyssa_merc" id="isPasted">https://x.com/alyssa_merc</a><br></td></tr><tr><td
-    style="width: 50.0000%;">Nick Calandra<br></td><td style="width: 50.0000%;"><a
-    data-fr-linked="true" href="https://x.com/nickjcal" id="isPasted">https://x.com/nickjcal</a><br></td></tr></tbody></table><p><br></p><p>What
+    100%;"><thead><tr><th style="background-color: rgb(44, 130, 201);"><div style="text-align:
+    left;"><span style="color: rgb(255, 255, 255);">Who</span></div></th><th style="background-color:
+    rgb(44, 130, 201);"><span style="color: rgb(255, 255, 255);">Link</span></th></tr></thead><tbody><tr><td
+    style="width: 50.0000%;">Alyssa Mercante</td><td style="width: 50.0000%;" class="fr-thick"><a
+    data-fr-linked="true" href="https://x.com/alyssa_merc" id="isPasted">https://x.com/alyssa_merc</a></td></tr><tr><td
+    style="width: 50.0000%;" class="fr-thick">Nick Calandra</td><td style="width:
+    50.0000%;" class="fr-thick"><a data-fr-linked="true" href="https://x.com/nickjcal"
+    id="isPasted">https://x.com/nickjcal</a></td></tr></tbody></table><p><br></p><p>What
     is DEI?</p><p><br></p><p>The current definition on Wikapedia as of 6/30/2024:<br><span
     style="color: rgb(77, 81, 86); font-family: Roboto, arial, sans-serif; font-size:
     14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;
