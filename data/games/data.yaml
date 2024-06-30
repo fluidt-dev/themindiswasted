@@ -1,12 +1,4 @@
 data:
-- id: 7cb7be0e-4750-4c3f-8066-6aeebc02e9f2
-  title: Killer Clowns From Outer Space
-  startdate: 6/30/2024
-  enddate: '-'
-  rating: 3
-  image: /imgs/games/killerclowns.jpg
-  review: ""
-  platform: ps5
 - id: 83e37acf-619f-43c8-9143-0f23670f83c4
   title: ELDEN RING Shadow of the Erdtree
   startdate: 6/21/2024

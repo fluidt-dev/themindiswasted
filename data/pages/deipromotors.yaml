@@ -1,10 +1,10 @@
 data:
-  title: You can find me on X
-  subTitle: X Marks the Sport
-  image: https://picsum.photos/350/165?random
+  title: DEI Promotors List
+  subTitle: List of DEI Activists on the Internet
+  image: /imgs/parallax.webp
   body: 
     <p>Today we are going to talk about X.</p>
     <p>I am on the site that is all</p>
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How in the hell is Master Ki-Adi-Mundi in The Acolyte? He wasn&#39;t even born yet? And even if it was, why did he say we haven&#39;t seen a Sith in a millennia? Why didn&#39;t he say, oh btw Anakin is not the first force baby? This show is such hot garbage. <a href="https://twitter.com/hashtag/thepowerofmany?src=hash&amp;ref_src=twsrc%5Etfw">#thepowerofmany</a> <a href="https://twitter.com/hashtag/starwars?src=hash&amp;ref_src=twsrc%5Etfw">#starwars</a> <a href="https://t.co/Uvs91y3ee7">pic.twitter.com/Uvs91y3ee7</a></p>&mdash; TheMindIsWasted (@themindiswasted) <a href="https://twitter.com/themindiswasted/status/1803389296746832165?ref_src=twsrc%5Etfw">June 19, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <a class="twitter-timeline" href="https://twitter.com/themindiswasted?ref_src=twsrc%5Etfw">Tweets by themindiswasted</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  featured: false  
+  featured: false
