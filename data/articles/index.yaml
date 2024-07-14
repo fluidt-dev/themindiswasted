@@ -1,0 +1,37 @@
+# Article List
+data:
+  - url: /article/attemptedassassinationonpresidenttrump
+    title: Attempted Assassination On President Trump
+    datetime: "2024-07-13 18:30:34"
+    category: Real Life
+    image: /imgs/articles/FightForFreedom.jpeg
+  - url: /article/diablo_iv
+    title: Diablo IV
+    datetime: "2024-06-20 7:54AM"
+    category: Video Games
+    image: /imgs/games/diabloiv.jpeg
+  - url: /article/eldenringSoTE
+    title: Elden Ring - Shadow of the Erdtree
+    datetime: 2024-06-21 7:01PM
+    category: Video Games
+    image: /imgs/games/eldenringsote.jpeg
+  - url: /article/finalfantasyr7rebirth
+    title: Final Fantasy Rebirth
+    datetime: 2024-06-20 7:54AM
+    category: Video Games
+    image: /imgs/games/ff7rebirth.avif
+  - url: /article/helldivers2
+    title: Hell Divers 2
+    datetime: 2024-06-20 7:54AM
+    category: Video Games
+    image: /imgs/games/helldivers2.jpeg
+  - url: /article/stellarblade
+    title: Stellar Blade
+    datetime: 2024-06-20 7:54AM
+    category: Video Games
+    image: /imgs/games/stellarblade.jpeg
+  - url: /article/vrising
+    title: V Rising
+    datetime: 2024-06-20 7:54AM
+    category: Video Games
+    image: /imgs/games/vrising.jpeg
