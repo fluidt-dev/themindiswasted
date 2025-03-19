@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMindIsWasted - A Gamer's Blog - Elden Ring: Shadow of Erdtree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Parallax effect for header */
+        .parallax-header {
+            background-image: url('./imgs/eldenringsote.jpeg'); /* Placeholder for header background */
+            background-attachment: fixed; /* Key for parallax effect */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 400px; /* Increased height for better parallax visibility */
+        }
+        /* Custom star rating */
+        .star-rating::before {
+            content: '★★★★★';
+            color: #3B82F6; /* Electric blue */
+            letter-spacing: 2px;
+        }
+        .star-rating-4::before {
+            content: '★★★★☆';
+            color: #3B82F6;
+        }
+        .star-rating-3::before {
+            content: '★★★☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-2::before {
+            content: '★★☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-1::before {
+            content: '★☆☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-0::before {
+            content: '☆☆☆☆☆';
+            color: #3B82F6;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-gray-400 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Left: TheMindIsWasted -->
+            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#" class="text-white text-lg"> TheMindIsWasted</span></span>
+            <!-- Center: Navigation Links with Icons -->
+            <ul class="flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                <li>
+                    <a href="/" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-house mr-2"></i> HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="/About" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-circle-info mr-2"></i> ABOUT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header with Parallax -->
+    <header class="parallax-header flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-white">Review: Elden Ring: Shadow of the Erdtree</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Review Section for Elden Ring: Shadow of the Erdtree -->
+        <section id="elden-ring-review" class="mb-12">
+            <!-- <h2 class="text-2xl font-bold text-white mb-6">Review: Elden Ring: Shadow of the Erdtree</h2> -->
+            <div class="bg-[#1F2526] rounded-lg shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                    <h3 class="text-lg font-bold text-white mr-4">ELDEN RING: Shadow of the Erdtree</h3>
+                    <p class="text-gray-400 text-sm">Rating: <span class="star-rating"></span></p>
+                </div>
+                <img src="./imgs/eldenringsote.jpeg" alt="Elden Ring Shadow of the Erdtree" class="w-full h-64 object-cover rounded mb-4">
+                <p class="text-gray-400 mb-4">
+                    FromSoftware has done it again with *Elden Ring: Shadow of the Erdtree*, a DLC that feels more like a full-fledged sequel than an expansion. Released on June 20, 2024, this masterpiece takes everything that made the base game a landmark in gaming history and elevates it to new heights. I’ve sunk countless hours into the Land of Shadow, and I can confidently say this is one of the best gaming experiences I’ve ever had.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    The Land of Shadow is a breathtakingly dense and vertical world, packed with secrets that reward exploration at every turn. From the haunting Gravesite Plains to the cerulean shores dotted with glowing flowers, every area is a visual feast that feels both familiar and alien compared to the Lands Between. The Scadutree, a twisted counterpart to the Erdtree, looms over the landscape, casting an eerie shadow that sets the tone for this dark, unforgettable journey.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Combat in *Shadow of the Erdtree* is as punishing as ever, but the new Scadutree Fragments leveling system ensures you feel a sense of progression even at higher levels. I started at level 150, thinking I was ready to dominate, but the DLC quickly humbled me with its brutal bosses—some of the most challenging FromSoftware has ever designed. Yet, every victory felt earned, thanks to the fair (if relentless) design. The new weapons, like the hand-to-hand Dryleaf Arts, added fresh dynamics to my build, making every encounter a thrill.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    The story delves deep into the lore of Miquella and the Golden Order, offering revelations that reframe much of what we thought we knew about the base game. The narrative is delivered in FromSoftware’s signature cryptic style, but the environmental storytelling—through ruined castles, ghostly graveyards, and the anguished Land of Shadow—speaks volumes. It’s a fitting encore to *Elden Ring*’s epic tale, blending melancholy with moments of serene beauty, like a hidden village untouched by war.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    If there’s any criticism, it’s that the performance can stutter at times, especially in the more detailed areas, and some might find the difficulty a bit too unforgiving. But these are minor blemishes on an otherwise flawless experience. *Shadow of the Erdtree* isn’t just a DLC—it’s a celebration of FromSoftware’s legacy, a love letter to fans, and a testament to their unparalleled craft. For $40, you’re getting what feels like a whole new game, easily worth 40-50 hours of exploration. This is a must-play for any *Elden Ring* fan, and it’s earned every one of its five stars.
+                </p>
+                <a href="/" class="inline-block px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">Back to Games</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2025 <a href="#" class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

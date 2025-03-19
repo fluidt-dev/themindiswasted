@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMindIsWasted - A Gamer's Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Parallax effect for header */
+        .parallax-header {
+            background-image: url('./imgs/parallax.webp'); /* Placeholder for header background */
+            background-attachment: fixed; /* Key for parallax effect */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 400px; /* Increased height for better parallax visibility */
+        }
+        /* Custom star rating */
+        .star-rating::before {
+            content: '★★★★★';
+            color: #3B82F6; /* Electric blue */
+            letter-spacing: 2px;
+        }
+        .star-rating-4::before {
+            content: '★★★★☆';
+            color: #3B82F6;
+        }
+        .star-rating-3::before {
+            content: '★★★☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-2::before {
+            content: '★★☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-1::before {
+            content: '★☆☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-0::before {
+            content: '☆☆☆☆☆';
+            color: #3B82F6;
+        }
+
+    </style>
+</head>
+<body class="bg-[#121212] text-gray-400 font-sans"> 
+    <!-- Navigation -->
+    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Left: TheMindIsWasted -->
+            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#" class="text-white text-lg"> TheMindIsWasted</span></span>
+            <!-- Center: Navigation Links with Icons -->
+            <ul class="flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                <li>
+                    <a href="/" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-house mr-2"></i> HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="/About" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-circle-info mr-2"></i> ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-list mr-2"></i> DEI TRACKER LIST
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header with Parallax -->
+    <header class="parallax-header flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-white">TheMindIsWasted</h1>
+            <p class="text-gray-400 mt-2">Just a blog from a GAMER.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Games I've Played Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-white mb-6">Games I've Played</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Game 1 -->
+                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden"> <!-- Dark gray card background -->
+                    <img src="./Games/Elden_Ring_Shadow_of_Erdtree/imgs/eldenringsote.jpeg" alt="Elden Ring" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">ELDEN RING Shadow of the Erdtree</h3>
+                        <p class="text-gray-400 text-sm mt-1">Started: 6/21/2024 Completed: --</p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
+                        <a href="./Games/Elden_Ring_Shadow_of_Erdtree/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a> <!-- Electric blue button -->
+                    </div>
+                </div>
+                <!-- Game 2 -->
+                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Games/V_Rising/imgs/vrising.jpeg" alt="V Rising" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">V Rising</h3>
+                        <p class="text-gray-400 text-sm mt-1">Started: 6/13/2024 Completed: --</p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
+                        <a href="./Games/V_Rising/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                    </div>
+                </div>
+                <!-- Game 3 -->
+                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Games/DiabloIV/imgs/diabloiv.jpeg" alt="Diablo IV" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">Diablo IV</h3>
+                        <p class="text-gray-400 text-sm mt-1">Started: 5/19/2024 Completed: --</p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-3"></span></p>
+                        <a href="./Games/DiabloIV/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                    </div>
+                </div>
+                <!-- Game 4 -->
+                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Games/Stellar_Blade/imgs/stellarblade.jpeg" alt="Stellar Blade" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">Stellar Blade</h3>
+                        <p class="text-gray-400 text-sm mt-1">Started: 4/26/2024 Completed: --</p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
+                        <a href="./Games/Stellar_Blade/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                    </div>
+                </div>
+                <!-- Game 5 -->
+                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Games/Final_Fantasy_VII_Rebirth/imgs/ff7rebirth.avif" alt="Final Fantasy VII Rebirth" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">Final Fantasy VII Rebirth</h3>
+                        <p class="text-gray-400 text-sm mt-1">Started: 2/29/2024 Completed: 4/15/2024</p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
+                        <a href="./Games/Final_Fantasy_VII_Rebirth/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                    </div>
+                </div>
+                <!-- Game 6 -->
+                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Games/HellDivers2/imgs/helldivers2.jpeg" alt="Helldivers 2" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">Helldivers 2</h3>
+                        <p class="text-gray-400 text-sm mt-1">Started: 2/8/2024 Completed: --</p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
+                        <a href="./Games/HellDivers2/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's On My Mind Section -->
+        <section>
+            <h2 class="text-2xl font-bold text-white mb-6">What's On My Mind</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Placeholder for additional content -->
+                <div class="bg-[#1F2526] rounded-lg shadow-lg p-4">
+                    <img src="./imgs/no-image.png" alt="No Videos" class="w-full h-40 object-cover rounded">
+                    <h3 class="text-lg font-bold text-white mt-3">No Videos Listed</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2025 <a href="#" class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

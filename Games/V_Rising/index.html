@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMindIsWasted - A Gamer's Blog - V Rising</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Parallax effect for header */
+        .parallax-header {
+            background-image: url('./imgs/vrising.jpeg');
+            background-attachment: fixed; /* Key for parallax effect */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 400px; /* Increased height for better parallax visibility */
+        }
+        /* Custom star rating */
+        .star-rating::before {
+            content: '★★★★★';
+            color: #3B82F6; /* Electric blue */
+            letter-spacing: 2px;
+        }
+        .star-rating-4::before {
+            content: '★★★★☆';
+            color: #3B82F6;
+        }
+        .star-rating-3::before {
+            content: '★★★☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-2::before {
+            content: '★★☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-1::before {
+            content: '★☆☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-0::before {
+            content: '☆☆☆☆☆';
+            color: #3B82F6;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-gray-400 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Left: TheMindIsWasted -->
+            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#" class="text-white text-lg"> TheMindIsWasted</span></span>
+            <!-- Center: Navigation Links with Icons -->
+            <ul class="flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                <li>
+                    <a href="/" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-house mr-2"></i> HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="/About" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-circle-info mr-2"></i> ABOUT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header with Parallax -->
+    <header class="parallax-header flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-white">Review: V Rising</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Review Section for V Rising -->
+        <section id="v-rising-review" class="mb-12">
+            <div class="bg-[#1F2526] rounded-lg shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                    <h3 class="text-lg font-bold text-white mr-4">V Rising</h3>
+                    <p class="text-gray-400 text-sm">Rating: <span class="star-rating-4"></span></p>
+                </div>
+                <img src="./imgs/vrising.jpeg" alt="V Rising" class="w-full h-64 object-cover rounded mb-4">
+                <p class="text-gray-400 mb-4">
+                    *V Rising*, developed by Stunlock Studios and fully released on May 8, 2024, after a successful Early Access period, is a vampire-themed survival ARPG that sinks its teeth into a unique blend of genres. I started playing on June 13, 2024, and after many hours of building gothic castles and hunting for blood, I can say it’s a highly engaging experience that’s earned a solid 4 stars—though it’s not without its flaws.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    The vampire fantasy is the heart of *V Rising*, and it’s executed brilliantly. You awaken as a weakened vampire, tasked with rebuilding your empire in a sprawling open world. The survival mechanics are immersive: the day-night cycle forces you to avoid sunlight, using shadows from trees or passing clouds to stay safe, which adds a thrilling layer of strategy to exploration. The blood system is equally compelling—drinking from different enemies grants temporary buffs, like increased critical chance from rogues, making every hunt feel meaningful. Building your castle is a joy, with an intuitive system that lets you snap together gothic structures effortlessly, from blood presses to coffins, creating a spooky estate that feels truly yours.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Combat is where *V Rising* truly shines. It’s fast-paced and deliberate, blending ARPG elements with MOBA-style duels. Boss fights, of which there are over 50, are a highlight—each one feels like a unique challenge, requiring you to dodge telegraphed attacks and manage your cooldowns carefully. The 1.0 update added Rift Incursions, timed events that let you earn Stygian Shards for crafting powerful weapons, adding a satisfying progression loop without overwhelming randomness. I loved experimenting with different weapons, like the mace for mining or dual axes for crowd control, and the ability to customize your playstyle with spells keeps combat fresh.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    The world is visually striking, especially after the 1.0 update’s graphical improvements, with better lighting and lush foliage that make the gothic landscapes pop. The progression system, tied to gear score rather than traditional leveling, encourages exploration and boss hunting to unlock new crafting recipes. The game also offers incredible flexibility—you can tweak server settings to adjust difficulty, making it accessible for solo players like me or more brutal for those seeking a challenge. The ability to play offline or with friends, with options for PvP or PvE, ensures there’s something for everyone.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    That said, *V Rising* isn’t perfect, which is why it’s a 4-star game for me. The narrative is almost nonexistent—you’re a vampire rising to power, but there’s little story to drive you forward, which can make the experience feel hollow at times, especially in solo play. The early game can be repetitive, with a lot of resource gathering that feels tedious until you unlock better tools. Progression can also be grindy, particularly in the mid-to-late game, where crafting high-tier gear takes a significant time investment. I also wish there were more variety in boss movesets early on, as some fights felt too similar. These issues hold it back from a perfect score, but they don’t overshadow the game’s strengths. *V Rising* is a bloody good time, offering 40-50 hours of engaging gameplay for $34.99. If you’re a fan of survival games, ARPGs, or vampire fantasies, it’s well worth sinking your teeth into.
+                </p>
+                <a href="/" class="inline-block px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">Back to Games</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2025 <a href="#" class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

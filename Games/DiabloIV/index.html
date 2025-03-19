@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMindIsWasted - A Gamer's Blog - Diablo IV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Parallax effect for header */
+        .parallax-header {
+            background-image: url('./imgs/diabloiv.jpeg');
+            background-attachment: fixed; /* Key for parallax effect */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 400px; /* Increased height for better parallax visibility */
+        }
+        /* Custom star rating */
+        .star-rating::before {
+            content: '★★★★★';
+            color: #3B82F6; /* Electric blue */
+            letter-spacing: 2px;
+        }
+        .star-rating-4::before {
+            content: '★★★★☆';
+            color: #3B82F6;
+        }
+        .star-rating-3::before {
+            content: '★★★☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-2::before {
+            content: '★★☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-1::before {
+            content: '★☆☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-0::before {
+            content: '☆☆☆☆☆';
+            color: #3B82F6;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-gray-400 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Left: TheMindIsWasted -->
+            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#" class="text-white text-lg"> TheMindIsWasted</span></span>
+            <!-- Center: Navigation Links with Icons -->
+            <ul class="flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                <li>
+                    <a href="/" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-house mr-2"></i> HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="/About" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-circle-info mr-2"></i> ABOUT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header with Parallax -->
+    <header class="parallax-header flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-white">Review: Diablo IV</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Review Section for Diablo IV -->
+        <section id="diablo-iv-review" class="mb-12">
+            <div class="bg-[#1F2526] rounded-lg shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                    <h3 class="text-lg font-bold text-white mr-4">Diablo IV</h3>
+                    <p class="text-gray-400 text-sm">Rating: <span class="star-rating-3"></span></p>
+                </div>
+                <img src="./imgs/diabloiv.jpeg" alt="Diablo IV" class="w-full h-64 object-cover rounded mb-4">
+                <p class="text-gray-400 mb-4">
+                    *Diablo IV*, developed by Blizzard Entertainment and released on June 6, 2023, for PC, PlayStation, and Xbox, marks a return to the dark, gothic roots of the series that fans have long craved. I started playing on launch day and have sunk over 80 hours into the game, exploring its hellish depths as a Necromancer. While there’s a lot to admire here—stunning visuals, satisfying combat, and a promising foundation—the game’s flaws hold it back from greatness, landing it at a 3-star rating for me.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Let’s start with the positives: *Diablo IV* looks and sounds incredible. The world of Sanctuary is a visual feast, with macabre landscapes ranging from blood-soaked swamps to snowy peaks, all rendered with meticulous detail. The lighting, especially in dank dungeons, creates an oppressive atmosphere that harkens back to the series’ early days, a stark improvement over *Diablo III*’s cartoonish vibe. The soundtrack is equally haunting, with eerie chants and demonic roars that amplify the tension. Combat is another high point—Blizzard has nailed the ARPG loop of slaughtering hordes of enemies for loot. My Necromancer’s ability to raise skeletons and detonate corpses felt visceral and rewarding, and the skill tree offers enough depth to experiment with builds, even if it’s not as groundbreaking as some hoped.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    The open-world design is ambitious, with a sprawling map filled with side quests, dungeons, and events like Helltides that encourage exploration. The campaign, centered on the demon Lilith’s return, starts strong with a gripping first act and some jaw-dropping cinematics. Moments with Lilith on-screen are genuinely captivating, and the lore ties nicely into the series’ history, offering a mix of nostalgia and fresh twists for longtime fans. The live-service foundation also shows promise—endgame activities like Nightmare Dungeons and Grim Favors provide a decent challenge, and Blizzard’s commitment to seasonal updates suggests the game could evolve into something truly special over time.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    However, *Diablo IV* stumbles in several key areas, which is why I can’t give it more than 3 stars. The campaign, while initially engaging, drags on with unnecessary filler across its 15-20 hours. After a strong start, the story devolves into repetitive errands that feel like detours, and the final boss fight is a letdown, lacking the intensity I expected from a Diablo game. The narrative’s pacing issues and lack of a satisfying payoff left me more excited for future expansions than fulfilled by the base game. Progression also feels uneven—while the early levels are well-paced, the endgame grind becomes tedious, with restrictive systems that stifle creativity in character builds. Many players, as seen in posts on X, have echoed this sentiment, noting that each season feels like a checklist with little depth or variety in builds over time.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Then there’s the live-service baggage. The always-online requirement, even for solo play, is frustrating—I’ve been disconnected for idling too long while stepping away to handle real-life responsibilities, losing progress in the process. The microtransactions, while cosmetic, are overpriced (some skins cost $25!), which feels exploitative for a $70 game. This has been a major point of contention, as evidenced by the review bombing on Metacritic, where the user score dropped to 4.0 due to fan backlash over monetization and updates that nerfed classes across the board. While the core gameplay loop is addictive, the lack of a compelling endgame and the repetitive nature of activities make it hard to stay invested long-term. *Diablo IV* has the bones of a great game, but it feels like it needs a year or two of updates to reach its full potential. For now, it’s a solid but flawed experience—worth playing if you love ARPGs, but don’t expect it to consume your life like its predecessors might have.
+                </p>
+                <a href="/" class="inline-block px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">Back to Games</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2025 <a href="#" class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

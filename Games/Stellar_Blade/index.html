@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMindIsWasted - A Gamer's Blog - Stellar Blade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Parallax effect for header */
+        .parallax-header {
+            background-image: url('./imgs/stellarblade.jpeg');
+            background-attachment: fixed; /* Key for parallax effect */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 400px; /* Increased height for better parallax visibility */
+        }
+        /* Custom star rating */
+        .star-rating::before {
+            content: '★★★★★';
+            color: #3B82F6; /* Electric blue */
+            letter-spacing: 2px;
+        }
+        .star-rating-4::before {
+            content: '★★★★☆';
+            color: #3B82F6;
+        }
+        .star-rating-3::before {
+            content: '★★★☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-2::before {
+            content: '★★☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-1::before {
+            content: '★☆☆☆☆';
+            color: #3B82F6;
+        }
+        .star-rating-0::before {
+            content: '☆☆☆☆☆';
+            color: #3B82F6;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-gray-400 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Left: TheMindIsWasted -->
+            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#" class="text-white text-lg"> TheMindIsWasted</span></span>
+            <!-- Center: Navigation Links with Icons -->
+            <ul class="flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                <li>
+                    <a href="/" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-house mr-2"></i> HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="/About" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
+                        <i class="fas fa-circle-info mr-2"></i> ABOUT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header with Parallax -->
+    <header class="parallax-header flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-white">Review: Stellar Blade</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Review Section for Stellar Blade -->
+        <section id="stellar-blade-review" class="mb-12">
+            <div class="bg-[#1F2526] rounded-lg shadow-lg p-6">
+                <div class="flex items-center mb-4">
+                    <h3 class="text-lg font-bold text-white mr-4">Stellar Blade</h3>
+                    <p class="text-gray-400 text-sm">Rating: <span class="star-rating"></span></p>
+                </div>
+                <img src="./imgs/stellarblade.jpeg" alt="Stellar Blade" class="w-full h-64 object-cover rounded mb-4">
+                <p class="text-gray-400 mb-4">
+                    *Stellar Blade*, developed by Shift Up and released on April 26, 2024, for the PS5, is a revelation in the action-adventure genre. As someone who started playing on launch day, I can say this game has consumed my gaming life in the best way possible. It’s a stunning blend of jaw-dropping visuals, razor-sharp combat, and a surprisingly heartfelt story that’s earned every one of its five stars.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    Let’s start with the visuals—*Stellar Blade* is a graphical powerhouse that pushes the PS5 to its limits. The world of Xion, a post-apocalyptic city teeming with remnants of humanity, is a sight to behold. From the neon-lit streets to the desolate wastelands, every environment is meticulously crafted with an attention to detail that makes exploration a joy. The character design, especially for protagonist Eve, is phenomenal—her animations are fluid, and the costume designs (over 30 outfits!) are a delight to unlock and customize. The Naytiba enemies are grotesque yet fascinating, with designs that range from insect-like horrors to towering biomechanical beasts.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    The combat is where *Stellar Blade* truly shines. Drawing inspiration from games like *Sekiro* and *Bayonetta*, it offers a perfect balance of challenge and accessibility. Eve’s moveset is a ballet of destruction—dodging, parrying, and unleashing Beta Skills feels incredibly satisfying. The parry system rewards precision, and the Beta Energy meter adds a layer of strategy to every encounter. Boss fights, like the battle against the hulking Abaddon, are intense and memorable, requiring you to master every mechanic to survive. I’ve spent hours perfecting my combos, and the sense of mastery you get from nailing a perfect dodge into a devastating counterattack is unmatched.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    The story, while not groundbreaking, is surprisingly emotional. You play as Eve, a soldier sent to reclaim Earth from the Naytiba, but the narrative quickly delves into themes of humanity, sacrifice, and redemption. The relationship between Eve, Adam, and Lily grows organically, and the voice acting (especially in the English dub) brings a lot of heart to their journey. Side quests, like helping the citizens of Xion, add depth to the world and make you feel invested in its survival. The soundtrack by Keiichi Okabe (of *NieR* fame) is a perfect complement, with haunting vocals and pulse-pounding battle themes that elevate every moment.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    If there’s a minor critique, it’s that the platforming sections can feel a bit clunky at times, and the open-world elements aren’t as expansive as some might hope. But these are small nitpicks in an otherwise stellar package. *Stellar Blade* is a 30-40 hour journey that feels like a love letter to action games, blending the best elements of its influences into something fresh and exhilarating. Shift Up has delivered a debut that’s not just good—it’s exceptional. For any PS5 owner who loves a challenge and a good story, this is a must-play. Five stars, without a doubt.
+                </p>
+                <a href="/" class="inline-block px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">Back to Games</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2025 <a href="#" class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
