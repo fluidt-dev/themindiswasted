@@ -9,44 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        /* Parallax effect for header */
-        .parallax-header {
-            background-image: url('./imgs/eldenringsote.jpeg'); /* Placeholder for header background */
-            background-attachment: fixed; /* Key for parallax effect */
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
-            background-color: rgba(0, 0, 0, 0.7);
-            height: 400px; /* Increased height for better parallax visibility */
-        }
-        /* Custom star rating */
-        .star-rating::before {
-            content: '★★★★★';
-            color: #3B82F6; /* Electric blue */
-            letter-spacing: 2px;
-        }
-        .star-rating-4::before {
-            content: '★★★★☆';
-            color: #3B82F6;
-        }
-        .star-rating-3::before {
-            content: '★★★☆☆';
-            color: #3B82F6;
-        }
-        .star-rating-2::before {
-            content: '★★☆☆☆';
-            color: #3B82F6;
-        }
-        .star-rating-1::before {
-            content: '★☆☆☆☆';
-            color: #3B82F6;
-        }
-        .star-rating-0::before {
-            content: '☆☆☆☆☆';
-            color: #3B82F6;
-        }
-    </style>
+    <link rel="stylesheet" href="/main.css" />
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M02GCCMDDK"></script>
 <script>
@@ -109,19 +72,13 @@
     <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
         <div class="container mx-auto px-4 text-center">
             <p class="text-gray-400 text-sm">
-                &copy; 2025 <a href="#" class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights reserved.
+                &copy;2025 <a href="#"
+                    class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights
+                reserved.
             </p>
             <!-- Social Media Links -->
-            <div class="social-links mt-2">
-                <a href="https://x.com/themindiswasted" target="_blank" title="Follow me on X">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
-                <a href="https://www.youtube.com/@themindiswasted" target="_blank" title="Subscribe on YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.twitch.tv/themindiswasted" target="_blank" title="Watch me on Twitch">
-                    <i class="fab fa-twitch"></i>
-                </a>
+            <script src="/socialmedia.js"></script>
+            <div class="social-links mt-2" id="socialitems">
             </div>
         </div>
     </footer>
