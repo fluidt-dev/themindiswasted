@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest" />  
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheMindIsWasted - A Gamer's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Parallax effect for header */
         .parallax-header {
-            background-image: url('./imgs/parallax.webp'); /* Placeholder for header background */
-            background-attachment: fixed; /* Key for parallax effect */
+            background-image: url('./imgs/parallax.webp');
+            /* Placeholder for header background */
+            background-attachment: fixed;
+            /* Key for parallax effect */
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
             background-color: rgba(0, 0, 0, 0.7);
-            height: 400px; /* Increased height for better parallax visibility */
+            height: 400px;
+            /* Increased height for better parallax visibility */
         }
+
         /* Custom star rating */
         .star-rating::before {
             content: '★★★★★';
-            color: #3B82F6; /* Electric blue */
+            color: #3B82F6;
+            /* Electric blue */
             letter-spacing: 2px;
         }
+
         .star-rating-4::before {
             content: '★★★★☆';
             color: #3B82F6;
         }
+
         .star-rating-3::before {
             content: '★★★☆☆';
             color: #3B82F6;
         }
+
         .star-rating-2::before {
             content: '★★☆☆☆';
             color: #3B82F6;
         }
+
         .star-rating-1::before {
             content: '★☆☆☆☆';
             color: #3B82F6;
         }
+
         .star-rating-0::before {
             content: '☆☆☆☆☆';
             color: #3B82F6;
         }
-
     </style>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M02GCCMDDK"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-M02GCCMDDK');
+    gtag('config', 'G-M02GCCMDDK');
 </script>
-<body class="bg-[#121212] text-gray-400 font-sans"> 
+
+<body class="bg-[#121212] text-gray-400 font-sans">
     <!-- Navigation -->
     <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Left: TheMindIsWasted -->
-            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#" class="text-white text-lg"> TheMindIsWasted</span></span>
+            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#"
+                    class="text-white text-lg"> TheMindIsWasted</span></span>
             <!-- Center: Navigation Links with Icons -->
-            <ul class="flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
-                <li>
-                    <a href="/" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
-                        <i class="fas fa-house mr-2"></i> HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="/About" class="text-gray-400 hover:text-[#3B82F6] transition-colors flex items-center">
-                        <i class="fas fa-circle-info mr-2"></i> ABOUT
-                    </a>
-                </li>
-            </ul>
+            <script src="/menu.js"></script>
+            <ul class="flex space-x-6 absolute left-1/2 transform -translate-x-1/2" id="menuitems"></ul>
         </div>
     </nav>
 
@@ -95,23 +99,30 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Game 1 -->
                 <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden"> <!-- Dark gray card background -->
-                    <img src="./Games/Monster_Hunter_Wilds/imgs/monsterhunterwilds.jpg" alt="Monster Huner Wilds" class="w-full h-40 object-cover">
+                    <img src="./Games/Monster_Hunter_Wilds/imgs/monsterhunterwilds.jpg" alt="Monster Huner Wilds"
+                        class="w-full h-40 object-cover">
                     <div class="p-4">
                         <h3 class="text-lg font-bold text-white">Monster Hunter Wilds</h3>
                         <p class="text-gray-400 text-sm mt-1">Started: 3/10/2025 Completed: --</p>
                         <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i></p>
                         <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
-                        <a href="./Games/Monster_Hunter_Wilds/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a> <!-- Electric blue button -->
+                        <a href="./Games/Monster_Hunter_Wilds/"
+                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                        <!-- Electric blue button -->
                     </div>
                 </div>
                 <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden"> <!-- Dark gray card background -->
-                    <img src="./Games/Elden_Ring_Shadow_of_Erdtree/imgs/eldenringsote.jpeg" alt="Elden Ring" class="w-full h-40 object-cover">
+                    <img src="./Games/Elden_Ring_Shadow_of_Erdtree/imgs/eldenringsote.jpeg" alt="Elden Ring"
+                        class="w-full h-40 object-cover">
                     <div class="p-4">
                         <h3 class="text-lg font-bold text-white">ELDEN RING Shadow of the Erdtree</h3>
                         <p class="text-gray-400 text-sm mt-1">Started: 6/21/2024 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i
+                                class="fa-brands fa-steam"></i></p>
                         <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
-                        <a href="./Games/Elden_Ring_Shadow_of_Erdtree/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a> <!-- Electric blue button -->
+                        <a href="./Games/Elden_Ring_Shadow_of_Erdtree/"
+                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                        <!-- Electric blue button -->
                     </div>
                 </div>
                 <!-- Game 2 -->
@@ -120,9 +131,11 @@
                     <div class="p-4">
                         <h3 class="text-lg font-bold text-white">V Rising</h3>
                         <p class="text-gray-400 text-sm mt-1">Started: 6/13/2024 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i
+                                class="fa-brands fa-steam"></i></p>
                         <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
-                        <a href="./Games/V_Rising/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                        <a href="./Games/V_Rising/"
+                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
                     </div>
                 </div>
                 <!-- Game 3 -->
@@ -133,40 +146,49 @@
                         <p class="text-gray-400 text-sm mt-1">Started: 5/19/2024 Completed: --</p>
                         <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-steam"></i></p>
                         <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-3"></span></p>
-                        <a href="./Games/DiabloIV/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                        <a href="./Games/DiabloIV/"
+                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
                     </div>
                 </div>
                 <!-- Game 4 -->
                 <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/Stellar_Blade/imgs/stellarblade.jpeg" alt="Stellar Blade" class="w-full h-40 object-cover">
+                    <img src="./Games/Stellar_Blade/imgs/stellarblade.jpeg" alt="Stellar Blade"
+                        class="w-full h-40 object-cover">
                     <div class="p-4">
                         <h3 class="text-lg font-bold text-white">Stellar Blade</h3>
                         <p class="text-gray-400 text-sm mt-1">Started: 4/26/2024 Completed: --</p>
                         <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i></p>
                         <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
-                        <a href="./Games/Stellar_Blade/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                        <a href="./Games/Stellar_Blade/"
+                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
                     </div>
                 </div>
                 <!-- Game 5 -->
                 <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/Final_Fantasy_VII_Rebirth/imgs/ff7rebirth.avif" alt="Final Fantasy VII Rebirth" class="w-full h-40 object-cover">
+                    <img src="./Games/Final_Fantasy_VII_Rebirth/imgs/ff7rebirth.avif" alt="Final Fantasy VII Rebirth"
+                        class="w-full h-40 object-cover">
                     <div class="p-4">
                         <h3 class="text-lg font-bold text-white">Final Fantasy VII Rebirth</h3>
                         <p class="text-gray-400 text-sm mt-1">Started: 2/29/2024 Completed: 4/15/2024</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i
+                                class="fa-brands fa-steam"></i></p>
                         <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
-                        <a href="./Games/Final_Fantasy_VII_Rebirth/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                        <a href="./Games/Final_Fantasy_VII_Rebirth/"
+                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
                     </div>
                 </div>
                 <!-- Game 6 -->
                 <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/HellDivers2/imgs/helldivers2.jpeg" alt="Helldivers 2" class="w-full h-40 object-cover">
+                    <img src="./Games/HellDivers2/imgs/helldivers2.jpeg" alt="Helldivers 2"
+                        class="w-full h-40 object-cover">
                     <div class="p-4">
                         <h3 class="text-lg font-bold text-white">Helldivers 2</h3>
                         <p class="text-gray-400 text-sm mt-1">Started: 2/8/2024 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-steam"></i></p>
+                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i
+                                class="fa-brands fa-steam"></i></p>
                         <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
-                        <a href="./Games/HellDivers2/" class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
+                        <a href="./Games/HellDivers2/"
+                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
                     </div>
                 </div>
             </div>
@@ -183,13 +205,60 @@
                 </div>
             </div>
         </section>
+
+        <!-- Latest News Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-white mb-6">Latest News</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Article 1 -->
+                <article class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./news/imgs/news1.jpg" alt="News 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">Capcom Teases New Monster Hunter Trailer</h3>
+                        <p class="text-gray-400 text-sm mt-1">Published: May 20, 2025</p>
+                        <p class="text-gray-400 text-sm mt-2">Fans of the franchise are in for a treat as Capcom
+                            prepares to showcase new gameplay during Summer Game Fest...</p>
+                        <a href="./news/capcom-monster-hunter-trailer.html"
+                            class="inline-block mt-3 text-[#3B82F6] hover:underline">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./news/imgs/news2.jpg" alt="News 2" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">Elden Ring DLC: New Bosses Revealed</h3>
+                        <p class="text-gray-400 text-sm mt-1">Published: May 18, 2025</p>
+                        <p class="text-gray-400 text-sm mt-2">Leaked footage reveals two new boss encounters in Shadow
+                            of the Erdtree. Are you ready for the challenge?</p>
+                        <a href="./news/elden-ring-dlc-bosses.html"
+                            class="inline-block mt-3 text-[#3B82F6] hover:underline">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./news/imgs/news3.jpg" alt="News 3" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">Twitch Changes Revenue Split Policy</h3>
+                        <p class="text-gray-400 text-sm mt-1">Published: May 15, 2025</p>
+                        <p class="text-gray-400 text-sm mt-2">In a controversial move, Twitch announced changes to its
+                            revenue model. Here's what it means for streamers...</p>
+                        <a href="./news/twitch-revenue-policy.html"
+                            class="inline-block mt-3 text-[#3B82F6] hover:underline">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
         <div class="container mx-auto px-4 text-center">
             <p class="text-gray-400 text-sm">
-                &copy; 2025 <a href="#" class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights reserved.
+                &copy; 2025 <a href="#"
+                    class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights
+                reserved.
             </p>
             <!-- Social Media Links -->
             <div class="social-links mt-2">
@@ -206,4 +275,5 @@
         </div>
     </footer>
 </body>
+
 </html>
