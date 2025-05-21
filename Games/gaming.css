@@ -1,0 +1,46 @@
+/* Parallax effect for header */
+.parallax-header {
+    background-image: url('/imgs/games-parallax.jpg');
+    /* Placeholder for header background */
+    background-attachment: fixed;
+    /* Key for parallax effect */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 400px;
+    /* Increased height for better parallax visibility */
+}
+
+/* Custom star rating */
+.star-rating::before {
+    content: '★★★★★';
+    color: #3B82F6;
+    /* Electric blue */
+    letter-spacing: 2px;
+}
+
+.star-rating-4::before {
+    content: '★★★★☆';
+    color: #3B82F6;
+}
+
+.star-rating-3::before {
+    content: '★★★☆☆';
+    color: #3B82F6;
+}
+
+.star-rating-2::before {
+    content: '★★☆☆☆';
+    color: #3B82F6;
+}
+
+.star-rating-1::before {
+    content: '★☆☆☆☆';
+    color: #3B82F6;
+}
+
+.star-rating-0::before {
+    content: '☆☆☆☆☆';
+    color: #3B82F6;
+}
