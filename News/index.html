@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMindIsWasted - A Gamer's Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/News/news.css" />
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M02GCCMDDK"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-M02GCCMDDK');
+</script>
+
+<body class="bg-[#121212] text-gray-400 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Left: TheMindIsWasted -->
+            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#"
+                    class="text-white text-lg"> TheMindIsWasted</span></span>
+            <!-- Center: Navigation Links with Icons -->
+            <script src="/menu.js"></script>
+            <ul class="flex space-x-6 absolute left-1/2 transform -translate-x-1/2" id="menuitems"></ul>
+        </div>
+    </nav>
+
+    <!-- Header with Parallax -->
+    <header class="parallax-header flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-white">TheMindIsWasted News</h1>
+            <p class="text-gray-400 mt-2">Internet News from a Gamer.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Latest News Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-white mb-6">Latest News</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Article 1 -->
+                <article class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
+                    <img src="./sweet-baby-exposed/imgs/sweet-baby-exposed.png" alt="Sweet Baby Expoosed" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-white">Sweet Baby Exposed</h3>
+                        <p class="text-gray-400 text-sm mt-1">Published: May 21, 2025</p>
+                        <p class="text-gray-400 text-sm mt-2">YouTuber SmashJT and commentator Master of TDS have been at the forefront of pushing the idea that Sweet Baby Inc may not just be . . . .</p>
+                        <a href="./sweet-baby-exposed/"
+                            class="inline-block mt-3 text-[#3B82F6] hover:underline">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">
+                &copy;2025 <a href="#"
+                    class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights
+                reserved.
+            </p>
+            <!-- Social Media Links -->
+            <script src="/socialmedia.js"></script>
+            <div class="social-links mt-2" id="socialitems">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
