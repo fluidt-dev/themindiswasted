@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About — TheMindIsWasted</title>
+    <title>Tech — TheMindIsWasted</title>
     <meta
       name="description"
-      content="Who's behind TheMindIsWasted — tech, movies, games, and live streams from one wasted mind."
+      content="Gear, builds, and the tools behind the stream. Tech deep dives from TheMindIsWasted."
     />
-    <meta property="og:title" content="About — TheMindIsWasted" />
+    <meta property="og:title" content="Tech — TheMindIsWasted" />
     <meta
       property="og:description"
-      content="One mind. Too many screens. The story behind the reviews, streams, and late-night takes."
+      content="Gear, builds, and the tools behind the stream. Hardware first, hype second."
     />
-    <meta property="og:url" content="https://themindiswasted.com/About/" />
+    <meta property="og:url" content="https://themindiswasted.com/Tech/" />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="hub-page hub-about">
+  <body class="hub-page hub-tech">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header is-scrolled" id="top">
@@ -50,12 +50,12 @@
 
         <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="../">Home</a>
-          <a href="../Tech/">Tech</a>
+          <a href="../Tech/" aria-current="page">Tech</a>
           <a href="../Movies/">Movies</a>
           <a href="../Games/">Games</a>
           <a href="../#streams">Streams</a>
           <a href="../Blog/">Blog</a>
-          <a href="../About/" aria-current="page">About</a>
+          <a href="../About/">About</a>
           <a class="nav-cta" href="#newsletter">Subscribe</a>
         </nav>
       </div>
@@ -68,7 +68,7 @@
           <div class="hero-grid"></div>
           <img
             class="hub-hero-image"
-            src="../img/unsplash-1511512578047-dfb367046420.jpg"
+            src="../img/unsplash-1593640408182-31c70c8268f5.jpg"
             alt=""
             width="2400"
             height="1600"
@@ -79,126 +79,162 @@
           <p class="hub-crumb">
             <a href="../">Home</a>
             <span aria-hidden="true">/</span>
-            <span>About</span>
+            <span>Tech</span>
           </p>
-          <p class="section-eyebrow">The signal</p>
-          <h1 id="hub-title" class="hub-title">About</h1>
+          <p class="section-eyebrow">Under the hood</p>
+          <h1 id="hub-title" class="hub-title">Tech</h1>
           <p class="hub-lead">
-            One mind. Too many screens. TheMindIsWasted is a home base for tech,
-            movies, games, and live streams — built for the chase, the wipe, and
-            everything in between.
+            Gear, builds, and the tools behind the stream — hardware first,
+            hype second. Notes from a desk that never quite stays finished.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#story">Read the Story</a>
-            <a class="btn btn-ghost" href="#connect">Connect</a>
+            <a class="btn btn-tech" href="#latest">Latest Posts</a>
+            <a class="btn btn-ghost" href="#categories">Browse Categories</a>
           </div>
         </div>
       </section>
 
-      <section class="section hub-featured" id="story">
-        <div class="mind-panel about-panel reveal">
+      <section class="section hub-categories" id="categories" aria-label="Tech categories">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Browse</p>
+          <h2>Pick a lane into the stack</h2>
+          <p class="section-sub">
+            Setup tours, hardware deep dives, and the software that keeps everything running.
+          </p>
+        </div>
+
+        <div class="hub-cat-grid">
+          <a class="hub-cat path-tech reveal" href="./desk-stream-setup/">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">01</p>
+              <h3>Desk &amp; Stream Setup</h3>
+              <p>Alienware Area-51, dual displays, and the current battle station.</p>
+            </div>
+            <span class="hub-cat-label">SETUP</span>
+          </a>
+          <a class="hub-cat path-tech reveal" href="./hardware-deep-dives/">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">02</p>
+              <h3>Hardware Deep Dives</h3>
+              <p>GPUs, peripherals, and gear that actually earns its keep.</p>
+            </div>
+            <span class="hub-cat-label">SILICON</span>
+          </a>
+          <a class="hub-cat path-tech reveal" href="./software-workflows/">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">03</p>
+              <h3>Software &amp; Workflows</h3>
+              <p>Tools, tips, and the stack behind the content.</p>
+            </div>
+            <span class="hub-cat-label">STACK</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section hub-latest" id="latest">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Latest</p>
+          <h2>Fresh from the workbench</h2>
+          <p class="section-sub">
+            New write-ups land here. Placeholder cards for now — swap in real posts as you publish.
+          </p>
+        </div>
+
+        <div class="game-grid">
+          <a class="game-tile tech-tile reveal" href="./desk-stream-setup/">
+            <div
+              class="game-art tech-art"
+              style="background-image: url('../img/unsplash-1593640408182-31c70c8268f5.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag">Setup</span>
+              <h3>Desk &amp; stream setup</h3>
+              <p>Area-51 · RTX 5070 Ti · AW3425DWM · Kiyo V2</p>
+            </div>
+          </a>
+          <a class="game-tile tech-tile reveal" href="./hardware-deep-dives/">
+            <div
+              class="game-art tech-art"
+              style="background-image: url('../img/unsplash-1518770660439-4636190af475.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag">Hardware</span>
+              <h3>Hardware deep dives</h3>
+              <p>5070 Ti · AW3425DWM · Kiyo V2 · storage</p>
+            </div>
+          </a>
+          <a class="game-tile tech-tile reveal" href="./software-workflows/">
+            <div
+              class="game-art tech-art"
+              style="background-image: url('../img/unsplash-1555066931-4365d14bab8c.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag">Software</span>
+              <h3>Software &amp; workflows</h3>
+              <p>OBS · PipeWire · CachyOS · VS Code</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section hub-featured" id="setup">
+        <div class="mind-panel tech-panel reveal">
           <div class="mind-copy">
-            <p class="section-eyebrow">The story</p>
-            <h2>A mind spent where the fun is</h2>
+            <p class="section-eyebrow">Featured lane</p>
+            <h2>Start with the desk</h2>
             <p>
-              This site started as a place to log games and spill thoughts after
-              long sessions. It grew into a broader home for whatever refuses to
-              leave my head — reviews, streams, tech rabbit holes, and the
-              occasional movie night that turns into a write-up.
+              Alienware 16 Area-51 with an RTX 5070 Ti, 64 GB, ~4 TB storage, a
+              curved AW3425DWM ultrawide beside the laptop panel, and a Razer
+              Kiyo V2 on cam — the station behind the streams.
             </p>
-            <p>
-              No corporate editorial calendar. No hype cycle cosplay. Just honest
-              takes from someone who actually finishes (some of) the backlog and
-              stays up too late doing it.
-            </p>
+            <a class="btn btn-tech" href="./desk-stream-setup/">View Setup Notes</a>
           </div>
           <div
             class="hub-featured-art"
-            style="background-image: url('../img/unsplash-1552820728-8b83bb6b773f.jpg')"
+            style="background-image: url('../img/unsplash-1593640408182-31c70c8268f5.jpg')"
             role="img"
-            aria-label="Gaming setup glow"
+            aria-label="Desk and stream setup"
           ></div>
         </div>
       </section>
 
-      <section class="section hub-categories" id="covers" aria-label="What this site covers">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Coverage</p>
-          <h2>What you'll find here</h2>
-          <p class="section-sub">
-            Four lanes. One wasted mind. Jump into whichever rabbit hole fits the night.
-          </p>
-        </div>
-
-        <div class="hub-cat-grid hub-cat-grid-4">
-          <a class="hub-cat hub-cat-about reveal" href="../Tech/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Tech</p>
-              <h3>Gear &amp; workflows</h3>
-              <p>Setup notes, hardware, and the tools behind the stream.</p>
-            </div>
-            <span class="hub-cat-label">STACK</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../Movies/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Movies</p>
-              <h3>Reviews &amp; rewatches</h3>
-              <p>Spoiler-aware takes when the controller hits the couch.</p>
-            </div>
-            <span class="hub-cat-label">REEL</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../Games/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Games</p>
-              <h3>Play logs &amp; deep dives</h3>
-              <p>Active runs, finished campaigns, and backlog confessions.</p>
-            </div>
-            <span class="hub-cat-label">LOGGED</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../#streams">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Streams</p>
-              <h3>Live on YouTube &amp; Kick</h3>
-              <p>Co-op chaos, boss fights, and late-night commentary.</p>
-            </div>
-            <span class="hub-cat-label">ON AIR</span>
-          </a>
+      <section class="section hub-split" id="hardware" aria-labelledby="hardware-title">
+        <div class="hub-split-panel reveal">
+          <div>
+            <p class="section-eyebrow">Hardware</p>
+            <h2 id="hardware-title">Silicon that earns its wattage</h2>
+            <p>
+              Builds, upgrades, and peripherals tested under real play — not
+              just bench charts. If it doesn't survive a long session, it
+              doesn't make the cut.
+            </p>
+            <a class="btn btn-ghost" href="./hardware-deep-dives/">Browse Hardware</a>
+          </div>
+          <ul class="hub-list">
+            <li>GPU &amp; display picks</li>
+            <li>Keyboards, mice, headsets</li>
+            <li>Capture cards &amp; audio chain</li>
+            <li>Cooling, cables, and cleanup</li>
+          </ul>
         </div>
       </section>
 
-      <section class="section hub-split" id="connect" aria-labelledby="connect-title">
+      <section class="section hub-split" id="software" aria-labelledby="software-title">
         <div class="hub-split-panel reveal">
           <div>
-            <p class="section-eyebrow">Connect</p>
-            <h2 id="connect-title">Find the signal</h2>
+            <p class="section-eyebrow">Software</p>
+            <h2 id="software-title">Workflows worth keeping</h2>
             <p>
-              Catch the streams, drop into VODs, or subscribe when the next
-              review or build note ships. Same voice across every screen.
+              From OBS scenes to editing pipelines — the boring systems that
+              make publishing less painful and streaming more reliable.
             </p>
-            <div class="hero-actions">
-              <a
-                class="btn btn-primary"
-                href="https://www.youtube.com/@sannahtee"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                YouTube
-              </a>
-              <a
-                class="btn btn-ghost"
-                href="https://kick.com/sannahtee"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Kick
-              </a>
-            </div>
+            <a class="btn btn-ghost" href="./software-workflows/">Browse Software</a>
           </div>
-          <ul class="hub-list hub-list-about">
-            <li>Live streams &amp; VODs</li>
-            <li>Game play logs &amp; reviews</li>
-            <li>Movie takes &amp; rewatches</li>
-            <li>Tech setup &amp; gear notes</li>
+          <ul class="hub-list">
+            <li>Streaming &amp; recording setups</li>
+            <li>Editors, overlays, and assets</li>
+            <li>Automation &amp; backups</li>
+            <li>Linux / Windows tooling notes</li>
           </ul>
         </div>
       </section>
@@ -207,8 +243,8 @@
         <div class="newsletter-panel reveal">
           <div>
             <p class="section-eyebrow">Signal boost</p>
-            <h2>Stay in the loop when something new goes live.</h2>
-            <p>Tech drops, movie reviews, game logs, and stream alerts — no filler.</p>
+            <h2>Get tech drops when the next build note ships.</h2>
+            <p>Setup changes, hardware takes, and workflow tips — no filler.</p>
           </div>
           <div
             id="mlb2-45600943"
@@ -281,13 +317,14 @@
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-text">TheMindIsWasted</span>
         </a>
-        <nav class="footer-nav" aria-label="Footer">
+                <nav class="footer-nav" aria-label="Footer">
           <a href="../">Home</a>
-          <a href="../Tech/">Tech</a>
+          <a href="../#streams">Streams</a>
+          <a href="./">Tech</a>
           <a href="../Movies/">Movies</a>
           <a href="../Games/">Games</a>
           <a href="../Blog/">Blog</a>
-          <a href="./">About</a>
+          <a href="../About/">About</a>
           <a href="#newsletter">Subscribe</a>
         </nav>
         <p class="footer-copy">

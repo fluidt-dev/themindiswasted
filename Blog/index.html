@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About — TheMindIsWasted</title>
+    <title>Blog — TheMindIsWasted</title>
     <meta
       name="description"
-      content="Who's behind TheMindIsWasted — tech, movies, games, and live streams from one wasted mind."
+      content="Notes from the edge of the backlog — short takes, stream highlights, and thoughts that don't fit a review."
     />
-    <meta property="og:title" content="About — TheMindIsWasted" />
+    <meta property="og:title" content="Blog — TheMindIsWasted" />
     <meta
       property="og:description"
-      content="One mind. Too many screens. The story behind the reviews, streams, and late-night takes."
+      content="Short takes, stream highlights, and the thoughts that won't leave my head."
     />
-    <meta property="og:url" content="https://themindiswasted.com/About/" />
+    <meta property="og:url" content="https://themindiswasted.com/Blog/" />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="hub-page hub-about">
+  <body class="hub-page hub-blog">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header is-scrolled" id="top">
@@ -54,8 +54,8 @@
           <a href="../Movies/">Movies</a>
           <a href="../Games/">Games</a>
           <a href="../#streams">Streams</a>
-          <a href="../Blog/">Blog</a>
-          <a href="../About/" aria-current="page">About</a>
+          <a href="../Blog/" aria-current="page">Blog</a>
+          <a href="../About/">About</a>
           <a class="nav-cta" href="#newsletter">Subscribe</a>
         </nav>
       </div>
@@ -68,7 +68,7 @@
           <div class="hero-grid"></div>
           <img
             class="hub-hero-image"
-            src="../img/unsplash-1511512578047-dfb367046420.jpg"
+            src="../img/unsplash-1455390582262-044cdead277a.jpg"
             alt=""
             width="2400"
             height="1600"
@@ -79,126 +79,142 @@
           <p class="hub-crumb">
             <a href="../">Home</a>
             <span aria-hidden="true">/</span>
-            <span>About</span>
+            <span>Blog</span>
           </p>
-          <p class="section-eyebrow">The signal</p>
-          <h1 id="hub-title" class="hub-title">About</h1>
+          <p class="section-eyebrow">What's on my mind</p>
+          <h1 id="hub-title" class="hub-title">Blog</h1>
           <p class="hub-lead">
-            One mind. Too many screens. TheMindIsWasted is a home base for tech,
-            movies, games, and live streams — built for the chase, the wipe, and
-            everything in between.
+            Notes from the edge of the backlog — short takes, stream highlights,
+            and the thoughts that don't fit neatly into a review. If it won't
+            leave my head, it ends up here.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#story">Read the Story</a>
-            <a class="btn btn-ghost" href="#connect">Connect</a>
+            <a class="btn btn-blog" href="#latest">Latest Posts</a>
+            <a class="btn btn-ghost" href="#topics">Browse Topics</a>
           </div>
         </div>
       </section>
 
-      <section class="section hub-featured" id="story">
-        <div class="mind-panel about-panel reveal">
+      <section class="section hub-categories" id="topics" aria-label="Blog topics">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Topics</p>
+          <h2>Pick a thread to pull</h2>
+          <p class="section-sub">
+            Quick hits, longer rambles, and the stuff that lives between reviews and streams.
+          </p>
+        </div>
+
+        <div class="hub-cat-grid">
+          <a class="hub-cat hub-cat-blog reveal" href="#latest">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">01</p>
+              <h3>Short Takes</h3>
+              <p>Hot reactions, mid-session notes, and one-sitting thoughts.</p>
+            </div>
+            <span class="hub-cat-label">TAKES</span>
+          </a>
+          <a class="hub-cat hub-cat-blog reveal" href="#streams-notes">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">02</p>
+              <h3>Stream Notes</h3>
+              <p>Highlights, chaos recaps, and what happened after going live.</p>
+            </div>
+            <span class="hub-cat-label">LIVE</span>
+          </a>
+          <a class="hub-cat hub-cat-blog reveal" href="#essays">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">03</p>
+              <h3>Longer Reads</h3>
+              <p>Deeper rants, genre talk, and essays that needed more room.</p>
+            </div>
+            <span class="hub-cat-label">ESSAY</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section hub-latest" id="latest">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Latest</p>
+          <h2>Fresh from the mind dump</h2>
+          <p class="section-sub">
+            New posts land here. Placeholder cards for now — swap in real entries as you publish.
+          </p>
+        </div>
+
+        <div class="game-grid">
+          <a class="game-tile blog-tile reveal" href="./notes-from-the-backlog/">
+            <div
+              class="game-art blog-art"
+              style="background-image: url('../img/unsplash-1455390582262-044cdead277a.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag tile-tag-blog">Short take</span>
+              <h3>Notes from the backlog</h3>
+              <p>What I'm playing, watching, and refusing to put down.</p>
+            </div>
+          </a>
+          <a class="game-tile blog-tile reveal" href="./after-the-stream/">
+            <div
+              class="game-art blog-art"
+              style="background-image: url('../img/unsplash-1516321318423-f06f85e504b3.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag tile-tag-blog">Stream notes</span>
+              <h3>After the stream</h3>
+              <p>Recaps, clip-worthy chaos, and lessons from going live.</p>
+            </div>
+          </a>
+          <a class="game-tile blog-tile reveal" href="./why-this-stuck/">
+            <div
+              class="game-art blog-art"
+              style="background-image: url('../img/unsplash-1486312338219-ce68d2c6f44d.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag tile-tag-blog">Essay</span>
+              <h3>Why this stuck with me</h3>
+              <p>Longer thoughts on stories, systems, and late-night rabbit holes.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section hub-featured" id="streams-notes">
+        <div class="mind-panel blog-panel reveal">
           <div class="mind-copy">
-            <p class="section-eyebrow">The story</p>
-            <h2>A mind spent where the fun is</h2>
+            <p class="section-eyebrow">Featured lane</p>
+            <h2>Start with the stream notes</h2>
             <p>
-              This site started as a place to log games and spill thoughts after
-              long sessions. It grew into a broader home for whatever refuses to
-              leave my head — reviews, streams, tech rabbit holes, and the
-              occasional movie night that turns into a write-up.
+              Not every night needs a full review. Sometimes the best writing is
+              what happens after the broadcast ends — the funny fails, the clutch
+              moments, and the thoughts that only show up live.
             </p>
-            <p>
-              No corporate editorial calendar. No hype cycle cosplay. Just honest
-              takes from someone who actually finishes (some of) the backlog and
-              stays up too late doing it.
-            </p>
+            <a class="btn btn-blog" href="./after-the-stream/">Read Stream Notes</a>
           </div>
           <div
             class="hub-featured-art"
-            style="background-image: url('../img/unsplash-1552820728-8b83bb6b773f.jpg')"
+            style="background-image: url('../img/unsplash-1516321318423-f06f85e504b3.jpg')"
             role="img"
-            aria-label="Gaming setup glow"
+            aria-label="Laptop and notes"
           ></div>
         </div>
       </section>
 
-      <section class="section hub-categories" id="covers" aria-label="What this site covers">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Coverage</p>
-          <h2>What you'll find here</h2>
-          <p class="section-sub">
-            Four lanes. One wasted mind. Jump into whichever rabbit hole fits the night.
-          </p>
-        </div>
-
-        <div class="hub-cat-grid hub-cat-grid-4">
-          <a class="hub-cat hub-cat-about reveal" href="../Tech/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Tech</p>
-              <h3>Gear &amp; workflows</h3>
-              <p>Setup notes, hardware, and the tools behind the stream.</p>
-            </div>
-            <span class="hub-cat-label">STACK</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../Movies/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Movies</p>
-              <h3>Reviews &amp; rewatches</h3>
-              <p>Spoiler-aware takes when the controller hits the couch.</p>
-            </div>
-            <span class="hub-cat-label">REEL</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../Games/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Games</p>
-              <h3>Play logs &amp; deep dives</h3>
-              <p>Active runs, finished campaigns, and backlog confessions.</p>
-            </div>
-            <span class="hub-cat-label">LOGGED</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../#streams">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Streams</p>
-              <h3>Live on YouTube &amp; Kick</h3>
-              <p>Co-op chaos, boss fights, and late-night commentary.</p>
-            </div>
-            <span class="hub-cat-label">ON AIR</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="section hub-split" id="connect" aria-labelledby="connect-title">
+      <section class="section hub-split" id="essays" aria-labelledby="essays-title">
         <div class="hub-split-panel reveal">
           <div>
-            <p class="section-eyebrow">Connect</p>
-            <h2 id="connect-title">Find the signal</h2>
+            <p class="section-eyebrow">Longer reads</p>
+            <h2 id="essays-title">When a take needs more room</h2>
             <p>
-              Catch the streams, drop into VODs, or subscribe when the next
-              review or build note ships. Same voice across every screen.
+              Essays for the ideas that won't fit in a caption — genre talk,
+              design rants, and the media that keeps looping in the background.
             </p>
-            <div class="hero-actions">
-              <a
-                class="btn btn-primary"
-                href="https://www.youtube.com/@sannahtee"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                YouTube
-              </a>
-              <a
-                class="btn btn-ghost"
-                href="https://kick.com/sannahtee"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Kick
-              </a>
-            </div>
+            <a class="btn btn-ghost" href="./why-this-stuck/">Browse Essays</a>
           </div>
-          <ul class="hub-list hub-list-about">
-            <li>Live streams &amp; VODs</li>
-            <li>Game play logs &amp; reviews</li>
-            <li>Movie takes &amp; rewatches</li>
-            <li>Tech setup &amp; gear notes</li>
+          <ul class="hub-list hub-list-blog">
+            <li>Design &amp; systems talk</li>
+            <li>Story obsessions</li>
+            <li>Culture at the edge of games</li>
+            <li>Personal play diaries</li>
           </ul>
         </div>
       </section>
@@ -207,8 +223,8 @@
         <div class="newsletter-panel reveal">
           <div>
             <p class="section-eyebrow">Signal boost</p>
-            <h2>Stay in the loop when something new goes live.</h2>
-            <p>Tech drops, movie reviews, game logs, and stream alerts — no filler.</p>
+            <h2>Get new posts when the next take ships.</h2>
+            <p>Short takes, stream notes, and essays — no filler.</p>
           </div>
           <div
             id="mlb2-45600943"
@@ -286,8 +302,8 @@
           <a href="../Tech/">Tech</a>
           <a href="../Movies/">Movies</a>
           <a href="../Games/">Games</a>
-          <a href="../Blog/">Blog</a>
-          <a href="./">About</a>
+          <a href="./">Blog</a>
+          <a href="../About/">About</a>
           <a href="#newsletter">Subscribe</a>
         </nav>
         <p class="footer-copy">
@@ -297,11 +313,9 @@
     </footer>
 
     <script src="../script.js"></script>
-  
     <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
     <script>
       fetch("https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/takel");
     </script>
-
   </body>
 </html>

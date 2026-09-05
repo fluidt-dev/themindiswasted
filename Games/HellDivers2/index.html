@@ -1,124 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest" />  
-    
-    <!-- Basic SEO -->
-    <title>TheMindIsWasted - A Gamer's Blog - Helldivers 2</title>
-    <meta name="description" content="Dive into themindiswasted's game review of Helldivers 2." />
-    <meta name="keywords" content="arrowhead ganmes, helldivers, helldivers 2, gaming news, game review, game industry" />
-    <meta name="author" content="TheMindIsWasted" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://themindiswasted.com/Games/HellDivers2" />
-    
-    <!-- Open Graph (Facebook, LinkedIn, Discord, etc.) -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review — Helldivers 2 | TheMindIsWasted</title>
+    <meta name="description" content="Review of Helldivers 2 — 4 Stars. From TheMindIsWasted." />
+    <meta property="og:title" content="Review — Helldivers 2" />
+    <meta property="og:description" content="Helldivers 2, developed by Arrowhead Game Studios and released on February 8, 2024, for PlayStation 5 and PC, is a chaotic, exhilarating co-op shooter that drop…" />
+    <meta property="og:url" content="https://themindiswasted.com/Games/HellDivers2/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Review: Helldivers 2" />
-    <meta property="og:description" content="Game review of Helldivers 2." />
-    <meta property="og:url" content="https://themindiswasted.com/Games/HellDivers2" />
-    <meta property="og:image" content="https://themindiswasted.com/Games/HellDivers2/imgs/helldivers2.jpeg" />
-    <meta property="og:site_name" content="TheMindIsWasted" />
-    <meta property="article:published_time" content="2025-05-21T09:00:00+00:00" />
-    <meta property="article:author" content="https://themindiswasted.com/About" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Review: Helldivers 2" />
-    <meta name="twitter:description" content="Game review of Helldivers 2." />
-    <meta name="twitter:image" content="https://themindiswasted.com/Games/HellDivers2/imgs/helldivers2.jpeg" />
-    <meta name="twitter:site" content="@TheMindIsWasted" />
-    
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:image" content="img/helldivers2.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap" rel="stylesheet" />
+        <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="../../favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="hub-page hub-games review-page">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Games/gaming.css" />
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M02GCCMDDK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M02GCCMDDK');
-</script>
-<body class="bg-[#121212] text-gray-400 font-sans">
-    <!-- Navigation -->
-    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-            <!-- Left: TheMindIsWasted -->
-            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#"
-                    class="text-white text-lg"> TheMindIsWasted</span></span>
-            <!-- Center: Navigation Links with Icons -->
-            <script src="/menu.js"></script>
-            <ul class="flex flex-col md:flex-row md:space-x-6 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto items-center" id="menuitems"></ul>
-        </div>
-    </nav>
-
-    <!-- Header with Parallax -->
-    <header class="parallax-header flex items-center justify-center">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold text-white">Review: Helldivers 2</h1>
-        </div>
+    <header class="site-header is-scrolled" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="../../" aria-label="TheMindIsWasted home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="../../">Home</a>
+          <a href="../../Tech/">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../../Games/" aria-current="page">Games</a>
+          <a href="../../#streams">Streams</a>
+          <a href="../../Blog/">Blog</a>
+          <a href="../../About/">About</a>
+          <a class="nav-cta" href="#newsletter">Subscribe</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container mx-auto px-8 py-8">
-        <!-- Review Section for Helldivers 2 -->
-        <section id="helldivers-2-review" class="mb-12">
-            <div class="bg-[#1F2526] rounded-lg shadow-lg p-6">
-                <div class="flex items-center mb-4">
-                    <h3 class="text-lg font-bold text-white mr-4">Helldivers 2</h3>
-                    <p class="text-gray-400 text-sm">Rating: <span class="star-rating-4"></span></p>
-                </div>
-                <img src="./imgs/helldivers2.jpeg" alt="Helldivers 2" class="w-full h-64 object-cover rounded mb-4">
-                <p class="text-gray-400 mb-4">
-                    *Helldivers 2*, developed by Arrowhead Game Studios and released on February 8, 2024, for PlayStation 5 and PC, is a chaotic, exhilarating co-op shooter that drops you into the boots of a galactic peacekeeper fighting for Super Earth. I’ve logged over 60 hours blasting bugs and bots alike, and it’s a riot of a time—easily one of the most entertaining multiplayer experiences I’ve had in years. It’s not perfect, but its highs are so thrilling that I’m giving it a strong 4-star rating.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    The game’s biggest strength is its sheer, unadulterated fun. Dropping into procedurally generated battlefields with up to three squadmates feels like starring in a *Starship Troopers* fever dream—complete with over-the-top propaganda and absurdly satisfying combat. The third-person shooting is punchy and responsive, with weapons like the autocannon and flamethrower delivering visceral feedback as you mow down Terminid swarms or Automaton patrols. Stratagems—orbital strikes, turrets, and massive bombs—elevate the chaos, turning every mission into a cinematic spectacle. I’ll never forget the time I called in a 500kg bomb to clear a bug nest, only to accidentally flatten my entire team in the blast. The friendly fire is brutal, but it’s part of the charm, making every victory feel earned.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    Visually, *Helldivers 2* impresses with its alien landscapes—think toxic swamps, snowy tundras, and fiery hellscapes—all rendered with a gritty, atmospheric flair. The sound design is equally stellar, from the patriotic blare of the soundtrack to the squelch of bug guts underfoot. The live-service structure adds a clever twist: your missions contribute to a galactic war map, giving a sense of purpose as the community liberates planets together. Progression is rewarding too, with a steady drip of new gear and ship upgrades that keep you hooked without feeling predatory. At $40, it’s a steal for the hours of entertainment it provides.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    That said, it’s not flawless. The always-online requirement is a pain—solo play is doable but far less enjoyable, and early server issues (since patched) left a sour taste for some. The mission variety, while spiced up by random modifiers and optional objectives, can start to blur together after dozens of hours; you’re often just killing waves of enemies or activating terminals, rinse and repeat. The grind for high-end stratagems can feel sluggish too, especially if you’re not playing on higher difficulties. And while the humor and chaos carry it far, there’s no real narrative depth to latch onto—just patriotic satire that’s funny but thin. Posts on X echo this mixed bag, with players loving the squad antics but occasionally griping about repetition.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    *Helldivers 2* is a near-perfect co-op shooter that thrives on teamwork, explosions, and slapstick mishaps. It’s not trying to reinvent the wheel, but it polishes its chaotic formula to a shine that’s hard to resist. The minor stumbles—repetitive missions and a reliance on online play—keep it from a full 5 stars, but they don’t dim the joy of liberating planets with friends. If you’ve got a crew ready to dive into hell and laugh at the carnage, this is a must-play. Arrowhead has crafted a gem that’s as addictive as it is absurd, and I’ll happily keep spreading democracy—one airstrike at a time.
-                </p>
-                <section class="mt-2 mb-8">
-                    <strong>Rating:</strong> <span class="star-rating-4"></span><br/>
-                    <strong>Platform(s):</strong>  <i class="fa-brands fa-playstation"></i> Playstation, <i class="fa-brands fa-steam"></i> Steam <br/>
-                    <strong>Developer:</strong> <a href="https://www.arrowheadgamestudios.com/" target="_developer">Arrowhead Game Studios</a><br/>
-                    <strong>Publisher:</strong> <a href="https://sonyinteractive.com/en/" target="_publisher">Sony Interactive Entertainment</a><br/>
-                    <strong>Playtime at Review:</strong> ~20 hours <br/>
-                    <strong>Release Date:</strong> 2/8/2024<br/>
-                    <strong>Started Play Through:</strong> 2/8/2024<br/>
-                </section>
-                <a href="/" class="inline-block px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">Back to Games</a>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400 text-sm">
-                &copy;2025 <a href="#"
-                    class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights
-                reserved.
-            </p>
-            <!-- Social Media Links -->
-            <script src="/socialmedia.js"></script>
-            <div class="social-links mt-2" id="socialitems">
-            </div>
+    <main id="main">
+      <section class="review-hero" aria-labelledby="review-title">
+        <div class="review-hero-media" aria-hidden="true">
+          <div class="review-hero-glow"></div>
+          <div class="hero-grid"></div>
+          <img class="review-hero-image" src="img/helldivers2.jpeg" alt="" width="1600" height="900" />
         </div>
+        <div class="review-hero-content">
+          <p class="hub-crumb">
+            <a href="../../">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="../">Games</a>
+            <span aria-hidden="true">/</span>
+            <span>Helldivers 2</span>
+          </p>
+          <p class="section-eyebrow">Game review</p>
+          <h1 id="review-title" class="hub-title">Helldivers 2</h1>
+          <p class="review-status">In progress · 4 Stars</p>
+        </div>
+      </section>
+
+      <article class="review-layout">
+        <dl class="review-meta reveal">
+            <div>
+              <dt>Rating</dt>
+              <dd>4 Stars</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>In progress</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>PlayStation, Steam</dd>
+            </div>
+            <div>
+              <dt>Developer</dt>
+              <dd>Arrowhead Game Studios</dd>
+            </div>
+            <div>
+              <dt>Publisher</dt>
+              <dd>Sony Interactive Entertainment</dd>
+            </div>
+            <div>
+              <dt>Playtime</dt>
+              <dd>~20 hours</dd>
+            </div>
+            <div>
+              <dt>Release Date</dt>
+              <dd>2/8/2024</dd>
+            </div>
+            <div>
+              <dt>Started</dt>
+              <dd>2/8/2024</dd>
+            </div>
+            <div>
+              <dt>Completed</dt>
+              <dd>—</dd>
+            </div>
+        </dl>
+
+        <div class="review-body reveal">
+          <p class="lede">Helldivers 2, developed by Arrowhead Game Studios and released on February 8, 2024, for PlayStation 5 and PC, is a chaotic, exhilarating co-op shooter that drops you into the boots of a galactic peacekeeper fighting for Super Earth. I’ve logged over 60 hours blasting bugs and bots alike, and it’s a riot of a time—easily one of the most entertaining multiplayer experiences I’ve had in years. It’s not perfect, but its highs are so thrilling that I’m giving it a strong 4-star rating.</p>
+          <h2>Managed Democracy, Maximum Chaos</h2>
+          <p>The game’s biggest strength is its sheer, unadulterated fun. Dropping into procedurally generated battlefields with up to three squadmates feels like starring in a Starship Troopers fever dream—complete with over-the-top propaganda and absurdly satisfying combat. The third-person shooting is punchy and responsive. Stratagems—orbital strikes, turrets, and massive bombs—elevate the chaos, turning every mission into a cinematic spectacle. The friendly fire is brutal, but it’s part of the charm, making every victory feel earned.</p>
+          <p>Visually, Helldivers 2 impresses with its alien landscapes—toxic swamps, snowy tundras, and fiery hellscapes—all rendered with a gritty, atmospheric flair. The sound design is equally stellar. The live-service structure adds a clever twist: your missions contribute to a galactic war map, giving a sense of purpose as the community liberates planets together. Progression is rewarding too, with a steady drip of new gear and ship upgrades.</p>
+          <h2>Where It Stumbles</h2>
+          <p>That said, it’s not flawless. The always-online requirement is a pain—solo play is doable but far less enjoyable. The mission variety, while spiced up by random modifiers and optional objectives, can start to blur together after dozens of hours. The grind for high-end stratagems can feel sluggish too. And while the humor and chaos carry it far, there’s no real narrative depth to latch onto—just patriotic satire that’s funny but thin.</p>
+          <h2>Final Verdict — 4 Stars</h2>
+          <p>Helldivers 2 is a near-perfect co-op shooter that thrives on teamwork, explosions, and slapstick mishaps. The minor stumbles—repetitive missions and a reliance on online play—keep it from a full 5 stars, but they don’t dim the joy of liberating planets with friends. If you’ve got a crew ready to dive into hell and laugh at the carnage, this is a must-play.</p>
+        </div>
+
+        <nav class="review-nav reveal" aria-label="More reviews">
+          <a href="../Final_Fantasy_VII_Rebirth/">← Final Fantasy VII Rebirth</a>
+          <a class="review-nav-all" href="../">All Games</a>
+          <span></span>
+        </nav>
+      </article>
+
+      <section class="newsletter section" id="newsletter">
+        <div class="newsletter-panel reveal">
+          <div>
+            <p class="section-eyebrow">Signal boost</p>
+            <h2>More reviews when the next save clears.</h2>
+            <p>Game logs, finish lines, and backlog confessions — no filler.</p>
+          </div>
+          <div
+            id="mlb2-45600943"
+            class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-45600943 newsletter-ml"
+          >
+            <div class="ml-form-align-center">
+              <div class="ml-form-embedWrapper embedForm">
+                <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                  <div class="ml-form-embedContent" aria-hidden="true">
+                    <h4>Newsletter</h4>
+                    <p>Signup for news and special offers!</p>
+                  </div>
+
+                  <form
+                    class="ml-block-form"
+                    action="https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/subscribe"
+                    data-code=""
+                    method="post"
+                    target="_blank"
+                  >
+                    <div class="ml-form-formContent">
+                      <div class="ml-form-fieldRow ml-last-item">
+                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                          <label class="sr-only" for="ml-email">Email</label>
+                          <input
+                            id="ml-email"
+                            aria-label="email"
+                            aria-required="true"
+                            type="email"
+                            class="form-control"
+                            name="fields[email]"
+                            placeholder="you@domain.com"
+                            autocomplete="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <input type="hidden" name="ml-submit" value="1" />
+
+                    <div class="ml-form-embedSubmit">
+                      <button type="submit" class="primary">Subscribe</button>
+                      <button disabled="disabled" style="display: none" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                      </button>
+                    </div>
+
+                    <input type="hidden" name="anticsrf" value="true" />
+                  </form>
+                </div>
+
+                <div class="ml-form-successBody row-success" style="display: none">
+                  <div class="ml-form-successContent">
+                    <h4>You're on the list</h4>
+                    <p>Thanks for subscribing — talk soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <a class="brand brand-footer" href="../../">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="../../">Home</a>
+          <a href="../../Tech/">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../">Games</a>
+          <a href="../../Blog/">Blog</a>
+          <a href="../../About/">About</a>
+          <a href="#newsletter">Subscribe</a>
+        </nav>
+        <p class="footer-copy">© <span id="year"></span> TheMindIsWasted. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+    <script src="../../script.js"></script>
+  
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
+    <script>
+      fetch("https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/takel");
+    </script>
+
+  </body>
 </html>

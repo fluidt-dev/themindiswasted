@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software &amp; Workflows — TheMindIsWasted</title>
+    <meta
+      name="description"
+      content="Software &amp; workflows from TheMindIsWasted — OBS, PipeWire, Linux tooling, editors, and the stack behind streams and reviews."
+    />
+    <meta property="og:title" content="Software &amp; Workflows — TheMindIsWasted" />
+    <meta
+      property="og:description"
+      content="The boring systems that make streaming and publishing less painful — OBS, audio, Linux tooling, and more."
+    />
+    <meta property="og:url" content="https://themindiswasted.com/Tech/software-workflows/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../../img/unsplash-1555066931-4365d14bab8c.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="../../favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="hub-page hub-tech review-page software-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header is-scrolled" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="../../" aria-label="TheMindIsWasted home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="../../">Home</a>
+          <a href="../../Tech/" aria-current="page">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../../Games/">Games</a>
+          <a href="../../#streams">Streams</a>
+          <a href="../../Blog/">Blog</a>
+          <a href="../../About/">About</a>
+          <a class="nav-cta" href="#newsletter">Subscribe</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="review-hero" aria-labelledby="review-title">
+        <div class="review-hero-media" aria-hidden="true">
+          <div class="review-hero-glow review-hero-glow-software"></div>
+          <div class="hero-grid"></div>
+          <img
+            class="review-hero-image"
+            src="../../img/unsplash-1555066931-4365d14bab8c.jpg"
+            alt=""
+            width="2400"
+            height="1600"
+          />
+        </div>
+        <div class="review-hero-content">
+          <p class="hub-crumb">
+            <a href="../../">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="../">Tech</a>
+            <span aria-hidden="true">/</span>
+            <span>Software &amp; workflows</span>
+          </p>
+          <p class="section-eyebrow">Stack lane</p>
+          <h1 id="review-title" class="hub-title">Software &amp; workflows</h1>
+          <p class="review-status">
+            OBS · PipeWire · Linux tooling · editors that ship content
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-tech" href="#stack">Browse the Stack</a>
+            <a class="btn btn-ghost" href="../desk-stream-setup/">Current Desk Setup</a>
+          </div>
+        </div>
+      </section>
+
+      <article class="review-layout setup-layout">
+        <dl class="review-meta review-meta-tech reveal">
+          <div>
+            <dt>OS</dt>
+            <dd>CachyOS · KDE · Wayland</dd>
+          </div>
+          <div>
+            <dt>Stream</dt>
+            <dd>OBS Studio</dd>
+          </div>
+          <div>
+            <dt>Audio</dt>
+            <dd>PipeWire</dd>
+          </div>
+          <div>
+            <dt>Build</dt>
+            <dd>Git · Docker · VS Code</dd>
+          </div>
+        </dl>
+
+        <div class="review-body reveal">
+          <p class="lede">
+            Software &amp; workflows live here — the boring systems that make
+            streaming reliable and publishing less painful. Same honesty as the
+            hardware lane: if it doesn’t survive a real session, it doesn’t stay
+            in the stack.
+          </p>
+
+          <h2>How these notes work</h2>
+          <p>
+            Scene setups, audio routing, Linux quirks, and editor habits get
+            written down after they earn a place on the Area-51 desk — not after
+            a shiny launch post. Expect configs, tradeoffs, and “don’t do this
+            twice” notes.
+          </p>
+        </div>
+
+        <section class="gear-section reveal" id="stack" aria-labelledby="stack-title">
+          <div class="section-head">
+            <p class="section-eyebrow">Current stack</p>
+            <h2 id="stack-title">What’s actually installed</h2>
+            <p class="section-sub">
+              Detected on the live machine — write-ups land as each workflow
+              gets documented.
+            </p>
+          </div>
+
+          <div class="gear-grid">
+            <article class="gear-card">
+              <p class="section-eyebrow">01 · Stream</p>
+              <h3>OBS Studio</h3>
+              <p class="gear-model">Capture, scenes, and go-live</p>
+              <ul class="gear-specs">
+                <li><span>App</span> OBS Studio (browser build on CachyOS)</li>
+                <li><span>Cam</span> Razer Kiyo V2 in the USB chain</li>
+                <li><span>Angle</span> Dual-display layouts, game + facecam scenes</li>
+                <li><span>Status</span> Daily driver — workflow notes coming</li>
+              </ul>
+            </article>
+
+            <article class="gear-card">
+              <p class="section-eyebrow">02 · Audio</p>
+              <h3>PipeWire</h3>
+              <p class="gear-model">Desktop audio graph · Linux</p>
+              <ul class="gear-specs">
+                <li><span>Stack</span> PipeWire + WirePlumber + pipewire-pulse</li>
+                <li><span>Angle</span> Game / Discord / mic routing without the drama</li>
+                <li><span>Status</span> Active — workflow notes coming</li>
+              </ul>
+            </article>
+
+            <article class="gear-card">
+              <p class="section-eyebrow">03 · Desktop</p>
+              <h3>CachyOS + KDE</h3>
+              <p class="gear-model">Wayland session on the Area-51</p>
+              <ul class="gear-specs">
+                <li><span>Distro</span> CachyOS (Arch-based)</li>
+                <li><span>DE</span> KDE Plasma · KWin Wayland</li>
+                <li><span>Angle</span> Gaming + streaming on Linux without fighting the OS</li>
+                <li><span>Status</span> Daily driver — notes coming</li>
+              </ul>
+            </article>
+
+            <article class="gear-card">
+              <p class="section-eyebrow">04 · Create</p>
+              <h3>Editors &amp; tooling</h3>
+              <p class="gear-model">Ship the site, clips, and backups</p>
+              <ul class="gear-specs">
+                <li><span>Edit</span> VS Code for the site and scripts</li>
+                <li><span>Media</span> ffmpeg for encode / clip jobs</li>
+                <li><span>Ops</span> Git + Docker for projects and isolation</li>
+                <li><span>Chat</span> Discord in the stream / community loop</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section hub-split reveal" id="lanes" aria-labelledby="lanes-title">
+          <div class="hub-split-panel">
+            <div>
+              <p class="section-eyebrow">Browse lanes</p>
+              <h2 id="lanes-title">Workflows worth keeping</h2>
+              <p>
+                Full articles will sort into these buckets as they publish. Until
+                then, the desk setup page covers the hardware side of the same
+                station.
+              </p>
+              <a class="btn btn-tech" href="../desk-stream-setup/">View Desk Setup</a>
+            </div>
+            <ul class="hub-list">
+              <li>Streaming &amp; recording setups</li>
+              <li>Editors, overlays, and assets</li>
+              <li>Automation &amp; backups</li>
+              <li>Linux / Windows tooling notes</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="review-body reveal">
+          <h2>Related right now</h2>
+          <p>
+            Hardware context for this stack lives on
+            <a href="../desk-stream-setup/">desk &amp; stream setup</a> and
+            <a href="../hardware-deep-dives/">hardware deep dives</a>. Software
+            notes zoom into OBS scenes, audio graphs, and the Linux toolchain
+            that keeps go-live boring — in a good way.
+          </p>
+        </div>
+
+        <nav class="review-nav reveal" aria-label="More tech">
+          <a href="../hardware-deep-dives/">← Hardware deep dives</a>
+          <a class="review-nav-all" href="../">All Tech</a>
+          <a href="../desk-stream-setup/">Desk &amp; stream setup →</a>
+        </nav>
+      </article>
+
+      <section class="newsletter section" id="newsletter">
+        <div class="newsletter-panel reveal">
+          <div>
+            <p class="section-eyebrow">Signal boost</p>
+            <h2>Get the next workflow note when it ships.</h2>
+            <p>OBS, Linux tooling, and stack tips — no filler.</p>
+          </div>
+          <div
+            id="mlb2-45600943"
+            class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-45600943 newsletter-ml"
+          >
+            <div class="ml-form-align-center">
+              <div class="ml-form-embedWrapper embedForm">
+                <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                  <div class="ml-form-embedContent" aria-hidden="true">
+                    <h4>Newsletter</h4>
+                    <p>Signup for news and special offers!</p>
+                  </div>
+                  <form
+                    class="ml-block-form"
+                    action="https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/subscribe"
+                    data-code=""
+                    method="post"
+                    target="_blank"
+                  >
+                    <div class="ml-form-formContent">
+                      <div class="ml-form-fieldRow ml-last-item">
+                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                          <label class="sr-only" for="ml-email">Email</label>
+                          <input
+                            id="ml-email"
+                            aria-label="email"
+                            aria-required="true"
+                            type="email"
+                            class="form-control"
+                            name="fields[email]"
+                            placeholder="you@domain.com"
+                            autocomplete="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <input type="hidden" name="ml-submit" value="1" />
+                    <div class="ml-form-embedSubmit">
+                      <button type="submit" class="primary">Subscribe</button>
+                      <button disabled="disabled" style="display: none" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                      </button>
+                    </div>
+                    <input type="hidden" name="anticsrf" value="true" />
+                  </form>
+                </div>
+                <div class="ml-form-successBody row-success" style="display: none">
+                  <div class="ml-form-successContent">
+                    <h4>You're on the list</h4>
+                    <p>Thanks for subscribing — talk soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <a class="brand brand-footer" href="../../">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="../../">Home</a>
+          <a href="../">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../../Games/">Games</a>
+          <a href="../../Blog/">Blog</a>
+          <a href="../../About/">About</a>
+          <a href="#newsletter">Subscribe</a>
+        </nav>
+        <p class="footer-copy">
+          © <span id="year"></span> TheMindIsWasted. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
+    <script>
+      fetch("https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/takel");
+    </script>
+  </body>
+</html>

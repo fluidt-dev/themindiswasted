@@ -1,254 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheMindIsWasted — Tech, Movies &amp; Games</title>
+    <meta
+      name="description"
+      content="Tech deep dives, movie takes, game reviews, and live streams. Welcome to TheMindIsWasted."
+    />
+    <meta property="og:title" content="TheMindIsWasted — Tech, Movies &amp; Games" />
+    <meta
+      property="og:description"
+      content="Tech deep dives, movie takes, game reviews, and live streams."
+    />
+    <meta property="og:url" content="https://themindiswasted.com/" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="./favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheMindIsWasted - A Gamer's Blog</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/main.css" />
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M02GCCMDDK"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="TheMindIsWasted home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
 
-    gtag('config', 'G-M02GCCMDDK');
-</script>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-<body class="bg-[#121212] text-gray-400 font-sans">
-    <!-- Navigation -->
-    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-            <!-- Left: TheMindIsWasted -->
-            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#"
-                    class="text-white text-lg"> TheMindIsWasted</span></span>
-            <!-- Center: Navigation Links with Icons -->
-            <script src="/menu.js"></script>
-            <ul class="flex flex-col md:flex-row md:space-x-6 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto items-center" id="menuitems"></ul>
-        </div>
-    </nav>
-
-    <!-- Header with Parallax -->
-    <header class="parallax-header flex items-center justify-center">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold text-white">TheMindIsWasted</h1>
-            <p class="text-gray-400 mt-2">Just a blog from a GAMER.</p>
-        </div>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="./" aria-current="page">Home</a>
+          <a href="./Tech/">Tech</a>
+          <a href="./Movies/">Movies</a>
+          <a href="./Games/">Games</a>
+          <a href="#streams">Streams</a>
+          <a href="./Blog/">Blog</a>
+          <a href="./About/">About</a>
+          <a class="nav-cta" href="#newsletter">Subscribe</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-brand">
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-glow"></div>
+          <div class="hero-grid"></div>
+          <div class="hero-scan"></div>
+          <img
+            class="hero-image"
+            src="img/unsplash-1542751371-adc38448a05e.jpg"
+            alt=""
+            width="2400"
+            height="1600"
+          />
+        </div>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-white mb-6">Live Streams</h2>
-            <!-- Tabs Navigation -->
-            <div class="flex border-b border-gray-700">
-                <button class="tab-button px-4 py-2 text-white font-semibold border-b-2 border-transparent hover:border-blue-500 focus:outline-none active" data-tab="youtube">YouTube</button>
-                <button class="tab-button px-4 py-2 text-white font-semibold border-b-2 border-transparent hover:border-blue-500 focus:outline-none" data-tab="kick">Kick</button>
+        <div class="hero-content">
+          <p class="hero-kicker">Tech · Movies · Games</p>
+          <h1 id="hero-brand" class="hero-brand">TheMindIsWasted</h1>
+          <p class="hero-lead">
+            Your next rabbit hole starts here — tech deep dives, movie takes,
+            game reviews, and live streams from a mind that rarely clocks out.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./Tech/">Explore Tech</a>
+            <a class="btn btn-ghost" href="./Movies/">Movie Reviews</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="paths" aria-label="Where to go next">
+        <article class="path path-streams reveal">
+          <div class="path-copy">
+            <p class="section-eyebrow">Live now</p>
+            <h2>Catch the stream. Stick around for the chaos.</h2>
+            <p>
+              Join on YouTube or Kick for co-op runs, boss fights, and the kind
+              of commentary you only get past midnight.
+            </p>
+            <a class="btn btn-primary" href="#streams">Watch Streams</a>
+          </div>
+          <div class="path-visual path-visual-streams" aria-hidden="true">
+            <span class="live-pip"></span>
+            <span class="path-label">ON AIR</span>
+          </div>
+        </article>
+
+        <article class="path path-tech reveal">
+          <div class="path-copy">
+            <p class="section-eyebrow">Under the hood</p>
+            <h2>Tech that powers the setup — and wastes more time.</h2>
+            <p>
+              Gear, software, and build notes from a desk that never quite stays
+              finished. Hardware first, hype second.
+            </p>
+            <a class="btn btn-tech" href="./Tech/">Explore Tech</a>
+          </div>
+          <div class="path-visual path-visual-tech" aria-hidden="true">
+            <span class="path-label">STACK</span>
+          </div>
+        </article>
+
+        <article class="path path-movies reveal">
+          <div class="path-copy">
+            <p class="section-eyebrow">On screen</p>
+            <h2>Movie reviews for when the controller hits the couch.</h2>
+            <p>
+              Spoiler-aware takes on new releases, rewatches, and the films that
+              stick around longer than the credits.
+            </p>
+            <a class="btn btn-movies" href="./Movies/">Movie Reviews</a>
+          </div>
+          <div class="path-visual path-visual-movies" aria-hidden="true">
+            <span class="path-label">REEL</span>
+          </div>
+        </article>
+
+        <article class="path path-games reveal">
+          <div class="path-copy">
+            <p class="section-eyebrow">Deep dives</p>
+            <h2>Fuel the backlog with reviews that go too far.</h2>
+            <p>
+              From Elden Ring to Expedition 33 — play logs, ratings, and the
+              thoughts that spill out after the credits.
+            </p>
+            <a class="btn btn-secondary" href="./Games/">Explore Games</a>
+          </div>
+          <div class="path-visual path-visual-games" aria-hidden="true">
+            <span class="path-label">LOGGED</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="streams section" id="streams">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Broadcast</p>
+          <h2>Keep your skills — wait, your <em>senses</em> — updated with live streams</h2>
+          <p class="section-sub">
+            Two platforms. One wasted mind. Pick a feed and drop in.
+          </p>
+        </div>
+
+        <div class="stream-grid">
+          <article class="stream-tile reveal">
+            <div class="stream-frame">
+              <iframe
+                src="https://www.youtube.com/embed/dr19tmOUP-E?si=ARzvf7EHGHBbwR-M"
+                title="TheMindIsWasted on YouTube"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
-            <!-- Tabs Content -->
-            <div class="tab-content mt-4">
-                <div id="youtube" class="tab-pane active">
-                    <iframe
-                        src="https://www.youtube.com/embed/dr19tmOUP-E?si=ARzvf7EHGHBbwR-M"
-                        width="100%"
-                        height="720"
-                        frameborder="0"
-                        allowfullscreen
-                        class="w-full"
-                    ></iframe>
-                </div>
-                <div id="kick" class="tab-pane hidden">
-                    <iframe
-                        src="https://player.kick.com/themindiswasted"
-                        width="100%"
-                        height="720"
-                        frameborder="0"
-                        scrolling="no"
-                        allowfullscreen="true"
-                        class="w-full"
-                    ></iframe>
-                </div>
+            <a
+              class="stream-meta"
+              href="https://www.youtube.com/@sannahtee"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="platform">YouTube</span>
+              <strong>Latest upload &amp; VODs</strong>
+            </a>
+          </article>
+
+          <article class="stream-tile reveal">
+            <div class="stream-frame">
+              <iframe
+                src="https://player.kick.com/sannahtee"
+                title="TheMindIsWasted on Kick"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
             </div>
-        </setcion>
+            <a
+              class="stream-meta"
+              href="https://kick.com/sannahtee"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="platform">Kick</span>
+              <strong>Live when the light is on</strong>
+            </a>
+          </article>
+        </div>
+      </section>
 
-        <!-- Games I've Played Section -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-white mb-6">Games I've Played</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <section class="tech section" id="tech">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Tech</p>
+          <h2>Gear, builds, and the tools behind the stream</h2>
+          <p class="section-sub">
+            Setup notes, software rabbit holes, and hardware that earns its place on the desk.
+          </p>
+        </div>
 
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/Elden_Ring_NightReign/imgs/nightreign.avif" alt="Elden Ring Nightreign"
-                        class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">Elden Ring Nightreign</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 5/29/2025 Completed: 5/30/2025</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-steam"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-3"></span></p>
-                        <a href="./Games/Elden_Ring_NightReign"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                    </div>
-                </div>
-
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/Clair_Obscur_Expedition_33/imgs/expedition33.jpg" alt="Clair Obscur: Expedition 33"
-                        class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">Clair Obscur: Expedition 33</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 5/13/2025 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-steam"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
-                        <a href="./Games/Clair_Obscur_Expedition_33"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                    </div>
-                </div>
-
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden"> <!-- Dark gray card background -->
-                    <img src="./Games/Monster_Hunter_Wilds/imgs/monsterhunterwilds.jpg" alt="Monster Huner Wilds"
-                        class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">Monster Hunter Wilds</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 3/10/2025 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
-                        <a href="./Games/Monster_Hunter_Wilds/"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                        <!-- Electric blue button -->
-                    </div>
-                </div>
-                
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden"> <!-- Dark gray card background -->
-                    <img src="./Games/Elden_Ring_Shadow_of_Erdtree/imgs/eldenringsote.jpeg" alt="Elden Ring"
-                        class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">ELDEN RING Shadow of the Erdtree</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 6/21/2024 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i
-                                class="fa-brands fa-steam"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
-                        <a href="./Games/Elden_Ring_Shadow_of_Erdtree/"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                        <!-- Electric blue button -->
-                    </div>
-                </div>
-                
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/V_Rising/imgs/vrising.jpeg" alt="V Rising" class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">V Rising</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 6/13/2024 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i
-                                class="fa-brands fa-steam"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
-                        <a href="./Games/V_Rising/"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                    </div>
-                </div>
-                
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/DiabloIV/imgs/diabloiv.jpeg" alt="Diablo IV" class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">Diablo IV</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 5/19/2024 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-steam"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-3"></span></p>
-                        <a href="./Games/DiabloIV/"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                    </div>
-                </div>
-                
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/Stellar_Blade/imgs/stellarblade.jpeg" alt="Stellar Blade"
-                        class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">Stellar Blade</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 4/26/2024 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
-                        <a href="./Games/Stellar_Blade/"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                    </div>
-                </div>
-                
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/Final_Fantasy_VII_Rebirth/imgs/ff7rebirth.avif" alt="Final Fantasy VII Rebirth"
-                        class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">Final Fantasy VII Rebirth</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 2/29/2024 Completed: 4/15/2024</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i
-                                class="fa-brands fa-steam"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating"></span></p>
-                        <a href="./Games/Final_Fantasy_VII_Rebirth/"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                    </div>
-                </div>
-                
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <img src="./Games/HellDivers2/imgs/helldivers2.jpeg" alt="Helldivers 2"
-                        class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-white">Helldivers 2</h3>
-                        <p class="text-gray-400 text-sm mt-1">Started: 2/8/2024 Completed: --</p>
-                        <p class="text-gray-400 text-sm mt-1">Platform(s): <i class="fa-brands fa-playstation"></i> <i
-                                class="fa-brands fa-steam"></i></p>
-                        <p class="text-gray-400 text-sm mt-1">Rating: <span class="star-rating-4"></span></p>
-                        <a href="./Games/HellDivers2/"
-                            class="inline-block mt-3 px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">REVIEW</a>
-                    </div>
-                </div>
+        <div class="game-grid">
+          <a class="game-tile tech-tile reveal" href="./Tech/desk-stream-setup/">
+            <div
+              class="game-art tech-art"
+              style="background-image: url('img/unsplash-1593640408182-31c70c8268f5.jpg')"
+            ></div>
+            <div class="game-info">
+              <h3>Desk &amp; stream setup</h3>
+              <p>Area-51 · 5070 Ti · dual Alienware screens</p>
             </div>
-        </section>
-
-        <!-- What's On My Mind Section -->
-        <section>
-            <h2 class="text-2xl font-bold text-white mb-6">What's On My Mind</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-                <div class="bg-[#1F2526] rounded-lg shadow-lg overflow-hidden">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/mazU6ILr-S4?si=l3y68S7SCNO8Av-C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+          </a>
+          <a class="game-tile tech-tile reveal" href="./Tech/hardware-deep-dives/">
+            <div
+              class="game-art tech-art"
+              style="background-image: url('img/unsplash-1518770660439-4636190af475.jpg')"
+            ></div>
+            <div class="game-info">
+              <h3>Hardware deep dives</h3>
+              <p>GPUs, displays, and gear under real load</p>
             </div>
-        </section>
+          </a>
+          <a class="game-tile tech-tile reveal" href="./Tech/software-workflows/">
+            <div
+              class="game-art tech-art"
+              style="background-image: url('img/unsplash-1555066931-4365d14bab8c.jpg')"
+            ></div>
+            <div class="game-info">
+              <h3>Software &amp; workflows</h3>
+              <p>OBS, Linux tooling, and the content stack</p>
+            </div>
+          </a>
+        </div>
+      </section>
 
+      <section class="movies section" id="movies">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Movie reviews</p>
+          <h2>Films that wasted (and won) my nights</h2>
+          <p class="section-sub">
+            Fresh reviews and rewatch notes — same honesty as the game log, different screen.
+          </p>
+        </div>
+
+        <div class="game-grid">
+          <a class="game-tile movie-tile reveal" href="./Movies/Insidious_Out_of_the_Further/">
+            <div
+              class="game-art movie-art"
+              style="background-image: url('Movies/Insidious_Out_of_the_Further/img/poster.jpg')"
+            ></div>
+            <div class="game-info">
+              <h3>Insidious: Out of the Further</h3>
+              <p>Aug 21, 2026 · Theater take · 6 / 10 popcorn</p>
+            </div>
+          </a>
+          <a class="game-tile movie-tile reveal" href="./Movies/Spider-Man_Brand_New_Day/">
+            <div
+              class="game-art movie-art"
+              style="background-image: url('Movies/Spider-Man_Brand_New_Day/img/poster.jpg')"
+            ></div>
+            <div class="game-info">
+              <h3>Spider-Man: Brand New Day</h3>
+              <p>Jul 31, 2026 · Theater take · 7 / 10 popcorn</p>
+            </div>
+          </a>
+          <a class="game-tile movie-tile reveal" href="./Movies/Bad_Boys/">
+            <div
+              class="game-art movie-art"
+              style="background-image: url('Movies/Bad_Boys/img/poster.jpg')"
+            ></div>
+            <div class="game-info">
+              <h3>Bad Boys</h3>
+              <p>Apr 7, 1995 · Rewatch · 9 / 10 popcorn</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="games section" id="games">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Play log</p>
+          <h2>Games I've wasted my mind on</h2>
+          <p class="section-sub">
+            Recent runs, unfinished epics, and the ones that still own my evenings.
+          </p>
+        </div>
+
+        <div class="game-grid">
+          <a class="game-tile reveal" href="./Games/Elden_Ring_NightReign/">
+            <div class="game-art" style="background-image: url('Games/Elden_Ring_NightReign/img/nightreign.jpg')"></div>
+            <div class="game-info">
+              <h3>Elden Ring Nightreign</h3>
+              <p>Started 5/29/2025 · Completed 5/30/2025</p>
+            </div>
+          </a>
+          <a class="game-tile reveal" href="./Games/Clair_Obscur_Expedition_33/">
+            <div class="game-art" style="background-image: url('Games/Clair_Obscur_Expedition_33/img/expedition33.jpg')"></div>
+            <div class="game-info">
+              <h3>Clair Obscur: Expedition 33</h3>
+              <p>Started 5/13/2025 · In progress</p>
+            </div>
+          </a>
+          <a class="game-tile reveal" href="./Games/Monster_Hunter_Wilds/">
+            <div class="game-art" style="background-image: url('Games/Monster_Hunter_Wilds/img/monsterhunterwilds.jpg')"></div>
+            <div class="game-info">
+              <h3>Monster Hunter Wilds</h3>
+              <p>Started 3/10/2025 · In progress</p>
+            </div>
+          </a>
+          <a class="game-tile reveal" href="./Games/Elden_Ring_Shadow_of_Erdtree/">
+            <div class="game-art" style="background-image: url('Games/Elden_Ring_Shadow_of_Erdtree/img/eldenringsote.jpeg')"></div>
+            <div class="game-info">
+              <h3>ELDEN RING Shadow of the Erdtree</h3>
+              <p>Started 6/21/2024 · In progress</p>
+            </div>
+          </a>
+          <a class="game-tile reveal" href="./Games/V_Rising/">
+            <div class="game-art" style="background-image: url('Games/V_Rising/img/vrising.jpeg')"></div>
+            <div class="game-info">
+              <h3>V Rising</h3>
+              <p>Started 6/13/2024 · In progress</p>
+            </div>
+          </a>
+          <a class="game-tile reveal" href="./Games/DiabloIV/">
+            <div class="game-art" style="background-image: url('Games/DiabloIV/img/diabloiv.jpeg')"></div>
+            <div class="game-info">
+              <h3>Diablo IV</h3>
+              <p>Started 5/19/2024 · In progress</p>
+            </div>
+          </a>
+          <a class="game-tile reveal" href="./Games/Stellar_Blade/">
+            <div class="game-art" style="background-image: url('Games/Stellar_Blade/img/stellarblade.jpeg')"></div>
+            <div class="game-info">
+              <h3>Stellar Blade</h3>
+              <p>Started 4/26/2024 · In progress</p>
+            </div>
+          </a>
+          <a class="game-tile reveal" href="./Games/Final_Fantasy_VII_Rebirth/">
+            <div class="game-art" style="background-image: url('Games/Final_Fantasy_VII_Rebirth/img/ff7rebirth.jpg')"></div>
+            <div class="game-info">
+              <h3>Final Fantasy VII Rebirth</h3>
+              <p>Started 2/29/2024 · Completed 4/15/2024</p>
+            </div>
+          </a>
+          <a class="game-tile reveal" href="./Games/HellDivers2/">
+            <div class="game-art" style="background-image: url('Games/HellDivers2/img/helldivers2.jpeg')"></div>
+            <div class="game-info">
+              <h3>Helldivers 2</h3>
+              <p>Started 2/8/2024 · In progress</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about-inner reveal">
+          <p class="section-eyebrow">About</p>
+          <h2>One mind. Too many screens.</h2>
+          <p>
+            TheMindIsWasted is a home base for tech, movie reviews, games, and
+            live streams — built for the joy of the chase, the pain of the wipe,
+            and everything in between. If you're hunting for a new obsession,
+            you're in the right place.
+          </p>
+          <a class="btn btn-ghost" href="./About/">More About</a>
+        </div>
+      </section>
+
+      <section class="newsletter section" id="newsletter">
+        <div class="newsletter-panel reveal">
+          <div>
+            <p class="section-eyebrow">Signal boost</p>
+            <h2>Get stream alerts, tech drops, movie reviews, and game logs.</h2>
+            <p>No spam. Just the good noise when something new goes live.</p>
+          </div>
+          <div
+            id="mlb2-45600943"
+            class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-45600943 newsletter-ml"
+          >
+            <div class="ml-form-align-center">
+              <div class="ml-form-embedWrapper embedForm">
+                <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                  <div class="ml-form-embedContent" aria-hidden="true">
+                    <h4>Newsletter</h4>
+                    <p>Signup for news and special offers!</p>
+                  </div>
+
+                  <form
+                    class="ml-block-form"
+                    action="https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/subscribe"
+                    data-code=""
+                    method="post"
+                    target="_blank"
+                  >
+                    <div class="ml-form-formContent">
+                      <div class="ml-form-fieldRow ml-last-item">
+                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                          <label class="sr-only" for="ml-email">Email</label>
+                          <input
+                            id="ml-email"
+                            aria-label="email"
+                            aria-required="true"
+                            type="email"
+                            class="form-control"
+                            name="fields[email]"
+                            placeholder="you@domain.com"
+                            autocomplete="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <input type="hidden" name="ml-submit" value="1" />
+
+                    <div class="ml-form-embedSubmit">
+                      <button type="submit" class="primary">Subscribe</button>
+                      <button disabled="disabled" style="display: none" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                      </button>
+                    </div>
+
+                    <input type="hidden" name="anticsrf" value="true" />
+                  </form>
+                </div>
+
+                <div class="ml-form-successBody row-success" style="display: none">
+                  <div class="ml-form-successContent">
+                    <h4>You're on the list</h4>
+                    <p>Thanks for subscribing — talk soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400 text-sm">
-                &copy;2025 <a href="#"
-                    class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights
-                reserved.
-            </p>
-            <!-- Social Media Links -->
-            <script src="/socialmedia.js"></script>
-            <div class="social-links mt-2" id="socialitems">
-            </div>
-        </div>
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <a class="brand brand-footer" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#streams">Streams</a>
+          <a href="./Tech/">Tech</a>
+          <a href="./Movies/">Movies</a>
+          <a href="./Games/">Games</a>
+          <a href="./Blog/">Blog</a>
+          <a href="./About/">About</a>
+          <a href="#newsletter">Subscribe</a>
+        </nav>
+        <p class="footer-copy">
+          © <span id="year"></span> TheMindIsWasted. All rights reserved.
+        </p>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
+  
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
     <script>
-        document.querySelectorAll('.tab-button').forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons and panes
-                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active', 'border-blue-500'));
-                document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.add('hidden'));
+      fetch("https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/takel");
+    </script>
 
-                // Add active class to clicked button and show corresponding pane
-                button.classList.add('active', 'border-blue-500');
-                const tabId = button.getAttribute('data-tab');
-                document.getElementById(tabId).classList.remove('hidden');
-            });
-        });
-    </script>    
-</body>
-
+  </body>
 </html>

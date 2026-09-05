@@ -1,124 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest" />  
-    
-    <!-- Basic SEO -->
-    <title>TheMindIsWasted - A Gamer's Blog - Monster Hunter Wilds</title>
-    <meta name="description" content="Dive into themindiswasted's game review of Monster Hunter Wilds." />
-    <meta name="keywords" content="capcom, Monster Hunter, Monster Hunter Wilds, gaming news, game review, game industry" />
-    <meta name="author" content="TheMindIsWasted" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://themindiswasted.com/Games/Monster_Hunter_Wilds" />
-    
-    <!-- Open Graph (Facebook, LinkedIn, Discord, etc.) -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review — Monster Hunter Wilds | TheMindIsWasted</title>
+    <meta name="description" content="Review of Monster Hunter Wilds — 5 Stars. From TheMindIsWasted." />
+    <meta property="og:title" content="Review — Monster Hunter Wilds" />
+    <meta property="og:description" content="Monster Hunter Wilds, developed by Capcom and released on February 28, 2025, for PlayStation 5, Xbox Series X/S, and PC, is a triumphant evolution of the belove…" />
+    <meta property="og:url" content="https://themindiswasted.com/Games/Monster_Hunter_Wilds/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Review: Monster Hunter Wilds" />
-    <meta property="og:description" content="Game review of Monster Hunter Wilds." />
-    <meta property="og:url" content="https://themindiswasted.com/Games/Monster_Hunter_Wilds" />
-    <meta property="og:image" content="https://themindiswasted.com/Games/Monster_Hunter_Wilds/imgs/monsterhunterwilds.jpg" />
-    <meta property="og:site_name" content="TheMindIsWasted" />
-    <meta property="article:published_time" content="2025-05-21T09:00:00+00:00" />
-    <meta property="article:author" content="https://themindiswasted.com/About" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Review: Monster Hunter Wilds" />
-    <meta name="twitter:description" content="Game review of Monster Hunter Wilds." />
-    <meta name="twitter:image" content="https://themindiswasted.com/Games/Monster_Hunter_Wilds/imgs/monsterhunterwilds.jpg" />
-    <meta name="twitter:site" content="@TheMindIsWasted" />
-    
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:image" content="img/monsterhunterwilds.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap" rel="stylesheet" />
+        <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="../../favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="hub-page hub-games review-page">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Games/gaming.css" />
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M02GCCMDDK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M02GCCMDDK');
-</script>
-<body class="bg-[#121212] text-gray-400 font-sans">
-    <!-- Navigation -->
-    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-            <!-- Left: TheMindIsWasted -->
-            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#"
-                    class="text-white text-lg"> TheMindIsWasted</span></span>
-            <!-- Center: Navigation Links with Icons -->
-            <script src="/menu.js"></script>
-            <ul class="flex flex-col md:flex-row md:space-x-6 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto items-center" id="menuitems"></ul>
-        </div>
-    </nav>
-
-    <!-- Header with Parallax -->
-    <header class="parallax-header flex items-center justify-center">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold text-white">Review: Monster Hunter Wilds</h1>
-        </div>
+    <header class="site-header is-scrolled" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="../../" aria-label="TheMindIsWasted home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="../../">Home</a>
+          <a href="../../Tech/">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../../Games/" aria-current="page">Games</a>
+          <a href="../../#streams">Streams</a>
+          <a href="../../Blog/">Blog</a>
+          <a href="../../About/">About</a>
+          <a class="nav-cta" href="#newsletter">Subscribe</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container mx-auto px-8 py-8">
-        <!-- Review Section for Monster Hunter Wilds -->
-        <section id="monster-hunter-wilds-review" class="mb-12">
-            <div class="bg-[#1F2526] rounded-lg shadow-lg p-6">
-                <div class="flex items-center mb-4">
-                    <h3 class="text-lg font-bold text-white mr-4">Monster Hunter Wilds</h3>
-                    <p class="text-gray-400 text-sm">Rating: <span class="star-rating"></span></p>
-                </div>
-                <img src="./imgs/monsterhunterwilds.jpg" alt="Monster Hunter Wilds" class="w-full h-64 object-cover rounded mb-4">
-                <p class="text-gray-400 mb-4">
-                    *Monster Hunter Wilds*, developed by Capcom and released on February 28, 2025, for PlayStation 5, Xbox Series X/S, and PC, is a triumphant evolution of the beloved action RPG series. After sinking over 80 hours into the Forbidden Lands, I can confidently say this is the pinnacle of Monster Hunter—a breathtaking, addictive masterpiece that earns a resounding 5-star rating. It’s the kind of game that redefines what the franchise can be while staying true to its monster-slaying soul.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    The visuals are a knockout punch. The sprawling open-world biomes—from the arid Windward Plains to the lush Scarlet Forest—are jaw-droppingly detailed, with dynamic weather shifts like sandstorms and torrential rains that transform the landscape in real time. The monsters themselves are the real stars, each one a marvel of design—from the menacing Arkveld to the grotesque, farting Congalala. Combat feels better than ever, with the new Focus Mode letting you target weak points with precision and the wound system adding a satisfying rhythm to battles. Whether I’m wielding the Insect Glaive to soar through the air or smashing with the Hammer, every fight is a thrilling dance of strategy and spectacle.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    What sets *Wilds* apart is its seamless flow. Gone are the clunky town returns between hunts—now you’re out in the field, riding your Seikret mount to track prey, gathering resources on the fly, and diving into the next fight without missing a beat. The quality-of-life upgrades are genius: food buffs that persist, a field guide at your fingertips, and an ecosystem that feels alive with herds of creatures interacting naturally. The story, while not groundbreaking, is the series’ best yet—a tale of discovery in the Forbidden Lands that’s bolstered by stellar voice acting and cinematic cutscenes. Characters like Nata and Alma add surprising depth, making me care about more than just the next hunt.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    The endgame is where *Wilds* truly shines. High Rank hunts, tempered monsters, and the promise of free content updates (new beasts are already on the horizon) ensure this is a game I’ll be playing for months, if not years. Multiplayer is a blast too, with crossplay and 100-player lobbies making it easy to team up and tackle colossal threats. Sure, some have griped about performance hiccups on PC or a slightly forgiving difficulty curve early on, but these feel like nitpicks against a backdrop of brilliance. Posts on X rave about the combat and world design, and I couldn’t agree more—it’s a visual and mechanical feast that keeps you coming back.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    *Monster Hunter Wilds* is Capcom firing on all cylinders—a love letter to fans and a perfect entry point for newcomers. It refines the series’ addictive loop of hunting, crafting, and upgrading into something seamless, stunning, and endlessly replayable. This isn’t just a game; it’s an experience that consumes your time and imagination in the best way possible. Whether you’re a veteran carving your 100th Rathalos or a rookie facing your first Doshaguma, *Wilds* delivers a hunt worth celebrating. Five stars, no question—it’s my game of the year contender for 2025.
-                </p>
-                <section class="mt-2 mb-8">
-                    <strong>Rating:</strong> <span class="star-rating"></span><br/>
-                    <strong>Platform(s):</strong>  <i class="fa-brands fa-playstation"></i> Playstation <br/>
-                    <strong>Developer:</strong> <a href="https://www.capcomusa.com/" target="_developer">Capcom</a><br/>
-                    <strong>Publisher:</strong> <a href="https://www.capcomusa.com/" target="_publisher">Capcom</a><br/>
-                    <strong>Playtime at Review:</strong> ~40 hours <br/>
-                    <strong>Release Date:</strong> 2/28/2025<br/>
-                    <strong>Started Play Through:</strong> 3/10/2024<br/>
-                </section>
-                <a href="/" class="inline-block px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">Back to Games</a>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400 text-sm">
-                &copy;2025 <a href="#"
-                    class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights
-                reserved.
-            </p>
-            <!-- Social Media Links -->
-            <script src="/socialmedia.js"></script>
-            <div class="social-links mt-2" id="socialitems">
-            </div>
+    <main id="main">
+      <section class="review-hero" aria-labelledby="review-title">
+        <div class="review-hero-media" aria-hidden="true">
+          <div class="review-hero-glow"></div>
+          <div class="hero-grid"></div>
+          <img class="review-hero-image" src="img/monsterhunterwilds.jpg" alt="" width="1600" height="900" />
         </div>
+        <div class="review-hero-content">
+          <p class="hub-crumb">
+            <a href="../../">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="../">Games</a>
+            <span aria-hidden="true">/</span>
+            <span>Monster Hunter Wilds</span>
+          </p>
+          <p class="section-eyebrow">Game review</p>
+          <h1 id="review-title" class="hub-title">Monster Hunter Wilds</h1>
+          <p class="review-status">In progress · 5 Stars</p>
+        </div>
+      </section>
+
+      <article class="review-layout">
+        <dl class="review-meta reveal">
+            <div>
+              <dt>Rating</dt>
+              <dd>5 Stars</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>In progress</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>PlayStation</dd>
+            </div>
+            <div>
+              <dt>Developer</dt>
+              <dd>Capcom</dd>
+            </div>
+            <div>
+              <dt>Publisher</dt>
+              <dd>Capcom</dd>
+            </div>
+            <div>
+              <dt>Playtime</dt>
+              <dd>~40 hours</dd>
+            </div>
+            <div>
+              <dt>Release Date</dt>
+              <dd>2/28/2025</dd>
+            </div>
+            <div>
+              <dt>Started</dt>
+              <dd>3/10/2025</dd>
+            </div>
+            <div>
+              <dt>Completed</dt>
+              <dd>—</dd>
+            </div>
+        </dl>
+
+        <div class="review-body reveal">
+          <p class="lede">Monster Hunter Wilds, developed by Capcom and released on February 28, 2025, for PlayStation 5, Xbox Series X/S, and PC, is a triumphant evolution of the beloved action RPG series. After sinking over 80 hours into the Forbidden Lands, I can confidently say this is the pinnacle of Monster Hunter—a breathtaking, addictive masterpiece that earns a resounding 5-star rating. It’s the kind of game that redefines what the franchise can be while staying true to its monster-slaying soul.</p>
+          <h2>The Hunt Elevated</h2>
+          <p>The visuals are a knockout punch. The sprawling open-world biomes—from the arid Windward Plains to the lush Scarlet Forest—are jaw-droppingly detailed, with dynamic weather shifts like sandstorms and torrential rains that transform the landscape in real time. The monsters themselves are the real stars, each one a marvel of design—from the menacing Arkveld to the grotesque Congalala. Combat feels better than ever, with the new Focus Mode letting you target weak points with precision and the wound system adding a satisfying rhythm to battles. Whether I’m wielding the Insect Glaive to soar through the air or smashing with the Hammer, every fight is a thrilling dance of strategy and spectacle.</p>
+          <p>What sets Wilds apart is its seamless flow. Gone are the clunky town returns between hunts—now you’re out in the field, riding your Seikret mount to track prey, gathering resources on the fly, and diving into the next fight without missing a beat. The quality-of-life upgrades are genius: food buffs that persist, a field guide at your fingertips, and an ecosystem that feels alive with herds of creatures interacting naturally. The story, while not groundbreaking, is the series’ best yet—a tale of discovery in the Forbidden Lands that’s bolstered by stellar voice acting and cinematic cutscenes.</p>
+          <p>The endgame is where Wilds truly shines. High Rank hunts, tempered monsters, and the promise of free content updates ensure this is a game I’ll be playing for months, if not years. Multiplayer is a blast too, with crossplay and large lobbies making it easy to team up and tackle colossal threats. Sure, some have griped about performance hiccups on PC or a slightly forgiving difficulty curve early on, but these feel like nitpicks against a backdrop of brilliance.</p>
+          <h2>Final Verdict — 5 Stars</h2>
+          <p>Monster Hunter Wilds is Capcom firing on all cylinders—a love letter to fans and a perfect entry point for newcomers. It refines the series’ addictive loop of hunting, crafting, and upgrading into something seamless, stunning, and endlessly replayable. This isn’t just a game; it’s an experience that consumes your time and imagination in the best way possible. Five stars, no question—it’s my game of the year contender for 2025.</p>
+        </div>
+
+        <nav class="review-nav reveal" aria-label="More reviews">
+          <a href="../Clair_Obscur_Expedition_33/">← Clair Obscur: Expedition 33</a>
+          <a class="review-nav-all" href="../">All Games</a>
+          <a href="../Elden_Ring_Shadow_of_Erdtree/">ELDEN RING Shadow of the Erdtree →</a>
+        </nav>
+      </article>
+
+      <section class="newsletter section" id="newsletter">
+        <div class="newsletter-panel reveal">
+          <div>
+            <p class="section-eyebrow">Signal boost</p>
+            <h2>More reviews when the next save clears.</h2>
+            <p>Game logs, finish lines, and backlog confessions — no filler.</p>
+          </div>
+          <div
+            id="mlb2-45600943"
+            class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-45600943 newsletter-ml"
+          >
+            <div class="ml-form-align-center">
+              <div class="ml-form-embedWrapper embedForm">
+                <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                  <div class="ml-form-embedContent" aria-hidden="true">
+                    <h4>Newsletter</h4>
+                    <p>Signup for news and special offers!</p>
+                  </div>
+
+                  <form
+                    class="ml-block-form"
+                    action="https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/subscribe"
+                    data-code=""
+                    method="post"
+                    target="_blank"
+                  >
+                    <div class="ml-form-formContent">
+                      <div class="ml-form-fieldRow ml-last-item">
+                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                          <label class="sr-only" for="ml-email">Email</label>
+                          <input
+                            id="ml-email"
+                            aria-label="email"
+                            aria-required="true"
+                            type="email"
+                            class="form-control"
+                            name="fields[email]"
+                            placeholder="you@domain.com"
+                            autocomplete="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <input type="hidden" name="ml-submit" value="1" />
+
+                    <div class="ml-form-embedSubmit">
+                      <button type="submit" class="primary">Subscribe</button>
+                      <button disabled="disabled" style="display: none" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                      </button>
+                    </div>
+
+                    <input type="hidden" name="anticsrf" value="true" />
+                  </form>
+                </div>
+
+                <div class="ml-form-successBody row-success" style="display: none">
+                  <div class="ml-form-successContent">
+                    <h4>You're on the list</h4>
+                    <p>Thanks for subscribing — talk soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <a class="brand brand-footer" href="../../">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="../../">Home</a>
+          <a href="../../Tech/">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../">Games</a>
+          <a href="../../Blog/">Blog</a>
+          <a href="../../About/">About</a>
+          <a href="#newsletter">Subscribe</a>
+        </nav>
+        <p class="footer-copy">© <span id="year"></span> TheMindIsWasted. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+    <script src="../../script.js"></script>
+  
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
+    <script>
+      fetch("https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/takel");
+    </script>
+
+  </body>
 </html>

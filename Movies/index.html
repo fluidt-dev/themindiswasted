@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About — TheMindIsWasted</title>
+    <title>Movies — TheMindIsWasted</title>
     <meta
       name="description"
-      content="Who's behind TheMindIsWasted — tech, movies, games, and live streams from one wasted mind."
+      content="Movie reviews, rewatch notes, and theater takes from TheMindIsWasted."
     />
-    <meta property="og:title" content="About — TheMindIsWasted" />
+    <meta property="og:title" content="Movies — TheMindIsWasted" />
     <meta
       property="og:description"
-      content="One mind. Too many screens. The story behind the reviews, streams, and late-night takes."
+      content="Spoiler-aware movie reviews, rewatches, and big-screen first impressions."
     />
-    <meta property="og:url" content="https://themindiswasted.com/About/" />
+    <meta property="og:url" content="https://themindiswasted.com/Movies/" />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="hub-page hub-about">
+  <body class="hub-page hub-movies">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header is-scrolled" id="top">
@@ -51,11 +51,11 @@
         <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="../">Home</a>
           <a href="../Tech/">Tech</a>
-          <a href="../Movies/">Movies</a>
+          <a href="../Movies/" aria-current="page">Movies</a>
           <a href="../Games/">Games</a>
           <a href="../#streams">Streams</a>
           <a href="../Blog/">Blog</a>
-          <a href="../About/" aria-current="page">About</a>
+          <a href="../About/">About</a>
           <a class="nav-cta" href="#newsletter">Subscribe</a>
         </nav>
       </div>
@@ -68,7 +68,7 @@
           <div class="hero-grid"></div>
           <img
             class="hub-hero-image"
-            src="../img/unsplash-1511512578047-dfb367046420.jpg"
+            src="../img/unsplash-1489599849927-2ee91cede3ba.jpg"
             alt=""
             width="2400"
             height="1600"
@@ -79,127 +79,143 @@
           <p class="hub-crumb">
             <a href="../">Home</a>
             <span aria-hidden="true">/</span>
-            <span>About</span>
+            <span>Movies</span>
           </p>
-          <p class="section-eyebrow">The signal</p>
-          <h1 id="hub-title" class="hub-title">About</h1>
+          <p class="section-eyebrow">On screen</p>
+          <h1 id="hub-title" class="hub-title">Movies</h1>
           <p class="hub-lead">
-            One mind. Too many screens. TheMindIsWasted is a home base for tech,
-            movies, games, and live streams — built for the chase, the wipe, and
-            everything in between.
+            Spoiler-aware takes on new releases, rewatches, and the films that
+            stick around longer than the credits. Same honesty as the game log —
+            different screen.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#story">Read the Story</a>
-            <a class="btn btn-ghost" href="#connect">Connect</a>
+            <a class="btn btn-movies" href="#review-log">Browse Reviews</a>
+            <a class="btn btn-ghost" href="#categories">Browse Categories</a>
           </div>
         </div>
       </section>
 
-      <section class="section hub-featured" id="story">
-        <div class="mind-panel about-panel reveal">
+      <section class="section hub-categories" id="categories" aria-label="Movie categories">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Browse</p>
+          <h2>Pick a lane into the reel</h2>
+          <p class="section-sub">
+            New reviews, rewatch notes, and first impressions from the theater.
+          </p>
+        </div>
+
+        <div class="hub-cat-grid">
+          <a class="hub-cat hub-cat-movies reveal" href="#review-log">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">01</p>
+              <h3>All Reviews</h3>
+              <p>Every movie logged — theater takes, rewatches, and more.</p>
+            </div>
+            <span class="hub-cat-label">REEL</span>
+          </a>
+          <a class="hub-cat hub-cat-movies reveal" href="#featured">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">02</p>
+              <h3>Latest Take</h3>
+              <p>The newest write-up fresh from the projector.</p>
+            </div>
+            <span class="hub-cat-label">NOW</span>
+          </a>
+          <a class="hub-cat hub-cat-movies reveal" href="#theater">
+            <div class="hub-cat-copy">
+              <p class="section-eyebrow">03</p>
+              <h3>Theater Takes</h3>
+              <p>Big-screen reactions and first impressions.</p>
+            </div>
+            <span class="hub-cat-label">LIGHTS</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section hub-featured" id="featured">
+        <div class="mind-panel movies-panel reveal">
           <div class="mind-copy">
-            <p class="section-eyebrow">The story</p>
-            <h2>A mind spent where the fun is</h2>
+            <p class="section-eyebrow">Featured review</p>
+            <h2>Insidious: Out of the Further</h2>
             <p>
-              This site started as a place to log games and spill thoughts after
-              long sessions. It grew into a broader home for whatever refuses to
-              leave my head — reviews, streams, tech rabbit holes, and the
-              occasional movie night that turns into a write-up.
+              Theater take — strong demon designs, okay story, lots of jump
+              scares. A solid recommend if you’re in the mood for horror.
+              <strong>6 / 10 popcorn buckets.</strong>
             </p>
-            <p>
-              No corporate editorial calendar. No hype cycle cosplay. Just honest
-              takes from someone who actually finishes (some of) the backlog and
-              stays up too late doing it.
-            </p>
+            <a class="btn btn-movies" href="./Insidious_Out_of_the_Further/">Read Theater Take</a>
           </div>
           <div
             class="hub-featured-art"
-            style="background-image: url('../img/unsplash-1552820728-8b83bb6b773f.jpg')"
+            style="background-image: url('./Insidious_Out_of_the_Further/img/poster.jpg')"
             role="img"
-            aria-label="Gaming setup glow"
+            aria-label="Insidious: Out of the Further poster"
           ></div>
         </div>
       </section>
 
-      <section class="section hub-categories" id="covers" aria-label="What this site covers">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Coverage</p>
-          <h2>What you'll find here</h2>
-          <p class="section-sub">
-            Four lanes. One wasted mind. Jump into whichever rabbit hole fits the night.
-          </p>
-        </div>
-
-        <div class="hub-cat-grid hub-cat-grid-4">
-          <a class="hub-cat hub-cat-about reveal" href="../Tech/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Tech</p>
-              <h3>Gear &amp; workflows</h3>
-              <p>Setup notes, hardware, and the tools behind the stream.</p>
-            </div>
-            <span class="hub-cat-label">STACK</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../Movies/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Movies</p>
-              <h3>Reviews &amp; rewatches</h3>
-              <p>Spoiler-aware takes when the controller hits the couch.</p>
-            </div>
-            <span class="hub-cat-label">REEL</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../Games/">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Games</p>
-              <h3>Play logs &amp; deep dives</h3>
-              <p>Active runs, finished campaigns, and backlog confessions.</p>
-            </div>
-            <span class="hub-cat-label">LOGGED</span>
-          </a>
-          <a class="hub-cat hub-cat-about reveal" href="../#streams">
-            <div class="hub-cat-copy">
-              <p class="section-eyebrow">Streams</p>
-              <h3>Live on YouTube &amp; Kick</h3>
-              <p>Co-op chaos, boss fights, and late-night commentary.</p>
-            </div>
-            <span class="hub-cat-label">ON AIR</span>
-          </a>
+      <section class="section hub-split" id="theater" aria-labelledby="theater-title">
+        <div class="hub-split-panel reveal">
+          <div>
+            <p class="section-eyebrow">Theater</p>
+            <h2 id="theater-title">First impressions under the lights</h2>
+            <p>
+              Crowd energy, projection quality, and the gut reaction before the
+              think-piece fully forms — captured while it's still hot.
+            </p>
+            <a class="btn btn-ghost" href="./Insidious_Out_of_the_Further/">Read Latest Theater Take</a>
+          </div>
+          <ul class="hub-list hub-list-movies">
+            <li>Insidious: Out of the Further — Aug 21, 2026 · 6 / 10</li>
+            <li>Spider-Man: Brand New Day — Jul 31, 2026 · 7 / 10</li>
+            <li>Opening weekend reactions</li>
+            <li>Worth leaving the house?</li>
+          </ul>
         </div>
       </section>
 
-      <section class="section hub-split" id="connect" aria-labelledby="connect-title">
-        <div class="hub-split-panel reveal">
-          <div>
-            <p class="section-eyebrow">Connect</p>
-            <h2 id="connect-title">Find the signal</h2>
-            <p>
-              Catch the streams, drop into VODs, or subscribe when the next
-              review or build note ships. Same voice across every screen.
-            </p>
-            <div class="hero-actions">
-              <a
-                class="btn btn-primary"
-                href="https://www.youtube.com/@sannahtee"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                YouTube
-              </a>
-              <a
-                class="btn btn-ghost"
-                href="https://kick.com/sannahtee"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Kick
-              </a>
+      <section class="section hub-latest" id="review-log">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Review log</p>
+          <h2>Movies I've wasted my mind on</h2>
+          <p class="section-sub">
+            Theater takes, rewatches, and the films that still own my evenings.
+          </p>
+        </div>
+
+        <div class="game-grid">
+          <a class="game-tile movie-tile reveal" href="./Insidious_Out_of_the_Further/">
+            <div
+              class="game-art movie-art"
+              style="background-image: url('./Insidious_Out_of_the_Further/img/poster.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag">Theater take</span>
+              <h3>Insidious: Out of the Further</h3>
+              <p>Aug 21, 2026 · 6 / 10 popcorn buckets · Recommended</p>
             </div>
-          </div>
-          <ul class="hub-list hub-list-about">
-            <li>Live streams &amp; VODs</li>
-            <li>Game play logs &amp; reviews</li>
-            <li>Movie takes &amp; rewatches</li>
-            <li>Tech setup &amp; gear notes</li>
-          </ul>
+          </a>
+          <a class="game-tile movie-tile reveal" href="./Spider-Man_Brand_New_Day/">
+            <div
+              class="game-art movie-art"
+              style="background-image: url('./Spider-Man_Brand_New_Day/img/poster.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag">Theater take</span>
+              <h3>Spider-Man: Brand New Day</h3>
+              <p>Jul 31, 2026 · 7 / 10 popcorn buckets · Recommended</p>
+            </div>
+          </a>
+          <a class="game-tile movie-tile reveal" href="./Bad_Boys/">
+            <div
+              class="game-art movie-art"
+              style="background-image: url('./Bad_Boys/img/poster.jpg')"
+            ></div>
+            <div class="game-info">
+              <span class="tile-tag">Rewatch</span>
+              <h3>Bad Boys</h3>
+              <p>Apr 7, 1995 · 9 / 10 popcorn buckets · Highly recommended</p>
+            </div>
+          </a>
         </div>
       </section>
 
@@ -207,8 +223,8 @@
         <div class="newsletter-panel reveal">
           <div>
             <p class="section-eyebrow">Signal boost</p>
-            <h2>Stay in the loop when something new goes live.</h2>
-            <p>Tech drops, movie reviews, game logs, and stream alerts — no filler.</p>
+            <h2>Get movie reviews when the next reel drops.</h2>
+            <p>New releases, rewatches, and theater takes — no filler.</p>
           </div>
           <div
             id="mlb2-45600943"
@@ -281,13 +297,14 @@
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-text">TheMindIsWasted</span>
         </a>
-        <nav class="footer-nav" aria-label="Footer">
+                <nav class="footer-nav" aria-label="Footer">
           <a href="../">Home</a>
+          <a href="../#streams">Streams</a>
           <a href="../Tech/">Tech</a>
-          <a href="../Movies/">Movies</a>
+          <a href="./">Movies</a>
           <a href="../Games/">Games</a>
           <a href="../Blog/">Blog</a>
-          <a href="./">About</a>
+          <a href="../About/">About</a>
           <a href="#newsletter">Subscribe</a>
         </nav>
         <p class="footer-copy">

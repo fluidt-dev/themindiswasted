@@ -1,125 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest" />  
-    
-    <!-- Basic SEO -->
-    <title>TheMindIsWasted - A Gamer's Blog - V Rising</title>
-    <meta name="description" content="Dive into themindiswasted's game review of V Rising." />
-    <meta name="keywords" content="stunlock studios, V Rising, gaming news, game review, game industry" />
-    <meta name="author" content="TheMindIsWasted" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://themindiswasted.com/Games/V_Rising" />
-    
-    <!-- Open Graph (Facebook, LinkedIn, Discord, etc.) -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review — V Rising | TheMindIsWasted</title>
+    <meta name="description" content="Review of V Rising — 4 Stars. From TheMindIsWasted." />
+    <meta property="og:title" content="Review — V Rising" />
+    <meta property="og:description" content="V Rising, developed by Stunlock Studios and fully released on May 8, 2024, after a successful Early Access period, is a vampire-themed survival ARPG that sinks …" />
+    <meta property="og:url" content="https://themindiswasted.com/Games/V_Rising/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Review: V Rising" />
-    <meta property="og:description" content="Game review of V Rising." />
-    <meta property="og:url" content="https://themindiswasted.com/Games/V_Rising" />
-    <meta property="og:image" content="https://themindiswasted.com/Games/V_Rising/imgs/vrising.jpeg" />
-    <meta property="og:site_name" content="TheMindIsWasted" />
-    <meta property="article:published_time" content="2025-05-21T09:00:00+00:00" />
-    <meta property="article:author" content="https://themindiswasted.com/About" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Review: V Rising" />
-    <meta name="twitter:description" content="Game review of V Rising." />
-    <meta name="twitter:image" content="https://themindiswasted.com/Games/V_Rising/imgs/vrising.jpeg" />
-    <meta name="twitter:site" content="@TheMindIsWasted" />
-    
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:image" content="img/vrising.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap" rel="stylesheet" />
+        <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="../../favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="hub-page hub-games review-page">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Games/gaming.css" />
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M02GCCMDDK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M02GCCMDDK');
-</script>
-<body class="bg-[#121212] text-gray-400 font-sans">
-    <!-- Navigation -->
-    <nav class="bg-[#1F2526] border-b border-gray-800 sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-            <!-- Left: TheMindIsWasted -->
-            <span class="text-[#3B82F6] font-bold text-lg"><i class="fa-solid fa-masks-theater"></i> <span href="#"
-                    class="text-white text-lg"> TheMindIsWasted</span></span>
-            <!-- Center: Navigation Links with Icons -->
-            <script src="/menu.js"></script>
-            <ul class="flex flex-col md:flex-row md:space-x-6 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto items-center" id="menuitems"></ul>
-        </div>
-    </nav>
-
-    <!-- Header with Parallax -->
-    <header class="parallax-header flex items-center justify-center">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold text-white">Review: V Rising</h1>
-        </div>
+    <header class="site-header is-scrolled" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="../../" aria-label="TheMindIsWasted home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="../../">Home</a>
+          <a href="../../Tech/">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../../Games/" aria-current="page">Games</a>
+          <a href="../../#streams">Streams</a>
+          <a href="../../Blog/">Blog</a>
+          <a href="../../About/">About</a>
+          <a class="nav-cta" href="#newsletter">Subscribe</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container mx-auto px-8 py-8">
-        <!-- Review Section for V Rising -->
-        <section id="v-rising-review" class="mb-12">
-            <div class="bg-[#1F2526] rounded-lg shadow-lg p-6">
-                <div class="flex items-center mb-4">
-                    <h3 class="text-lg font-bold text-white mr-4">V Rising</h3>
-                    <p class="text-gray-400 text-sm">Rating: <span class="star-rating-4"></span></p>
-                </div>
-                <img src="./imgs/vrising.jpeg" alt="V Rising" class="w-full h-64 object-cover rounded mb-4">
-                <p class="text-gray-400 mb-4">
-                    *V Rising*, developed by Stunlock Studios and fully released on May 8, 2024, after a successful Early Access period, is a vampire-themed survival ARPG that sinks its teeth into a unique blend of genres. I started playing on June 13, 2024, and after many hours of building gothic castles and hunting for blood, I can say it’s a highly engaging experience that’s earned a solid 4 stars—though it’s not without its flaws.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    The vampire fantasy is the heart of *V Rising*, and it’s executed brilliantly. You awaken as a weakened vampire, tasked with rebuilding your empire in a sprawling open world. The survival mechanics are immersive: the day-night cycle forces you to avoid sunlight, using shadows from trees or passing clouds to stay safe, which adds a thrilling layer of strategy to exploration. The blood system is equally compelling—drinking from different enemies grants temporary buffs, like increased critical chance from rogues, making every hunt feel meaningful. Building your castle is a joy, with an intuitive system that lets you snap together gothic structures effortlessly, from blood presses to coffins, creating a spooky estate that feels truly yours.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    Combat is where *V Rising* truly shines. It’s fast-paced and deliberate, blending ARPG elements with MOBA-style duels. Boss fights, of which there are over 50, are a highlight—each one feels like a unique challenge, requiring you to dodge telegraphed attacks and manage your cooldowns carefully. The 1.0 update added Rift Incursions, timed events that let you earn Stygian Shards for crafting powerful weapons, adding a satisfying progression loop without overwhelming randomness. I loved experimenting with different weapons, like the mace for mining or dual axes for crowd control, and the ability to customize your playstyle with spells keeps combat fresh.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    The world is visually striking, especially after the 1.0 update’s graphical improvements, with better lighting and lush foliage that make the gothic landscapes pop. The progression system, tied to gear score rather than traditional leveling, encourages exploration and boss hunting to unlock new crafting recipes. The game also offers incredible flexibility—you can tweak server settings to adjust difficulty, making it accessible for solo players like me or more brutal for those seeking a challenge. The ability to play offline or with friends, with options for PvP or PvE, ensures there’s something for everyone.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    That said, *V Rising* isn’t perfect, which is why it’s a 4-star game for me. The narrative is almost nonexistent—you’re a vampire rising to power, but there’s little story to drive you forward, which can make the experience feel hollow at times, especially in solo play. The early game can be repetitive, with a lot of resource gathering that feels tedious until you unlock better tools. Progression can also be grindy, particularly in the mid-to-late game, where crafting high-tier gear takes a significant time investment. I also wish there were more variety in boss movesets early on, as some fights felt too similar. These issues hold it back from a perfect score, but they don’t overshadow the game’s strengths. *V Rising* is a bloody good time, offering 40-50 hours of engaging gameplay for $34.99. If you’re a fan of survival games, ARPGs, or vampire fantasies, it’s well worth sinking your teeth into.
-                </p>
-                <section class="mt-2 mb-8">
-                    <strong>Rating:</strong> <span class="star-rating-4"></span><br/>
-                    <strong>Platform(s):</strong>  <i class="fa-brands fa-playstation"></i> Playstation, <i class="fa-brands fa-steam"></i> Steam <br/>
-                    <strong>Developer:</strong> <a href="https://www.stunlock.com/" target="_developer">Stunlock Studios</a><br/>
-                    <strong>Publisher:</strong> <a href="https://www.stunlock.com/" target="_publisher">Stunlock Studios</a><br/>
-                    <strong>Playtime at Review:</strong> ~34 hours <br/>
-                    <strong>Release Date:</strong> 5/17/2022<br/>
-                    <strong>Started Play Through:</strong> 6/13/2024<br/>
-                </section>
-                <a href="/" class="inline-block px-4 py-2 bg-transparent border border-[#3B82F6] text-[#3B82F6] rounded hover:bg-[#3B82F6] hover:text-white transition-colors">Back to Games</a>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="bg-[#1F2526] border-t border-gray-800 py-4">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400 text-sm">
-                &copy;2025 <a href="#"
-                    class="text-[#3B82F6] hover:text-[#3B82F6] transition-colors">TheMindIsWasted</a>. All rights
-                reserved.
-            </p>
-            <!-- Social Media Links -->
-            <script src="/socialmedia.js"></script>
-            <div class="social-links mt-2" id="socialitems">
-            </div>
+    <main id="main">
+      <section class="review-hero" aria-labelledby="review-title">
+        <div class="review-hero-media" aria-hidden="true">
+          <div class="review-hero-glow"></div>
+          <div class="hero-grid"></div>
+          <img class="review-hero-image" src="img/vrising.jpeg" alt="" width="1600" height="900" />
         </div>
-    </footer>
+        <div class="review-hero-content">
+          <p class="hub-crumb">
+            <a href="../../">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="../">Games</a>
+            <span aria-hidden="true">/</span>
+            <span>V Rising</span>
+          </p>
+          <p class="section-eyebrow">Game review</p>
+          <h1 id="review-title" class="hub-title">V Rising</h1>
+          <p class="review-status">In progress · 4 Stars</p>
+        </div>
+      </section>
 
-</body>
+      <article class="review-layout">
+        <dl class="review-meta reveal">
+            <div>
+              <dt>Rating</dt>
+              <dd>4 Stars</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>In progress</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>PlayStation, Steam</dd>
+            </div>
+            <div>
+              <dt>Developer</dt>
+              <dd>Stunlock Studios</dd>
+            </div>
+            <div>
+              <dt>Publisher</dt>
+              <dd>Stunlock Studios</dd>
+            </div>
+            <div>
+              <dt>Playtime</dt>
+              <dd>~34 hours</dd>
+            </div>
+            <div>
+              <dt>Release Date</dt>
+              <dd>5/17/2022</dd>
+            </div>
+            <div>
+              <dt>Started</dt>
+              <dd>6/13/2024</dd>
+            </div>
+            <div>
+              <dt>Completed</dt>
+              <dd>—</dd>
+            </div>
+        </dl>
+
+        <div class="review-body reveal">
+          <p class="lede">V Rising, developed by Stunlock Studios and fully released on May 8, 2024, after a successful Early Access period, is a vampire-themed survival ARPG that sinks its teeth into a unique blend of genres. I started playing on June 13, 2024, and after many hours of building gothic castles and hunting for blood, I can say it’s a highly engaging experience that’s earned a solid 4 stars—though it’s not without its flaws.</p>
+          <h2>A Bloody Good Fantasy</h2>
+          <p>The vampire fantasy is the heart of V Rising, and it’s executed brilliantly. You awaken as a weakened vampire, tasked with rebuilding your empire in a sprawling open world. The survival mechanics are immersive: the day-night cycle forces you to avoid sunlight, using shadows from trees or passing clouds to stay safe, which adds a thrilling layer of strategy to exploration. The blood system is equally compelling—drinking from different enemies grants temporary buffs, making every hunt feel meaningful. Building your castle is a joy, with an intuitive system that lets you snap together gothic structures effortlessly.</p>
+          <p>Combat is where V Rising truly shines. It’s fast-paced and deliberate, blending ARPG elements with MOBA-style duels. Boss fights, of which there are over 50, are a highlight—each one feels like a unique challenge, requiring you to dodge telegraphed attacks and manage your cooldowns carefully. The 1.0 update added Rift Incursions, timed events that let you earn Stygian Shards for crafting powerful weapons, adding a satisfying progression loop.</p>
+          <p>The world is visually striking, especially after the 1.0 update’s graphical improvements. The progression system, tied to gear score rather than traditional leveling, encourages exploration and boss hunting to unlock new crafting recipes. Flexibility is excellent—you can tweak server settings, play offline or with friends, and choose PvP or PvE.</p>
+          <h2>Final Verdict — 4 Stars</h2>
+          <p>That said, V Rising isn’t perfect. The narrative is almost nonexistent, which can make the experience feel hollow at times in solo play. The early game can be repetitive, and mid-to-late progression can feel grindy. These issues hold it back from a perfect score, but they don’t overshadow the game’s strengths. If you’re a fan of survival games, ARPGs, or vampire fantasies, it’s well worth sinking your teeth into.</p>
+        </div>
+
+        <nav class="review-nav reveal" aria-label="More reviews">
+          <a href="../Elden_Ring_Shadow_of_Erdtree/">← ELDEN RING Shadow of the Erdtree</a>
+          <a class="review-nav-all" href="../">All Games</a>
+          <a href="../DiabloIV/">Diablo IV →</a>
+        </nav>
+      </article>
+
+      <section class="newsletter section" id="newsletter">
+        <div class="newsletter-panel reveal">
+          <div>
+            <p class="section-eyebrow">Signal boost</p>
+            <h2>More reviews when the next save clears.</h2>
+            <p>Game logs, finish lines, and backlog confessions — no filler.</p>
+          </div>
+          <div
+            id="mlb2-45600943"
+            class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-45600943 newsletter-ml"
+          >
+            <div class="ml-form-align-center">
+              <div class="ml-form-embedWrapper embedForm">
+                <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                  <div class="ml-form-embedContent" aria-hidden="true">
+                    <h4>Newsletter</h4>
+                    <p>Signup for news and special offers!</p>
+                  </div>
+
+                  <form
+                    class="ml-block-form"
+                    action="https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/subscribe"
+                    data-code=""
+                    method="post"
+                    target="_blank"
+                  >
+                    <div class="ml-form-formContent">
+                      <div class="ml-form-fieldRow ml-last-item">
+                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                          <label class="sr-only" for="ml-email">Email</label>
+                          <input
+                            id="ml-email"
+                            aria-label="email"
+                            aria-required="true"
+                            type="email"
+                            class="form-control"
+                            name="fields[email]"
+                            placeholder="you@domain.com"
+                            autocomplete="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <input type="hidden" name="ml-submit" value="1" />
+
+                    <div class="ml-form-embedSubmit">
+                      <button type="submit" class="primary">Subscribe</button>
+                      <button disabled="disabled" style="display: none" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                      </button>
+                    </div>
+
+                    <input type="hidden" name="anticsrf" value="true" />
+                  </form>
+                </div>
+
+                <div class="ml-form-successBody row-success" style="display: none">
+                  <div class="ml-form-successContent">
+                    <h4>You're on the list</h4>
+                    <p>Thanks for subscribing — talk soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <a class="brand brand-footer" href="../../">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="../../">Home</a>
+          <a href="../../Tech/">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../">Games</a>
+          <a href="../../Blog/">Blog</a>
+          <a href="../../About/">About</a>
+          <a href="#newsletter">Subscribe</a>
+        </nav>
+        <p class="footer-copy">© <span id="year"></span> TheMindIsWasted. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../../script.js"></script>
+  
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
+    <script>
+      fetch("https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/takel");
+    </script>
+
+  </body>
 </html>
