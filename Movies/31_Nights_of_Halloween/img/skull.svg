@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" aria-hidden="true">
+  <!-- Original elongated skull inspired by comic antihero iconography, with horns -->
+  <g fill="currentColor" fill-rule="evenodd">
+    <!-- Horns -->
+    <path d="M32 48L8 2l28 40z"/>
+    <path d="M88 48l24-46-28 40z"/>
+    <path d="M40 44L26 10l16 30z" opacity="0.5"/>
+    <path d="M80 44l14-34-16 30z" opacity="0.5"/>
+
+    <!-- Skull body + eye/nose holes -->
+    <path d="
+      M60 16
+      C38 16 26 34 26 54
+      C26 70 29 80 34 90
+      L30 106
+      L38 106
+      L38 152
+      L46 138
+      L50 152
+      L54 140
+      L60 154
+      L66 140
+      L70 152
+      L74 138
+      L82 152
+      L82 106
+      L90 106
+      L86 90
+      C91 80 94 70 94 54
+      C94 34 82 16 60 16
+      Z
+
+      M33 56
+      L54 61
+      L49 84
+      L29 74
+      Z
+
+      M87 56
+      L66 61
+      L71 84
+      L91 74
+      Z
+
+      M60 88
+      L51 108
+      L69 108
+      Z
+    "/>
+  </g>
+</svg>

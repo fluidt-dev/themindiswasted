@@ -1654,6 +1654,23 @@ input {
   .hub-hero-content {
     animation: none !important;
   }
+
+  .halloween-cal-cell,
+  .halloween-poster,
+  .halloween-skull-icon {
+    transition: none;
+  }
+
+  .halloween-cal-cell:not(.is-empty):hover,
+  .halloween-cal-cell:not(.is-empty):focus-within {
+    transform: none;
+  }
+
+  .halloween-cal-cell.is-revealed:hover .halloween-poster,
+  .halloween-cal-cell.is-revealed:focus-within .halloween-poster,
+  .halloween-cal-cell.is-locked:hover .halloween-skull-icon {
+    transform: none;
+  }
 }
 
 /* Motion */
@@ -2001,5 +2018,391 @@ input {
   .gear-specs li {
     grid-template-columns: 1fr;
     gap: 0.2rem;
+  }
+}
+
+/* 31 Nights of Halloween */
+.hub-cat-halloween {
+  background:
+    linear-gradient(160deg, rgba(255, 122, 89, 0.16), transparent 45%),
+    linear-gradient(320deg, rgba(232, 184, 74, 0.08), transparent 50%),
+    var(--ink-elevated);
+}
+
+.hub-cat-halloween:hover,
+.hub-cat-halloween:focus-visible {
+  border-color: rgba(255, 122, 89, 0.55);
+}
+
+.halloween-panel {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 122, 89, 0.18), transparent 42%),
+    radial-gradient(circle at 100% 100%, rgba(232, 184, 74, 0.08), transparent 40%),
+    var(--ink-elevated);
+}
+
+.halloween-promo-meta {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 0.35rem;
+  min-height: 16rem;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(160deg, rgba(255, 122, 89, 0.12), transparent 55%),
+    var(--ink-soft);
+  text-align: center;
+}
+
+.halloween-promo-count {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 12vw, 8rem);
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+  color: var(--reel);
+}
+
+.halloween-promo-label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(243, 239, 230, 0.55);
+}
+
+.halloween-promo-decades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.halloween-promo-decades li {
+  padding: 0.25rem 0.55rem;
+  border: 1px solid rgba(255, 122, 89, 0.35);
+  color: var(--reel);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.review-hero-glow-halloween {
+  background:
+    linear-gradient(180deg, rgba(11, 14, 18, 0.5) 0%, rgba(11, 14, 18, 0.28) 40%, rgba(11, 14, 18, 0.96) 100%),
+    radial-gradient(ellipse 55% 45% at 80% 20%, rgba(255, 122, 89, 0.28), transparent 55%),
+    radial-gradient(ellipse 40% 35% at 15% 70%, rgba(232, 184, 74, 0.1), transparent 50%);
+}
+
+.halloween-page .review-hero-content .hub-title {
+  color: var(--reel);
+}
+
+.halloween-page .review-status {
+  color: var(--reel);
+}
+
+.halloween-lead {
+  max-width: 34rem;
+  margin: 1rem 0 0;
+}
+
+.halloween-rules-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255, 122, 89, 0.12), transparent 40%),
+    var(--ink-elevated);
+}
+
+.halloween-rules-panel h2 {
+  margin: 0 0 0.9rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.halloween-rules-panel p {
+  margin: 0;
+  color: var(--fog);
+}
+
+.halloween-decade-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.halloween-decade {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  background: var(--ink-elevated);
+}
+
+.halloween-decade h3 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--reel);
+}
+
+.halloween-decade p:last-child {
+  margin: 0;
+  color: var(--fog);
+  font-size: 0.95rem;
+}
+
+.halloween-calendar {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.halloween-cal-weekdays,
+.halloween-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.halloween-cal-weekday {
+  padding: 0.35rem 0.25rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(243, 239, 230, 0.45);
+}
+
+.halloween-cal-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  min-height: 100%;
+  padding: 0.55rem;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 122, 89, 0.08), transparent 42%),
+    var(--ink-elevated);
+  transition: border-color 0.2s ease, transform 0.25s var(--ease), box-shadow 0.25s ease;
+}
+
+.halloween-cal-cell.is-empty {
+  min-height: 0;
+  padding: 0;
+  border-style: dashed;
+  border-color: rgba(243, 239, 230, 0.06);
+  background: rgba(20, 24, 32, 0.35);
+  pointer-events: none;
+}
+
+.halloween-cal-cell:not(.is-empty):hover,
+.halloween-cal-cell:not(.is-empty):focus-within {
+  border-color: rgba(255, 122, 89, 0.45);
+  transform: translateY(-3px);
+}
+
+.halloween-cal-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.halloween-cal-daynum {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: rgba(243, 239, 230, 0.72);
+}
+
+.halloween-cal-cell.is-locked .decade-tag {
+  visibility: hidden;
+}
+
+.halloween-cal-skull {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 12rem;
+  padding: 0.85rem 0.5rem;
+  border: 1px solid rgba(255, 122, 89, 0.28);
+  background:
+    radial-gradient(circle at 50% 28%, rgba(255, 70, 50, 0.22), transparent 42%),
+    radial-gradient(circle at 50% 70%, rgba(0, 0, 0, 0.45), transparent 60%),
+    linear-gradient(180deg, rgba(20, 24, 32, 0.15), rgba(11, 14, 18, 0.92));
+  color: rgba(255, 98, 72, 0.88);
+}
+
+.halloween-cal-cell.is-locked .halloween-cal-skull {
+  display: flex;
+}
+
+.halloween-cal-cell.is-locked .halloween-cal-reveal {
+  display: none;
+}
+
+.halloween-skull-icon {
+  width: clamp(3.1rem, 5vw, 4.1rem);
+  height: auto;
+  opacity: 0.95;
+  filter:
+    drop-shadow(0 0 10px rgba(255, 70, 50, 0.35))
+    drop-shadow(0 10px 18px rgba(0, 0, 0, 0.55));
+  transition: transform 0.35s var(--ease), opacity 0.2s ease, filter 0.25s ease;
+}
+
+.halloween-skull-label {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 122, 89, 0.55);
+}
+
+.halloween-cal-reveal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 1;
+}
+
+.halloween-poster-wrap {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border: 1px solid rgba(243, 239, 230, 0.12);
+  background: #0a0c10;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+.halloween-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.45s var(--ease);
+}
+
+.halloween-cal-cell.is-revealed:hover .halloween-poster,
+.halloween-cal-cell.is-revealed:focus-within .halloween-poster {
+  transform: scale(1.05);
+}
+
+.halloween-cal-copy {
+  display: grid;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.halloween-cal-copy h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.1vw, 1.25rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.halloween-cal-copy p {
+  margin: 0;
+  color: var(--fog);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.decade-tag {
+  flex: 0 0 auto;
+  padding: 0.15rem 0.35rem;
+  border: 1px solid rgba(255, 122, 89, 0.4);
+  color: var(--reel);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.halloween-status {
+  margin-top: 0.15rem;
+  color: var(--fog);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.halloween-cal-cell.is-finale {
+  border-color: rgba(255, 122, 89, 0.4);
+  background:
+    linear-gradient(180deg, rgba(255, 122, 89, 0.18), transparent 50%),
+    var(--ink-elevated);
+}
+
+.halloween-cal-cell.is-finale .halloween-cal-daynum {
+  color: var(--reel);
+}
+
+.halloween-cal-cell.is-today {
+  border-color: rgba(255, 122, 89, 0.7);
+  box-shadow: 0 0 0 1px rgba(255, 122, 89, 0.25), 0 12px 28px rgba(255, 122, 89, 0.12);
+}
+
+.halloween-cal-cell.is-today .halloween-cal-daynum,
+.halloween-cal-cell.is-today .halloween-status {
+  color: var(--reel);
+}
+
+.halloween-cal-cell.is-locked:hover,
+.halloween-cal-cell.is-locked:focus-within {
+  transform: none;
+}
+
+.halloween-cal-cell.is-locked:hover .halloween-skull-icon {
+  transform: scale(1.07);
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 14px rgba(255, 70, 50, 0.55))
+    drop-shadow(0 12px 22px rgba(0, 0, 0, 0.6));
+}
+
+@media (max-width: 960px) {
+  .halloween-rules-panel,
+  .halloween-decade-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .halloween-schedule {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .halloween-calendar {
+    min-width: 58rem;
   }
 }
