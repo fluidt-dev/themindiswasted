@@ -222,7 +222,7 @@ input {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 45%;
   filter: saturate(0.85) contrast(1.05);
   transform: scale(1.04);
   animation: kenburns 18s ease-in-out infinite alternate;
@@ -1721,10 +1721,13 @@ input {
   }
 
   .hero-image,
+  .coming-hero-image,
   .brand-mark,
   .live-pip,
+  .coming-pip,
   .reveal,
-  .hero-content {
+  .hero-content,
+  .coming-hero-content {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
@@ -2404,5 +2407,155 @@ input {
 
   .halloween-calendar {
     min-width: 58rem;
+  }
+}
+
+/* Coming soon — blog landing */
+.coming-soon-page .site-header {
+  background: transparent;
+  border-bottom-color: transparent;
+}
+
+.coming-soon-page .site-header.is-scrolled {
+  background: rgba(11, 14, 18, 0.94);
+  border-bottom-color: var(--line);
+}
+
+.coming-hero {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+}
+
+.coming-hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.coming-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  filter: saturate(0.8) contrast(1.05);
+  transform: scale(1.04);
+  animation: kenburns 20s ease-in-out infinite alternate;
+}
+
+.coming-hero-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(11, 14, 18, 0.4) 0%, rgba(11, 14, 18, 0.22) 35%, rgba(11, 14, 18, 0.94) 100%),
+    radial-gradient(ellipse 65% 50% at 72% 22%, rgba(242, 166, 90, 0.28), transparent 55%);
+}
+
+.coming-hero-content {
+  position: relative;
+  z-index: 3;
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: calc(var(--header-h) + 3rem) 0 4.5rem;
+  animation: rise 1s var(--ease) both;
+}
+
+.coming-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1.1rem 0 0;
+  color: var(--dispatch);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.coming-pip {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--dispatch);
+  animation: coming-pulse 2.2s ease-out infinite;
+}
+
+.coming-brand {
+  margin: 1.35rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--paper);
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+.coming-title {
+  margin: 0.2rem 0 0;
+  max-width: 14ch;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(3.4rem, 11vw, 6.8rem);
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--dispatch);
+  text-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+}
+
+.coming-lead {
+  max-width: 32rem;
+  margin: 1.25rem 0 0;
+  color: var(--fog);
+  font-size: 1.1rem;
+}
+
+.coming-expect {
+  padding-top: 3.5rem;
+}
+
+.coming-expect-panel {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(242, 166, 90, 0.12), transparent 45%),
+    var(--ink-elevated);
+}
+
+.coming-expect-panel h2 {
+  margin: 0.35rem 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.coming-expect-panel p {
+  margin: 0;
+  color: var(--fog);
+  max-width: 36rem;
+}
+
+@keyframes coming-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(242, 166, 90, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(242, 166, 90, 0);
+  }
+}
+
+@media (max-width: 960px) {
+  .coming-expect-panel {
+    grid-template-columns: 1fr;
   }
 }
