@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://themindiswasted.com/Blog/cursor-vs-copilot-cli/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://themindiswasted.com/Blog/after-the-stream/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -112,6 +117,11 @@
   </url>
   <url>
     <loc>https://themindiswasted.com/Movies/Spider-Man_Brand_New_Day/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://themindiswasted.com/Movies/The_Thing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

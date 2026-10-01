@@ -48,8 +48,13 @@
       }
 
       const status = cell.querySelector(".halloween-status");
-      if (status && today) {
-        status.textContent = "Tonight";
+      if (status) {
+        const reviewed = cell.hasAttribute("data-review");
+        if (today) {
+          status.textContent = reviewed ? "Tonight · Reviewed" : "Tonight";
+        } else if (reviewed) {
+          status.textContent = "Reviewed";
+        }
       }
     } else {
       cell.setAttribute("aria-label", `October ${day} — locked`);

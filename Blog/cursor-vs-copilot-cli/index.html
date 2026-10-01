@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M02GCCMDDK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-M02GCCMDDK');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursor vs Copilot CLI — TheMindIsWasted</title>
+    <meta
+      name="description"
+      content="How I use AI to build and maintain this site. Cursor is still the daily driver. Copilot CLI is capable, but it does not feel as powerful. Includes a feature and pricing comparison as of October 2026."
+    />
+    <meta property="og:title" content="Cursor vs Copilot CLI — where the work actually lands" />
+    <meta
+      property="og:description"
+      content="A working comparison of Cursor and GitHub Copilot CLI, including current individual and team pricing."
+    />
+    <meta property="og:url" content="https://themindiswasted.com/Blog/cursor-vs-copilot-cli/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://themindiswasted.com/img/unsplash-1555066931-4365d14bab8c.jpg" />
+    <meta property="og:site_name" content="TheMindIsWasted" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cursor vs Copilot CLI — where the work actually lands" />
+    <meta name="twitter:description" content="A working comparison of Cursor and GitHub Copilot CLI, including current individual and team pricing." />
+    <meta name="twitter:image" content="https://themindiswasted.com/img/unsplash-1555066931-4365d14bab8c.jpg" />
+    <link rel="canonical" href="https://themindiswasted.com/Blog/cursor-vs-copilot-cli/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Cursor still runs this site. Copilot CLI does not feel as strong.",
+        "datePublished": "2026-10-01",
+        "dateModified": "2026-10-01",
+        "author": {
+          "@type": "Person",
+          "name": "TheMindIsWasted",
+          "url": "https://themindiswasted.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "TheMindIsWasted",
+          "url": "https://themindiswasted.com/"
+        },
+        "image": "https://themindiswasted.com/img/unsplash-1555066931-4365d14bab8c.jpg",
+        "url": "https://themindiswasted.com/Blog/cursor-vs-copilot-cli/",
+        "description": "How I use AI to build and maintain this site. Cursor is still the daily driver. Copilot CLI is capable, but it does not feel as powerful."
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="../../favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="hub-page hub-blog review-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header is-scrolled" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="../../" aria-label="TheMindIsWasted home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="../../">Home</a>
+          <a href="../../Tech/">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../../Games/">Games</a>
+          <a href="../../#streams">Streams</a>
+          <a href="../" aria-current="page">Blog</a>
+          <a href="../../About/">About</a>
+          <a class="nav-cta" href="#newsletter">Subscribe</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="review-hero" aria-labelledby="review-title">
+        <div class="review-hero-media" aria-hidden="true">
+          <div class="review-hero-glow review-hero-glow-blog"></div>
+          <div class="hero-grid"></div>
+          <img
+            class="review-hero-image"
+            src="../../img/unsplash-1555066931-4365d14bab8c.jpg"
+            alt=""
+            width="2400"
+            height="1600"
+          />
+        </div>
+        <div class="review-hero-content">
+          <p class="hub-crumb">
+            <a href="../../">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="../">Blog</a>
+            <span aria-hidden="true">/</span>
+            <span>Cursor vs Copilot CLI</span>
+          </p>
+          <p class="section-eyebrow">Essay</p>
+          <h1 id="review-title" class="hub-title">Cursor still runs this site</h1>
+          <p class="review-status">October 1, 2026 · AI workflow</p>
+        </div>
+      </section>
+
+      <article class="review-layout">
+        <dl class="review-meta reveal">
+          <div>
+            <dt>Published</dt>
+            <dd>October 1, 2026</dd>
+          </div>
+          <div>
+            <dt>Topic</dt>
+            <dd>AI tooling</dd>
+          </div>
+          <div>
+            <dt>Daily driver</dt>
+            <dd>Cursor</dd>
+          </div>
+          <div>
+            <dt>Also tried</dt>
+            <dd>GitHub Copilot CLI</dd>
+          </div>
+        </dl>
+
+        <div class="review-body reveal">
+          <p class="lede">
+            I have been using AI to build and maintain this site, and the
+            journey is in a good place. Cursor is the tool that constructed
+            these static pages and the one I still trust to change them.
+            I recently started using GitHub Copilot CLI. It is a capable
+            terminal agent, but it does not feel as powerful as Cursor.
+          </p>
+
+          <h2>What “progress” looks like here</h2>
+          <p>
+            TheMindIsWasted is a static site: reviews, a game log, a tech
+            section, and the October horror schedule. There is no app server
+            behind the pages. The work is HTML, CSS, and the discipline of
+            matching a page that already exists. That sounds simple until you
+            are adding a review, a poster treatment, a calendar cell, and the
+            index cards that point at it, all in the same voice.
+          </p>
+          <p>
+            Cursor is what got that system standing, and it is what keeps it
+            standing. I can hand it a page that already shipped, ask for a
+            change that has to fit the rest of the site, and get a result I
+            can open in a browser and judge. That loop — edit, check, correct —
+            is the whole job. The progress is not that I type less. The
+            progress is that a finished page is a normal outcome.
+          </p>
+
+          <h2>Why Cursor still feels like the stronger tool</h2>
+          <p>
+            Cursor’s CLI is not a separate product. It is the same agent as
+            the editor: same account, same project, same rules. When I am in
+            the terminal I am still working on this repository, with the
+            layout, the class names, and the pages that have to stay
+            consistent. The agent can read the files, change them, and leave
+            something I can verify.
+          </p>
+          <p>
+            That is the part that matters for a site like this. A static page
+            is a set of agreements. The hero, the rating, the navigation, and
+            the card on the index all have to agree. Cursor holds that
+            agreement well enough that I am happy to keep using it. I am not
+            shopping for a replacement.
+          </p>
+
+          <h2>Copilot CLI is capable. It feels smaller.</h2>
+          <p>
+            Copilot CLI is included with every GitHub Copilot plan. It runs
+            in the terminal, spends the same AI credits as Copilot Chat, and
+            sits next to the rest of GitHub: issues, pull requests, and
+            <code>gh</code>. For work that starts on GitHub, that is a
+            sensible place to put an agent.
+          </p>
+          <p>
+            For maintaining this site, it has not matched Cursor. Sessions
+            feel narrower. Multi-step changes — a new page, the index, the
+            schedule, the styling — do not land with the same confidence.
+            I do not think Copilot CLI is a bad tool. I think it is a
+            different center of gravity, and that center is GitHub, not the
+            long edit that has to survive contact with an existing design.
+          </p>
+
+          <h2>The two CLIs, side by side</h2>
+          <div class="compare-wrap">
+            <table class="compare-table">
+              <caption>Cursor CLI and Copilot CLI</caption>
+              <thead>
+                <tr>
+                  <th scope="col">What I care about</th>
+                  <th scope="col">Cursor CLI</th>
+                  <th scope="col">Copilot CLI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">What it is</th>
+                  <td>The Cursor agent in the terminal. Same plan as the editor.</td>
+                  <td>The Copilot agent in the terminal. Included on every Copilot plan.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Where it is strongest</th>
+                  <td>Staying inside a project and finishing a multi-file change.</td>
+                  <td>GitHub-shaped work: issues, pull requests, and the <code>gh</code> workflow.</td>
+                </tr>
+                <tr>
+                  <th scope="row">How I use it</th>
+                  <td>Building and maintaining this static site.</td>
+                  <td>A recent trial on the same kind of work.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Project context</th>
+                  <td>The repo, plus rules and skills the agent already follows.</td>
+                  <td>The session and the GitHub repository it is pointed at.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Editor</th>
+                  <td>Cursor itself: Agent, Tab, cloud agents, and the CLI together.</td>
+                  <td>Copilot inside other editors. The CLI is not an editor.</td>
+                </tr>
+                <tr>
+                  <th scope="row">How usage is metered</th>
+                  <td>Two monthly pools, then on-demand billing at model API rates.</td>
+                  <td>GitHub AI Credits. One credit is $0.01. Paid plans also get a flex allotment.</td>
+                </tr>
+                <tr>
+                  <th scope="row">My read</th>
+                  <td>The daily driver. Happy with it.</td>
+                  <td>Worth knowing. It does not feel as powerful for this site.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 id="pricing">What the plans actually cost</h2>
+          <p>
+            Neither CLI has its own price. You pay for the platform, and the
+            terminal agent draws from that plan. These are the published
+            individual and team prices as of October 1, 2026. Cursor’s paid
+            plans include a Cursor Models pool and an Other Models pool, then
+            on-demand usage at the model’s API rate. Copilot’s paid plans
+            include a base credit allotment plus a flex allotment GitHub can
+            adjust. Unused credits do not roll over.
+          </p>
+          <div class="compare-wrap">
+            <table class="compare-table">
+              <caption>Pricing comparison</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Tier</th>
+                  <th scope="col">Cursor</th>
+                  <th scope="col">GitHub Copilot, including the CLI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Free</th>
+                  <td>Hobby. Limited Agent, Chat, and Tab on Auto.</td>
+                  <td>Copilot Free. A small credit allowance, auto model selection only, and 2,000 completions a month.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Individual</th>
+                  <td>Pro, $20/month. Both usage pools included.</td>
+                  <td>Pro, $10/month. 1,500 AI credits (1,000 base + 500 flex).</td>
+                </tr>
+                <tr>
+                  <th scope="row">Heavier individual</th>
+                  <td>Pro+, $60/month. More included usage. Cursor’s own guidance puts daily agent use around $60–$100 a month.</td>
+                  <td>Pro+, $39/month. 7,000 AI credits (3,900 base + 3,100 flex).</td>
+                </tr>
+                <tr>
+                  <th scope="row">Top individual</th>
+                  <td>Ultra, $200/month. The plan Cursor points power users toward.</td>
+                  <td>Max, $100/month. 20,000 AI credits (10,000 base + 10,000 flex).</td>
+                </tr>
+                <tr>
+                  <th scope="row">Team</th>
+                  <td>Teams Standard, $40/user/month. Teams Premium, $120/user/month, with 5× the Standard agent limits.</td>
+                  <td>Business, $19/user/month and 1,900 credits. Enterprise, $39/user/month and 3,900 credits. An admin has to enable the CLI.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="compare-note">
+            Sources, checked October 1, 2026:
+            <a href="https://cursor.com/docs/models-and-pricing">Cursor models and pricing</a>
+            and
+            <a href="https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals">GitHub Copilot usage-based billing</a>.
+            Copilot’s flex allotment is variable. Extra Copilot usage is billed
+            at one credit per $0.01. Cursor on-demand usage continues at the
+            model API rate.
+          </p>
+
+          <h2>Price is not the same thing as power</h2>
+          <p>
+            On the sticker, Copilot is the cheaper entry. Pro is $10 against
+            Cursor Pro at $20, and Copilot Max is $100 against Cursor Ultra at
+            $200. That matters if the work fits inside Copilot’s credit
+            allowance and inside the kind of task Copilot is good at.
+          </p>
+          <p>
+            Sticker price is not how I choose a tool for this site. If I
+            have to run the session again, the savings disappear. Cursor costs more at the comparable
+            tier, and it is the tool that has actually shipped and maintained
+            these pages. I would rather pay for the loop that finishes.
+          </p>
+
+          <h2>Where I am leaving it</h2>
+          <p>
+            I am happy with Cursor. It built this site, and it is what I will
+            keep using to maintain the static pages. Copilot CLI stays in the
+            kit for GitHub work, where its home-field advantage is real. For
+            the long edit — the one that has to match the rest of the site —
+            it does not feel as powerful, and I am not going to pretend that
+            a lower price changes that.
+          </p>
+        </div>
+
+        <nav class="review-nav reveal" aria-label="More posts">
+          <a href="../">← All posts</a>
+          <a class="review-nav-all" href="../#essays">Essays</a>
+          <span></span>
+        </nav>
+      </article>
+
+      <section class="newsletter section" id="newsletter">
+        <div class="newsletter-panel reveal">
+          <div>
+            <p class="section-eyebrow">Signal boost</p>
+            <h2>Get the next post when it ships.</h2>
+            <p>Short takes, stream notes, and essays — no filler.</p>
+          </div>
+          <div
+            id="mlb2-45600943"
+            class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-45600943 newsletter-ml"
+          >
+            <div class="ml-form-align-center">
+              <div class="ml-form-embedWrapper embedForm">
+                <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                  <div class="ml-form-embedContent" aria-hidden="true">
+                    <h4>Newsletter</h4>
+                    <p>Signup for news and special offers!</p>
+                  </div>
+                  <form
+                    class="ml-block-form"
+                    action="https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/subscribe"
+                    data-code=""
+                    method="post"
+                    target="_blank"
+                  >
+                    <div class="ml-form-formContent">
+                      <div class="ml-form-fieldRow ml-last-item">
+                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                          <label class="sr-only" for="ml-email">Email</label>
+                          <input
+                            id="ml-email"
+                            aria-label="email"
+                            aria-required="true"
+                            type="email"
+                            class="form-control"
+                            name="fields[email]"
+                            placeholder="you@domain.com"
+                            autocomplete="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <input type="hidden" name="ml-submit" value="1" />
+                    <div class="ml-form-embedSubmit">
+                      <button type="submit" class="primary">Subscribe</button>
+                      <button disabled="disabled" style="display: none" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                      </button>
+                    </div>
+                    <input type="hidden" name="anticsrf" value="true" />
+                  </form>
+                </div>
+                <div class="ml-form-successBody row-success" style="display: none">
+                  <div class="ml-form-successContent">
+                    <h4>You're on the list</h4>
+                    <p>Thanks for subscribing — talk soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <a class="brand brand-footer" href="../../">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">TheMindIsWasted</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="../../">Home</a>
+          <a href="../../Tech/">Tech</a>
+          <a href="../../Movies/">Movies</a>
+          <a href="../../Games/">Games</a>
+          <a href="../">Blog</a>
+          <a href="../../About/">About</a>
+          <a href="#newsletter">Subscribe</a>
+        </nav>
+        <p class="footer-copy">
+          © <span id="year"></span> TheMindIsWasted. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
+    <script>
+      fetch("https://assets.mailerlite.com/jsonp/2616799/forms/197776170811393297/takel");
+    </script>
+  </body>
+</html>
