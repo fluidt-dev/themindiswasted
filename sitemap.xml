@@ -26,6 +26,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://themindiswasted.com/Blog/the-witcher-3-remastered/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://themindiswasted.com/Blog/notes-from-the-backlog/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

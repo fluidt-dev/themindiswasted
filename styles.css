@@ -1690,6 +1690,21 @@ input {
   font-size: 0.92rem;
 }
 
+.post-figure {
+  margin: 0;
+  justify-self: start;
+}
+
+.post-figure img {
+  width: min(280px, 100%);
+  height: auto;
+  border: 1px solid var(--line);
+}
+
+.review-hero-image-right {
+  object-position: 78% center;
+}
+
 .review-nav {
   display: flex;
   flex-wrap: wrap;
