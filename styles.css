@@ -1509,6 +1509,29 @@ input {
   font-weight: 500;
 }
 
+.kill-count {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+}
+
+.kill-score {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: calc(clamp(3.2rem, 8vw, 4.8rem) - 4px);
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  color: #6e2c28;
+}
+
+.kill-note {
+  margin: 0;
+  color: var(--fog);
+  font-weight: 500;
+}
+
 .star-rating {
   display: grid;
   gap: 0.45rem;
