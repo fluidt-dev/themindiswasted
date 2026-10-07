@@ -116,6 +116,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://themindiswasted.com/Movies/A_Nightmare_On_Elm_Street/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://themindiswasted.com/Movies/Bad_Boys/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
