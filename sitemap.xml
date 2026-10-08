@@ -151,6 +151,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://themindiswasted.com/Movies/The_Descent/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://themindiswasted.com/Movies/The_Thing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
