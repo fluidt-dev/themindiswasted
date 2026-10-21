@@ -161,6 +161,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://themindiswasted.com/Movies/Longlegs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://themindiswasted.com/Movies/poltergeist/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
