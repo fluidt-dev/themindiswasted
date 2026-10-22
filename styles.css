@@ -2691,3 +2691,190 @@ input {
     grid-template-columns: 1fr;
   }
 }
+
+/* ------------------------------------------------------------------
+   Seasonal Halloween accents (Oct 1–31 local; gated in script.js)
+   Soft corner webs + drifting bats; brand mark warms to pumpkin.
+   ------------------------------------------------------------------ */
+html.halloween-season {
+  --halloween: #e07a2f;
+  --halloween-mist: rgba(224, 122, 47, 0.14);
+}
+
+html.halloween-season .brand-mark {
+  background: var(--halloween);
+  box-shadow: 0 0 0 0 rgba(224, 122, 47, 0.5);
+  animation: halloween-pulse 2.4s ease-in-out infinite;
+}
+
+html.halloween-season .hero-glow {
+  background:
+    linear-gradient(180deg, rgba(11, 14, 18, 0.35) 0%, rgba(11, 14, 18, 0.2) 35%, rgba(11, 14, 18, 0.92) 100%),
+    radial-gradient(ellipse 70% 50% at 70% 20%, var(--halloween-mist), transparent 55%),
+    radial-gradient(ellipse 40% 35% at 18% 70%, rgba(232, 184, 74, 0.08), transparent 60%);
+}
+
+html.halloween-season .hero-kicker {
+  color: var(--halloween);
+}
+
+.halloween-decor {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.halloween-web {
+  position: absolute;
+  color: rgba(243, 239, 230, 0.14);
+}
+
+.halloween-web-tr {
+  top: 0;
+  right: 0;
+  width: min(140px, 28vw);
+  height: auto;
+}
+
+.halloween-web-bl {
+  bottom: 0;
+  left: 0;
+  width: min(100px, 22vw);
+  height: auto;
+  color: rgba(243, 239, 230, 0.1);
+}
+
+.halloween-bat {
+  position: absolute;
+  color: rgba(243, 239, 230, 0.22);
+  opacity: 0.55;
+  will-change: transform;
+}
+
+.halloween-bat-1 {
+  top: 18%;
+  left: -8%;
+  width: 36px;
+  height: auto;
+  animation: halloween-drift-1 28s linear infinite;
+}
+
+.halloween-bat-2 {
+  top: 42%;
+  left: -10%;
+  width: 28px;
+  height: auto;
+  opacity: 0.4;
+  animation: halloween-drift-2 36s linear infinite;
+  animation-delay: -12s;
+}
+
+.halloween-bat-3 {
+  top: 68%;
+  left: -6%;
+  width: 22px;
+  height: auto;
+  opacity: 0.32;
+  animation: halloween-drift-3 42s linear infinite;
+  animation-delay: -22s;
+}
+
+@keyframes halloween-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(224, 122, 47, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(224, 122, 47, 0);
+  }
+}
+
+@keyframes halloween-drift-1 {
+  0% {
+    transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  45% {
+    transform: translate3d(110vw, 12vh, 0) scaleX(1);
+  }
+  50% {
+    transform: translate3d(110vw, 12vh, 0) scaleX(-1);
+  }
+  95% {
+    transform: translate3d(-8vw, -6vh, 0) scaleX(-1);
+  }
+  100% {
+    transform: translate3d(-8vw, -6vh, 0) scaleX(1);
+  }
+}
+
+@keyframes halloween-drift-2 {
+  0% {
+    transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  48% {
+    transform: translate3d(115vw, -10vh, 0) scaleX(1);
+  }
+  52% {
+    transform: translate3d(115vw, -10vh, 0) scaleX(-1);
+  }
+  100% {
+    transform: translate3d(-10vw, 8vh, 0) scaleX(-1);
+  }
+}
+
+@keyframes halloween-drift-3 {
+  0% {
+    transform: translate3d(0, 4vh, 0) scaleX(1);
+  }
+  40% {
+    transform: translate3d(108vw, -8vh, 0) scaleX(1);
+  }
+  45% {
+    transform: translate3d(108vw, -8vh, 0) scaleX(-1);
+  }
+  100% {
+    transform: translate3d(-6vw, 2vh, 0) scaleX(-1);
+  }
+}
+
+@media (max-width: 720px) {
+  .halloween-web-tr {
+    width: min(96px, 32vw);
+  }
+
+  .halloween-web-bl {
+    width: min(72px, 26vw);
+  }
+
+  .halloween-bat-3 {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.halloween-season .brand-mark {
+    animation: none;
+  }
+
+  .halloween-bat {
+    animation: none !important;
+    opacity: 0.28;
+  }
+
+  .halloween-bat-1 {
+    top: 14%;
+    left: auto;
+    right: 12%;
+  }
+
+  .halloween-bat-2 {
+    top: 36%;
+    left: 8%;
+  }
+
+  .halloween-bat-3 {
+    display: none;
+  }
+}
