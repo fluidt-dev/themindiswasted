@@ -176,6 +176,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://themindiswasted.com/Movies/Late_Night_with_the_Devil/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://themindiswasted.com/Movies/Let_the_Right_One_In/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
