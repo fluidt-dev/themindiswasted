@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" aria-hidden="true">
+  <g fill="currentColor" fill-rule="evenodd">
+    <rect x="52" y="8" width="16" height="14" rx="2"/>
+    <path d="M46 22h28v8H46z" opacity="0.85"/>
+    <path d="M60 30
+      C34 30 20 52 20 78
+      C20 112 36 148 60 148
+      C84 148 100 112 100 78
+      C100 52 86 30 60 30
+      Z"/>
+    <path d="M28 72h64v10H28z" opacity="0.35"/>
+    <circle cx="60" cy="96" r="8" opacity="0.45"/>
+  </g>
+</svg>

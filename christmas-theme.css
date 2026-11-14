@@ -1,0 +1,557 @@
+/* Temporary Christmas season skin.
+   Loaded only while script.js enables body.season-christmas.
+   Rollback: set CHRISTMAS_SEASON.force = false (or wait for end date). */
+
+body.season-christmas {
+  --holly: #c43c4a;
+  --holly-deep: #8e2430;
+  --frost: rgba(243, 239, 230, 0.55);
+  --season-glow: rgba(125, 255, 163, 0.22);
+  --season-gold: rgba(232, 184, 74, 0.2);
+}
+
+body.season-christmas .season-only {
+  display: block;
+}
+
+body.season-christmas .season-only.home-christmas-promo {
+  display: grid;
+}
+
+/* Soft frost vignette */
+body.season-christmas::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 90% 70% at 50% -10%, rgba(125, 255, 163, 0.08), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(196, 60, 74, 0.1), transparent 50%),
+    radial-gradient(ellipse 50% 35% at 0% 80%, rgba(232, 184, 74, 0.08), transparent 45%);
+  mix-blend-mode: screen;
+  opacity: 0.85;
+}
+
+/* Header string lights */
+body.season-christmas .site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background:
+    radial-gradient(circle at 4% 50%, #7dffa3 0 2px, transparent 3px),
+    radial-gradient(circle at 12% 50%, #e8b84a 0 2px, transparent 3px),
+    radial-gradient(circle at 20% 50%, #c43c4a 0 2px, transparent 3px),
+    radial-gradient(circle at 28% 50%, #7dffa3 0 2px, transparent 3px),
+    radial-gradient(circle at 36% 50%, #e8b84a 0 2px, transparent 3px),
+    radial-gradient(circle at 44% 50%, #c43c4a 0 2px, transparent 3px),
+    radial-gradient(circle at 52% 50%, #7dffa3 0 2px, transparent 3px),
+    radial-gradient(circle at 60% 50%, #e8b84a 0 2px, transparent 3px),
+    radial-gradient(circle at 68% 50%, #c43c4a 0 2px, transparent 3px),
+    radial-gradient(circle at 76% 50%, #7dffa3 0 2px, transparent 3px),
+    radial-gradient(circle at 84% 50%, #e8b84a 0 2px, transparent 3px),
+    radial-gradient(circle at 92% 50%, #c43c4a 0 2px, transparent 3px),
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(125, 255, 163, 0.35) 20%,
+      rgba(232, 184, 74, 0.35) 50%,
+      rgba(196, 60, 74, 0.35) 80%,
+      transparent
+    );
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+body.season-christmas .site-header.is-scrolled {
+  border-bottom-color: rgba(125, 255, 163, 0.18);
+}
+
+body.season-christmas .brand-mark {
+  background: var(--acid);
+  box-shadow: 0 0 0 0 rgba(125, 255, 163, 0.55);
+  animation: season-pulse 2.2s ease-in-out infinite;
+}
+
+body.season-christmas .hero-kicker,
+body.season-christmas .section-eyebrow {
+  color: var(--acid);
+}
+
+body.season-christmas .hero-glow {
+  background:
+    linear-gradient(180deg, rgba(11, 14, 18, 0.4) 0%, rgba(11, 14, 18, 0.22) 35%, rgba(11, 14, 18, 0.94) 100%),
+    radial-gradient(ellipse 65% 48% at 72% 18%, rgba(125, 255, 163, 0.28), transparent 55%),
+    radial-gradient(ellipse 40% 35% at 18% 70%, rgba(196, 60, 74, 0.18), transparent 50%),
+    radial-gradient(ellipse 35% 30% at 55% 55%, rgba(232, 184, 74, 0.12), transparent 55%);
+}
+
+body.season-christmas .hub-hero-glow,
+body.season-christmas .review-hero-glow {
+  background:
+    linear-gradient(180deg, rgba(11, 14, 18, 0.5) 0%, rgba(11, 14, 18, 0.28) 40%, rgba(11, 14, 18, 0.96) 100%),
+    radial-gradient(ellipse 55% 45% at 80% 20%, rgba(125, 255, 163, 0.22), transparent 55%),
+    radial-gradient(ellipse 40% 35% at 15% 70%, rgba(196, 60, 74, 0.14), transparent 50%),
+    radial-gradient(ellipse 30% 28% at 50% 40%, rgba(232, 184, 74, 0.1), transparent 55%);
+}
+
+/* Hero Christmas decorations (Home + hub pages) */
+body.season-christmas .hero-media,
+body.season-christmas .hub-hero-media {
+  isolation: isolate;
+}
+
+body.season-christmas .hero-image,
+body.season-christmas .hub-hero-image {
+  filter: saturate(0.9) contrast(1.06) brightness(0.92);
+}
+
+.season-hero-decor {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.season-hero-frost {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 28% at 12% 0%, rgba(243, 239, 230, 0.22), transparent 70%),
+    radial-gradient(ellipse 50% 26% at 88% 0%, rgba(243, 239, 230, 0.18), transparent 70%),
+    radial-gradient(ellipse 70% 35% at 50% 100%, rgba(11, 14, 18, 0.55), transparent 70%),
+    linear-gradient(180deg, rgba(243, 239, 230, 0.08), transparent 18%, transparent 78%, rgba(11, 14, 18, 0.35));
+  mix-blend-mode: soft-light;
+}
+
+.season-hero-bokeh {
+  position: absolute;
+  inset: 0;
+  opacity: 0.55;
+  background:
+    radial-gradient(circle at 8% 22%, rgba(125, 255, 163, 0.45) 0 3px, transparent 8px),
+    radial-gradient(circle at 18% 48%, rgba(232, 184, 74, 0.4) 0 4px, transparent 10px),
+    radial-gradient(circle at 28% 16%, rgba(196, 60, 74, 0.42) 0 3px, transparent 9px),
+    radial-gradient(circle at 72% 20%, rgba(125, 255, 163, 0.38) 0 5px, transparent 12px),
+    radial-gradient(circle at 84% 42%, rgba(232, 184, 74, 0.42) 0 3px, transparent 9px),
+    radial-gradient(circle at 92% 18%, rgba(196, 60, 74, 0.4) 0 4px, transparent 11px),
+    radial-gradient(circle at 64% 12%, rgba(232, 184, 74, 0.35) 0 2px, transparent 7px),
+    radial-gradient(circle at 40% 28%, rgba(125, 255, 163, 0.3) 0 2px, transparent 6px);
+  filter: blur(0.4px);
+  animation: season-bokeh 5.5s ease-in-out infinite alternate;
+}
+
+.season-hero-garland {
+  position: absolute;
+  top: 0.35rem;
+  left: -2%;
+  width: 104%;
+  height: auto;
+  max-height: 7.5rem;
+  object-fit: cover;
+  object-position: center top;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.45));
+  opacity: 0.95;
+}
+
+.season-hero-ornament {
+  position: absolute;
+  top: 0;
+  width: clamp(2.4rem, 4.5vw, 3.6rem);
+  height: auto;
+  filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.45));
+  transform-origin: top center;
+  animation: season-sway 3.8s ease-in-out infinite;
+}
+
+.season-hero-ornament-a {
+  left: 7%;
+  width: clamp(2.6rem, 5vw, 3.8rem);
+  animation-delay: 0s;
+}
+
+.season-hero-ornament-b {
+  left: 22%;
+  width: clamp(2.1rem, 3.8vw, 3rem);
+  animation-delay: -1.1s;
+  animation-duration: 4.4s;
+}
+
+.season-hero-ornament-c {
+  right: 24%;
+  left: auto;
+  width: clamp(2.3rem, 4.2vw, 3.3rem);
+  animation-delay: -0.6s;
+  animation-duration: 4s;
+}
+
+.season-hero-ornament-d {
+  right: 8%;
+  left: auto;
+  width: clamp(2.7rem, 5.2vw, 4rem);
+  animation-delay: -1.8s;
+  animation-duration: 4.6s;
+}
+
+.season-hero-pine {
+  position: absolute;
+  bottom: -0.5rem;
+  width: clamp(7rem, 16vw, 12rem);
+  height: auto;
+  opacity: 0.88;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+}
+
+.season-hero-pine-left {
+  left: -1.25rem;
+}
+
+.season-hero-pine-right {
+  right: -1.25rem;
+  transform: scaleX(-1);
+}
+
+.season-hero-present {
+  position: absolute;
+  bottom: 0.35rem;
+  width: clamp(3.2rem, 6.5vw, 5rem);
+  height: auto;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.5));
+  transform-origin: center bottom;
+  animation: season-present-bob 3.6s ease-in-out infinite;
+}
+
+.season-hero-present-a {
+  left: clamp(5.5rem, 12vw, 10rem);
+  width: clamp(3.6rem, 7vw, 5.4rem);
+  animation-delay: 0s;
+}
+
+.season-hero-present-b {
+  left: clamp(9.5rem, 18vw, 15rem);
+  bottom: 0.15rem;
+  width: clamp(2.8rem, 5.5vw, 4.2rem);
+  animation-delay: -1.2s;
+  animation-duration: 4.1s;
+}
+
+.season-hero-present-c {
+  right: clamp(5.5rem, 12vw, 10rem);
+  left: auto;
+  width: clamp(3.1rem, 6vw, 4.6rem);
+  animation-delay: -0.7s;
+  animation-duration: 3.9s;
+}
+
+.season-hero-lights {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5.6rem;
+  height: 3px;
+  background:
+    radial-gradient(circle at 6% 50%, #7dffa3 0 2px, transparent 3px),
+    radial-gradient(circle at 14% 50%, #e8b84a 0 2px, transparent 3px),
+    radial-gradient(circle at 22% 50%, #c43c4a 0 2px, transparent 3px),
+    radial-gradient(circle at 30% 50%, #7dffa3 0 2px, transparent 3px),
+    radial-gradient(circle at 38% 50%, #e8b84a 0 2px, transparent 3px),
+    radial-gradient(circle at 46% 50%, #c43c4a 0 2px, transparent 3px),
+    radial-gradient(circle at 54% 50%, #7dffa3 0 2px, transparent 3px),
+    radial-gradient(circle at 62% 50%, #e8b84a 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 50%, #c43c4a 0 2px, transparent 3px),
+    radial-gradient(circle at 78% 50%, #7dffa3 0 2px, transparent 3px),
+    radial-gradient(circle at 86% 50%, #e8b84a 0 2px, transparent 3px),
+    radial-gradient(circle at 94% 50%, #c43c4a 0 2px, transparent 3px);
+  opacity: 0.75;
+  filter: drop-shadow(0 0 6px rgba(125, 255, 163, 0.35));
+  animation: season-twinkle 2.8s ease-in-out infinite;
+}
+
+@keyframes season-sway {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes season-present-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(2deg);
+  }
+}
+
+@keyframes season-bokeh {
+  from {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.7;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes season-twinkle {
+  0%,
+  100% {
+    opacity: 0.55;
+    filter: drop-shadow(0 0 4px rgba(125, 255, 163, 0.25));
+  }
+  50% {
+    opacity: 0.95;
+    filter: drop-shadow(0 0 10px rgba(232, 184, 74, 0.45));
+  }
+}
+
+body.season-christmas .btn-primary {
+  background: var(--acid);
+  color: var(--ink);
+}
+
+body.season-christmas .btn-primary:hover,
+body.season-christmas .btn-primary:focus-visible {
+  background: #9affb8;
+}
+
+body.season-christmas .btn-movies {
+  background: var(--holly);
+  color: var(--paper);
+}
+
+body.season-christmas .btn-movies:hover,
+body.season-christmas .btn-movies:focus-visible {
+  background: #d64d5a;
+}
+
+body.season-christmas .nav-cta {
+  border-color: var(--acid);
+  color: var(--acid) !important;
+}
+
+body.season-christmas .nav-cta:hover,
+body.season-christmas .nav-cta:focus-visible {
+  background: var(--acid);
+  color: var(--ink) !important;
+}
+
+body.season-christmas .skip-link:focus {
+  background: var(--acid);
+}
+
+body.season-christmas .newsletter-form input:focus {
+  border-color: var(--acid);
+}
+
+body.season-christmas .mind-panel,
+body.season-christmas .newsletter-panel {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(125, 255, 163, 0.14), transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(196, 60, 74, 0.1), transparent 42%),
+    var(--ink-elevated);
+}
+
+/* Home season promo */
+body.season-christmas .home-christmas-promo {
+  margin-top: -2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+body.season-christmas .home-christmas-panel {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid rgba(125, 255, 163, 0.28);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(125, 255, 163, 0.14), transparent 42%),
+    radial-gradient(circle at 100% 100%, rgba(232, 184, 74, 0.1), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(196, 60, 74, 0.08), transparent 45%),
+    var(--ink-elevated);
+  box-shadow: var(--shadow);
+}
+
+body.season-christmas .home-christmas-panel h2 {
+  margin: 0 0 0.9rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: var(--acid);
+}
+
+body.season-christmas .home-christmas-panel p {
+  margin: 0 0 1.4rem;
+  color: var(--fog);
+}
+
+body.season-christmas .home-christmas-meta {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 0.35rem;
+  min-height: 12rem;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(160deg, rgba(125, 255, 163, 0.1), transparent 55%),
+    var(--ink-soft);
+  text-align: center;
+}
+
+body.season-christmas .home-christmas-count {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(4.5rem, 10vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+  color: var(--acid);
+}
+
+body.season-christmas .home-christmas-label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(243, 239, 230, 0.55);
+}
+
+body.season-christmas .home-christmas-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.season-christmas .home-christmas-tags li {
+  padding: 0.25rem 0.55rem;
+  border: 1px solid rgba(196, 60, 74, 0.45);
+  color: #f0a0a8;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Snow layer (mounted by script.js) */
+.season-snow {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.season-snow-flake {
+  position: absolute;
+  top: -12px;
+  border-radius: 50%;
+  background: rgba(243, 239, 230, 0.85);
+  box-shadow: 0 0 6px rgba(243, 239, 230, 0.35);
+  animation-name: season-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+body.season-christmas.christmas-page .season-snow-flake {
+  opacity: 0.55;
+  animation-duration: calc(var(--fall-duration, 12s) * 1.35) !important;
+}
+
+@keyframes season-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(125, 255, 163, 0.55);
+    background: var(--acid);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(125, 255, 163, 0);
+    background: #e8b84a;
+  }
+}
+
+@keyframes season-fall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(var(--drift, 40px), 110vh, 0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  body.season-christmas .home-christmas-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .season-hero-ornament-b,
+  .season-hero-ornament-c {
+    display: none;
+  }
+
+  .season-hero-pine {
+    width: clamp(5.5rem, 28vw, 8rem);
+    opacity: 0.8;
+  }
+
+  .season-hero-present-a {
+    left: 4.8rem;
+  }
+
+  .season-hero-present-b {
+    left: 8.2rem;
+  }
+
+  .season-hero-present-c {
+    right: 4.8rem;
+  }
+
+  .season-hero-garland {
+    max-height: 5.5rem;
+  }
+
+  .season-hero-lights {
+    top: 4.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.season-christmas .brand-mark,
+  .season-hero-ornament,
+  .season-hero-present,
+  .season-hero-bokeh,
+  .season-hero-lights {
+    animation: none !important;
+  }
+
+  .season-snow {
+    display: none !important;
+  }
+}
